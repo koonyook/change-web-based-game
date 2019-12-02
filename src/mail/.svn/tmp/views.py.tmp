@@ -1,0 +1,215 @@
+# Create your views here.
+
+from django.shortcuts import render_to_response
+from django.http import HttpResponseRedirect
+from helpers.http import JSONResponse
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import authenticate, login
+from django.core.urlresolvers import reverse
+from helpers.decorators import post_or_redirect_to_front
+
+from django.core.exceptions import ObjectDoesNotExist
+
+from newtype.core.models import Player,Union,Players_Items,Unions_Items, Item
+from newtype.mail.models import Mail, Players_Items_Mails, Unions_Items_Mails
+
+import datetime
+import math
+
+def appear(type,name):				#true or false
+	if (type=='player'):
+		try:
+			Player.objects.get(user__username=name)			#not sure
+			return True
+		except ObjectDoesNotExist:
+			return False
+	else:
+		try:
+			Union.objects.get(name=name)			#not sure
+			return True
+		except ObjectDoesNotExist:
+			return False
+
+def get_person(type,name):					#return object of player or union #type='player' or 'union' #name is name
+	if (type=='player'):
+		try:
+			return Player.objects.get(user__username=name)			#not sure
+		except ObjectDoesNotExist:
+			return None
+	else:
+		try:
+			return Union.objects.get(name=name)			#not sure
+		except ObjectDoesNotExist:
+			return None
+
+def is_available(type,item_id):				#true or false
+	if (type=='player'):
+		try:
+			return Players_Items.objects.get(id=item_id).is_available
+		except ObjectDoesNotExist:
+			return False
+	else:
+		try:
+			return Unions_Items.objects.get(id=item_id).is_available
+		except ObjectDoesNotExist:
+			return False
+
+def send_mail(request):
+	type='3'
+	send_by='player'
+	send_to='player'
+	target_name='clickme1'
+	subject=''
+	message='this is first gift'
+	item_list=[1]
+	money=''
+	'''
+	type=request.POST['type']
+	send_by=request.POST['send_by']
+	send_to=request.POST['send_to']
+	target_name=request.POST['target_name']
+	subject=request.POST['subject']
+	message=request.POST['message']
+	item_list=request.POST['item_list']     # I do not know , it's work or not for get list from request.POST
+	money=request.POST['money']
+	'''
+	if (type=='2'):
+		send_by='union'
+		send_to='player'	
+	
+	person_sender=request.user.player
+	if (send_by=='union'):
+		person_sender=person_sender.union
+
+	#validate data
+	if (not appear(send_to,target_name)):
+		return JSONResponse(u'Sorry, do not have '+send_to+' '+target_name)
+	
+	if (subject==''):
+		if (type=='1'):
+			subject='Message from '+person_sender.__unicode__()
+		elif (type=='2'):
+			subject='Invitation from '+person_sender.__unicode__()
+		elif (type=='3'):
+			subject='Gift from '+person_sender.__unicode__()
+		elif (type=='4'):
+			subject='Offer from'+person_sender.__unicode__()
+	if (message==''):
+		if (type=='2'):
+			message=person_sender+' union wants you to join with them. Do you accept this offer?'
+		else:
+			message='<no message>'
+
+	if (type=='3' or type=='4'):
+		for item_id in item_list:
+			if(not is_available(send_by,item_id)):
+				return JSONResponse(u'Sorry, some of your item is not available')
+		if (money==''):
+			money='0'
+		if (not money.isdigit()):
+			return JSONResponse(u'Sorry, your money is invalid')
+		else:
+			money=int(money)
+		if (person_sender.money < money):
+			return JSONResponse(u'Sorry, your money is not enough')
+
+	#end validate data
+	person_reciever=get_person(send_to,target_name)
+
+	this_mail=Mail.objects.create(type=type,subject=subject,message=message,send_by=send_by,send_to=send_to)
+	this_mail.set_sender(send_by,person_sender)
+	this_mail.set_receiver(send_by,person_reciever)
+
+	if (type=='3' or type=='4'):
+		this_mail.set_item(1,send_by,item_list)
+		person_sender.money=person_sender.money-money
+		person_sender.save()
+		this_mail.money=money
+		this_mail.save()
+
+	return JSONResponse(u'Sending Complete')
+
+def cmp_unread_before(data1,data2): return int(data2['unread'])-int(data1['unread'])
+
+def show_inbox(request):
+	view_by='player'
+	#view_by=request.POST['view_by']   #'player' or 'union'
+
+	if view_by=='player':
+		queryset=Mail.objects.filter(send_to_player=request.user.player)		#not sure
+	else:
+		queryset=Mail.objects.filter(send_to_union=request.user.player.union)	#not sure
+	
+	queryset=queryset.order_by('-send_at')
+	temp=queryset.select_related(depth=2)
+	data=list()
+	for e in temp:
+		data.append({
+			'id'		:e.id,
+			'type'		:e.type,
+			'subject'	:e.subject,
+			'sender'	:str(e.sender()),
+			'send_at'	:str(e.send_at),
+			'unread'	:e.unread
+		})
+	data.sort(cmp_unread_before)
+
+	return JSONResponse(data)
+
+def show_waiting(request):
+	view_by='player'
+	#view_by=request.POST['view_by']   #'player' or 'union'
+
+	if view_by=='player':
+		queryset=Mail.objects.filter(send_by_player=request.user.player)		#not sure
+	else:
+		queryset=Mail.objects.filter(send_by_union=request.user.player.union)	#not sure
+	
+	queryset=queryset.filter(type__in=[2,3,4,5],waiting=1)
+	queryset=queryset.order_by('send_at')
+	temp=queryset.select_related(depth=2)
+	data=list()
+	for e in temp:
+		data.append({
+			'id'		:e.id,
+			'type'		:e.type,
+			'subject'	:e.subject,
+			'receiver'	:str(e.receiver()),
+			'send_at'	:str(e.send_at),
+		})
+	return JSONResponse(data)
+
+def read_mail(request):
+	mail_id=1
+	'''
+	mail_id=request.POST['mail_id']
+	'''
+	try:
+		this_mail=Mail.objects.get(id=mail_id)
+	except ObjectDoesNotExist:
+		return JSONResponse({'error_message':'Sorry, mail not found'})
+	data={}
+	data['error_message']=''
+	data['type']=this_mail.type
+	data['subject']=this_mail.subject
+	data['message']=this_mail.message
+	data['sender']=str(this_mail.sender())
+	data['send_at']=str(this_mail.send_at)
+	
+
+		if (e.type==2 or e.type==3 or e.type==5):
+			accept_button=True
+		else:
+			accept_button=False
+		
+		if (e.type==4):
+			ans_trade_button=True
+		else:
+			ans_trade_button=False
+		#All mails have 'delete_button'
+<<<<<<< .mine
+=======
+'''
+
+def testmail(request):
+	return render_to_response('testpost.html')>>>>>>> .r95

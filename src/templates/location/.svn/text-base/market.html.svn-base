@@ -1,0 +1,65 @@
+<script type="text/javascript">
+	$(document).ready(function(){
+		if(serverunlock["bank_enabled"]==0)
+		{
+			$('#bank_button').hide();
+		}
+		if(serverunlock["patent_enabled"]==0)
+		{
+			$('#patent_button').hide();
+		}
+	});
+</script>
+<div id="location_market" class="location">
+	<input type="button" id="market_button" />
+	<input type="button" id="bank_button" />
+	<input type="button" id="patent_button" />
+	<div id="market_box">
+		<div id="main_shop">
+			<div id="viewbuyshop" class="tab button">ดูร้านรับซื้อ</div>
+			<div id="viewsellshop" class="tab button">ดูร้านขาย</div>
+			<div id="setbuyshop" class="tab button">ตั้งร้านรับซื้อ</div>
+			<div id="setsellshop" class="tab button">ตั้งร้านขาย</div>
+		</div>
+		<div id="shop_content">
+			<div id="shop_content_viewbuy" class="market_component">
+			</div>
+			<div id="shop_content_viewsell" class="market_component">
+			</div>
+			<div id="sellshop_box" class="market_component component">
+					<!--<label for="sell_box_slots">ไอเท็ม</label>-->
+					<div id="sell_box_slots" class="item_list"></div>
+					<div style="padding: 4px;"><label for="sell_box_value">ราคา&nbsp;</label><input type="text" name="price" id="sell_box_value" value="0"/></div>
+					<div style="padding: 4px;"><input type="button" id="sell_box_submit" value="ตั้งขาย"/></div>
+			</div>
+			<div id="buyshop_box" class="market_component component">
+			    <div>ไอเท็ม&nbsp;<select id="buy_box_slots"></select></div>
+				<div>ราคา&nbsp;&nbsp;&nbsp;<input type="text" name="price" id="buy_box_price" value="0"/></div>
+				<div>เลเวล&nbsp;&nbsp;<input type="text" name="lvl" id="buy_box_lvl" value="0"/></div>
+				<div>จำนวน&nbsp;<input type="text" name="quantity" id="buy_box_quantity" value="0"/></div>
+				<div>ต้องเต็มประสิทธิภาพ&nbsp;<input type="checkbox" name="must_complete" id="buy_box_must_complete" value="must_complete" /></div>
+				<div><input type="button" id="buy_box_submit" value="ตั้งซื้อ"/></div>
+			</div>
+		</div>
+		<div id="market_box_close" class="button"><b>ปิด</b></div>
+	</div>
+	<div id="bank_box">
+		<div id="bank_title" class="button">รับซื้อสินค้า</div>
+		<div id="bank_box_slots" class="item_list"></div>
+		<div id="bank_box_draft">ราคาขาย <div id="bank_box_value">&nbsp;</div></div>
+		<input id="bank_box_submit" type="button" value="ขาย" disabled="disabled"/>
+		<div id="bank_box_close" class="button">ปิด</div>
+	</div>
+	<div id="patent_box">
+		<div id="patent_title"><div id="patent_title_view" class="tab button" >ดูรายการ</div><div id="patent_title_setup" class="tab button">ตั้งขาย</div></div>
+		<div id="patent_box_close" class="button">ปิด</div>
+		<div id="patent_box_setup_content" class="patent_component">
+			<div>สิทธิบัตร&nbsp;<select id="patent_box_slots"></select></div>
+			<div>ราคา&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="price" id="patent_box_price" value="0"/></div>
+			<div><input type="button" id="patent_box_submit" value="ตั้งขาย"/></div>
+		</div>
+		<div id="patent_box_title_content" class="patent_component">
+			<div id="patent_box_showall" class="component"></div>
+		</div>
+	</div>
+</div>

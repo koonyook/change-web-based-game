@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/repos/change/!svn/ver/846/trunk/newtype/front
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/change/!svn/ver/846/trunk/newtype/front/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/change/!svn/ver/3/trunk/newtype/front/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/change/!svn/ver/3/trunk/newtype/front/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/change/!svn/ver/3/trunk/newtype/front/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/change/!svn/ver/21/trunk/newtype/front/urls.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/change/!svn/ver/41/trunk/newtype/front/forms.py
+END

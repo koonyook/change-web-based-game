@@ -1,0 +1,1265 @@
+	<script type="text/javascript">
+		var submenu = "";
+		var submenu2 = "";
+		var menudata;
+		var orderby="items";
+		var item_page = 1;
+		function updatefivesec()
+		{
+			if(submenu=="msg")
+			{
+				update_unread();
+			}
+			LoadMenu();
+			setTimeout(updatefivesec,5000);
+		}
+		function isdefined(variable)
+		{
+			return (!(!(variable)))
+		}
+		function LoadMenu(callbackfunction)
+		{
+				$.getJSON("/user/menu/", function(data) 
+					{
+						menudata = data;
+						var mech_en_p = (data["mechanical_energy"]*100)/data["max_mechanical_energy"];
+						var user_en_p = (data["energy"]*100)/data["max_energy"];
+						if(serverunlock["union_enabled"]==1)
+						{
+							$('select[name=patent_give_box_to]').html('<option value="union">บริษัท</option><option value="player">ผู้เล่น</option>');
+						}
+						if(data["union"]!=null && serverunlock["union_enabled"]==1)
+						{
+							haveunion = true;
+						}
+						else
+						{
+							haveunion = false;
+						}
+						$('#mech_eng').css("width",mech_en_p+"%");
+						$('#user_eng').css("width",user_en_p+"%");
+						$('#user_menu_fullen_text').html(data["energy"]+'/'+data["max_energy"]);
+						$('#user_menu_fullmechen_text').html(data["mechanical_energy"]+'/'+data["max_mechanical_energy"]);
+						if(serverunlock["money_enabled"]==1)
+						{
+							$('#main_menu_content_money_bg').show();
+							$('#main_menu_content_money').html(data["money"]+" <span id='suffix'>$</span>");
+						}
+						$('#main_menu_content_name').html(data["name"]);
+						$('#item_storage_value').html(data['used_storage']+'/'+data['storage']);
+						if(data["union"]!=null && serverunlock["union_enabled"]==1 && nowstate=="union")	// AND mode Corp.
+						{
+							$('#main_menu_content_name').html(data["union"]["name"]);
+							$('#main_menu_content_money').html(data["union"]["money"]+" <span id='suffix'>$</span>");
+							$('a[href="#transfer"]').html('ส่งไปยังผู้เล่น');
+							$('#item_storage_value').html(data['union']['used_storage']+'/'+data['union']['storage']);
+
+							mech_en_p = (data["union"]["mechanical_energy"]*100)/data["union"]["max_mechanical_energy"];
+							user_en_p = (data["union"]["energy"]*100)/data["union"]["max_energy"];
+							$('#mech_eng').css("width",mech_en_p+"%");
+							$('#user_eng').css("width",user_en_p+"%");
+							$('#user_menu_fullen_text').html(data["union"]["energy"]+'/'+data["union"]["max_energy"]);
+							$('#user_menu_fullmechen_text').html(data["union"]["mechanical_energy"]+'/'+data["union"]["max_mechanical_energy"]);
+						}
+						else
+						{
+							$('a[href="#transfer"]').html('ส่งไปยังบริษัท');
+						}
+						if(isdefined(callbackfunction))
+							callbackfunction();
+					});
+		}
+		function getStringItem(data)
+		{
+			var str='';
+			for(var loop in data)
+			{
+				str += '<div id="itemid_'+data[loop]["item_id"]+'" id2="'+data[loop]["ownership_id"]+'" class="obj_items button" style="background: url('+data[loop]["icon_url"]+') no-repeat;"><div style="float: right; margin-right:-1px; margin-top: 19px; background: rgba(255,255,255,0.7);border:1px solid #999; font-size:10px;'+((data[loop]["is_available"])?'':'color:red;')+'">'+data[loop]["level"]+'</div></div>';
+				array_items[data[loop]["ownership_id"]] = data[loop];
+			}
+			return str;
+		}
+		function setOrderItem(data)
+		{
+			orderby = data;
+			if(data=="item")
+			{
+				$('#category_item').attr("src","/media/images/menubox/item_menu_itemcat_hover.png");
+				$('#category_tech').attr("src","/media/images/menubox/item_menu_techcat.png");
+				$('#category_patent').attr("src","/media/images/menubox/item_menu_patentcat.png");
+			}
+			else if(data=="tech")
+			{
+				$('#category_item').attr("src","/media/images/menubox/item_menu_itemcat.png");
+				$('#category_tech').attr("src","/media/images/menubox/item_menu_techcat_hover.png");
+				$('#category_patent').attr("src","/media/images/menubox/item_menu_patentcat.png");
+			}
+			else if(data=="patent")
+			{
+				$('#category_item').attr("src","/media/images/menubox/item_menu_itemcat.png");
+				$('#category_tech').attr("src","/media/images/menubox/item_menu_techcat.png");
+				$('#category_patent').attr("src","/media/images/menubox/item_menu_patentcat_hover.png");
+			}
+			if(data=="patent")
+			{
+				$('#item_search').hide();
+				$('#item_page').hide();
+				$('#item_storage').hide();
+				$('#item_scope').hide();
+				$.getJSON("/patent/show_person_patent/", {},function(data) 
+				{
+					var mystr = '<ul id="person_patent_list">';
+					for(var loop in data)
+					{
+						mystr += '<li class="link_patent button" id2="'+data[loop]["id"]+'">'+data[loop]["name"]+'</li>';
+					}
+					mystr += '</ul>';
+					$('#item_patent').html(mystr);
+					$('#item_patent').show();
+					$('.link_patent').click(function(){
+						showPatent($(this).attr("id2"));
+					});
+				});
+			}
+			else
+			{
+				if(!$('#item_patent').is(':hidden'))
+				{
+					$('#item_patent').hide();
+					$('#item_search').show();
+					$('#item_page').show();
+					$('#item_storage').show();
+					$('#item_scope').show();
+				}
+				LoadItem();
+			}
+		}
+		function getOtherItemId()
+		{
+			var myarr = new Array();
+			var head=0;
+			var obj = $('.item_list');
+			for(var i=0;i<obj.length;i++)
+			{
+				if($(obj.get(i)).attr("id") != "item_slots")
+				{
+					var tmp = getItemList( $(obj.get(i)) );
+					for(var j in tmp)
+					{
+						myarr[head++] = tmp[j];
+					}
+				}
+			}
+			return myarr;
+		}
+		function searchArray(key,arr)
+		{
+			for(var loop2 in arr)
+			{
+				if(key== arr[loop2])
+					return true;
+			}
+			return false;
+		}
+		function _LoadItem(data)
+		{
+			var newdata = new Array();
+			var head=0;
+			var otheritem = getOtherItemId();
+			for(var loop in data)
+			{
+				if(data[loop]["is_technology"] == (orderby=="tech"))
+				{
+					if(!searchArray(data[loop]["ownership_id"],otheritem))
+					{
+						newdata[head++] = data[loop];
+					}
+				}
+			}
+			head=0;
+			var resdata = new Array();
+			for(var i=(item_page-1)*24;i<newdata.length && i<item_page*24;i++)
+			{
+				resdata[head++] = newdata[i];
+			}
+			$('#item_slots').html(getStringItem(resdata));
+			SyncItem();
+		}
+		function LoadItem(key,callback)
+		{
+			if(isdefined(key) && key!="")
+			{
+				$.post("/user/items/", {
+					search:key
+				},function(data) 
+				{
+					_LoadItem(data);
+					if(isdefined(callback))
+						callback();
+				},'json');
+			}
+			else
+			{
+				$.getJSON("/user/items/", function(data) 
+				{
+					_LoadItem(data);
+					if(isdefined(callback))
+						callback();
+				});
+			}
+		}
+		function parseItem(data)
+		{
+			var tmp = '';
+			for(var i in data)
+			{
+				array_items[data[i]["ownership_id"]] = data[i];
+				tmp +=  '<div id="itemid_'+data[i]["id"]+'" id2="'+data[i]["ownership_id"]+'" class="obj_items button" style="background: url('+data[i]["icon_url"]+') no-repeat;"></div>';
+			}
+			return tmp;
+		}
+		function getItemList(parentobj)
+		{
+			var myarr = new Array();
+			var obj = parentobj.children();
+			for(var i=0;i<obj.length;i++)
+			{
+				myarr[i] = $(obj.get(i)).attr("id2");
+			}
+			return myarr;
+		}
+		function update_unread(callback)
+		{
+			$.post("/mail/count_unread/", {},function(data) {
+					$('#sub_menu_content_msg_arg').html(data);
+					$('#sub_menu_content_msg').show();
+					if(isdefined(callback))
+						callback();
+			},'json');
+		}
+		function update_do_delete_mail(){
+			$('.do_del_mail').click(function(){
+					$.post("/mail/decline/",{
+						mail_id: $(this).attr("id")
+						},function(data) {
+						if(data["success"])
+						{
+							if(submenu2=="inbox")
+							{
+								$.post("/mail/show_inbox/",{},function(data) 
+								{
+									updateShow_Inbox(data);
+									update_do_delete_mail();
+									update_do_read_mail();
+									submenu2 = "inbox";
+								},'json');
+							}
+							else if(submenu2=="waiting")
+							{
+								$.post("/mail/show_waiting/",{},function(data) 
+								{
+									updateShow_Waiting(data);
+									update_do_delete_mail();
+									update_do_read_mail();
+									submenu2 = "waiting";
+								},'json');
+							}
+						}
+						Alert(data["message"]);
+					},'json');
+			});
+		}
+		function updateShow_Inbox(data)
+		{
+			var tmp = '<table class="inbox_table" border="1" cellspacing="0" cellpadding="0"><thead><tr><td id="inbox_table_icon"></td><td id="inbox_table_title">หัวข้อ</td><td id="inbox_table_sender">ผู้ส่ง</td><td  id="inbox_table_time">ส่ง</td><td  id="inbox_table_cancel"></td></tr></thead><tbody>';
+			for(loop in data)
+			{
+				tmp+='<tr>';
+				tmp+='<td id="inbox_table_icon"><img src="/media/images/menubox/mail_';
+				tmp += getmailTypeString(data[loop]["type"]);
+				tmp+='.png"/></td>';
+				tmp+='<td><a id="'+data[loop]["id"]+'" class="do_read_mail" href="#">'+data[loop]["subject"]+'</a>';
+				if(data[loop]["unread"])
+				{
+					tmp+=' (ใหม่)';
+				}
+				tmp+='</td>';
+				tmp+='<td>'+data[loop]["sender"]+'</td>';
+				tmp+='<td>'+data[loop]["send_at"].split(' ')[0]+'</td>';
+				tmp+='<td id="inbox_table_cancel"><img src="/media/images/menubox/mail_del.png" id="'+data[loop]["id"]+'" class="button do_del_mail"/></td>';
+				tmp+="</tr>";
+			}
+			tmp+="</tbody></table>";
+			$('#sub_menu2_content_inbox').html(tmp);
+		}
+		function updateShow_Waiting(data)
+		{
+			var tmp = '<table class="inbox_table" border="1" cellspacing="0" cellpadding="0"><thead><tr><td id="inbox_table_icon"></td><td id="inbox_table_title">หัวข้อ</td><td id="inbox_table_sender">ผู้รับ</td><td  id="inbox_table_time">ส่ง</td><td  id="inbox_table_cancel"></td></tr></thead><tbody>';
+			for(loop in data)
+			{
+				tmp+='<tr>';
+				tmp+='<td id="inbox_table_icon"><img src="/media/images/menubox/mail_';
+				tmp += getmailTypeString(data[loop]["type"]);
+				tmp+='.png"/></td>';
+				tmp+='<td><a id="'+data[loop]["id"]+'" class="do_read_mail" href="#">'+data[loop]["subject"]+'</a>';
+				if(data[loop]["unread"])
+				{
+					tmp+=' (ใหม่)';
+				}
+				tmp+='</td>';
+				tmp+='<td>'+data[loop]["receiver"]+'</td>';
+				tmp+='<td>'+data[loop]["send_at"].split(' ')[0]+'</td>';
+				tmp+='<td id="inbox_table_cancel"><img src="/media/images/menubox/mail_del.png" id="'+data[loop]["id"]+'" class="button do_del_mail"/></td>';
+				tmp+="</tr>";
+			}
+			tmp+="</tbody></table>";
+			$('#sub_menu2_content_inbox').html(tmp);
+		}
+		function getmailTypeString(data)
+		{
+			if(data==1)
+				return 'message';
+			else if(data==2)
+				return 'invite';
+			else if(data==3)
+				return 'gift';
+			else if(data==4)
+				return 'trade';
+			else if(data==5)
+					return 'trade2';
+			return '';
+		}
+		function update_do_read_mail(){
+			$('.do_read_mail').click(function(event){
+				var mymail_id = $(this).attr("id");
+				$.post("/mail/read_mail/",{
+					mail_id: mymail_id
+				},function(data) 
+				{
+					$("#sub_menu2_content_inbox").fadeOut("normal",function(){
+						var tmp='<img src="/media/images/menubox/mail_';
+						tmp += getmailTypeString(data["type"]);
+						tmp+='.png"/>';
+						$('#do_read_mail_sender').html(tmp+data["sender"]);
+						$('#do_read_mail_title').html(data["subject"]);
+						$('#do_read_mail_time1').html(data["send_at"].split(' ')[0]);
+						$('#do_read_mail_time2').html(data["send_at"].split(' ')[1]);
+						$('.readmail_txt').html(data["message"]);
+						if(data["type"]=="4")
+						{
+							$('#msg_box_slots_title').html('เสนอ');
+							$('#msg_box_slots_title2').html('อะไรซักอย่าง');
+							var tmp = $('div .readmail_txt');
+							tmp.addClass("readmail_txt2");
+							tmp.removeClass("readmail_txt");
+							$('#readmail_txt_form').show();
+						}
+						else{
+							var tmp = $('div .readmail_txt2');
+							tmp.addClass("readmail_txt");
+							tmp.removeClass("readmail_txt2");
+							$('#readmail_txt_form').hide();
+						}
+						if(data["item1"].length>0 || data["money1"]>0)
+						{
+							$('#msg_box_slots').html(parseItem(data["item1"]));
+							$('#msg_box_money').html(data["money1"]+' $');
+							$('#readmail_attachment').show();
+							if(serverunlock["money_enabled"]==1)
+								$('#msg_box_money').show();
+							else
+								$('#msg_box_money').hide();
+						}
+						else
+						{
+							$('#readmail_attachment').hide();
+						}
+						if(data["item2"].length>0 || data["money2"]>0)
+						{
+							$('#msg_box_slots2').html(parseItem(data["item2"]));
+							$('#msg_box_money2').html(data["money2"]+' $');
+							$('#readmail_attachment2').show();
+							if(serverunlock["money_enabled"]==1)
+								$('#msg_box_money2').show();
+							else
+								$('#msg_box_money2').hide();
+						}
+						else if(data["type"]=="4")
+						{
+							$('#msg_box_slots2').html("");
+							$('#msg_box_money2').html('เงิน: <input type="text" name="msg_box_money2" value="0" size="10"/>');
+							$('#msg_box_slots2').addClass("item_list");
+							SyncItem();
+							$('#readmail_attachment2').show();
+							if(serverunlock["money_enabled"]==1)
+								$('#msg_box_money2').show();
+							else
+								$('#msg_box_money2').hide();
+						}
+						else
+						{
+							$('#readmail_attachment2').hide();
+						}
+
+						if(data["answer_trade_button"])
+						{
+							$('#readmail_trade').show();
+							$('#readmail_trade').attr("id2", mymail_id);
+							$('#readmail_trade').click(function(){
+								var myarr = getItemList($('#msg_box_slots2'));
+								$.post("/mail/answer_trade/",{
+									mail_id: $(this).attr("id2") ,
+									message:  $("#readmail_txt_form").val(),
+									item_list: myarr,
+									money: $("input[name=msg_box_money2]").val()
+								},function(data){
+									if(data["success"])
+									{
+										LoadItem();
+										$("#sub_menu2").fadeOut();
+										submenu2 = "";
+									}
+									Alert(data["message"]);
+								},'json');
+							});
+						}
+						else
+						{
+							$('#readmail_trade').hide();
+						}
+
+						if(data["accept_button"])
+						{
+							$('#readmail_accept').show();
+							$('#readmail_accept').attr("id2", mymail_id);
+							$('#readmail_accept').click(function(){
+								$.post("/mail/accept/",{
+									mail_id: $(this).attr("id2") 
+								},function(data){
+									if(data["success"])
+									{
+										LoadItem();
+										$("#sub_menu2").fadeOut();
+										submenu2 = "";
+									}
+									Alert(data["message"]);
+								},'json');
+							});
+							$('#readmail_decline').show();
+							$('#readmail_decline').attr("id2", mymail_id);
+							$('#readmail_decline').click(function(){
+								$.post("/mail/decline/",{
+									mail_id: $(this).attr("id2") 
+								},function(data){
+									if(data["success"])
+									{
+										LoadItem();
+										$("#sub_menu2").fadeOut();
+										submenu2 = "";
+									}
+									Alert(data["message"]);
+								},'json');
+							});
+						}
+						else
+						{
+							$('#readmail_accept').hide();
+							$('#readmail_decline').hide();
+						}
+						$('#sub_menu2_content_do_read_mail').fadeIn();
+						SyncItem();
+					});
+					submenu2 = "read_mail";
+				},'json');
+			});
+		}
+		function showPatent(patentid,regis)
+		{
+			$.post("/patent/read_patent/",{
+				patent_id: patentid
+			},function(data){
+				if(data["error_message"]=='')
+				{
+					$('#read_patent').fadeIn();
+					$('#read_patent_status').html(data["status_name"]);
+					$('#read_patent_owner').html(data["owner"]);
+					$('#read_patent_regis_at').html(data["regis_at"]);
+					$('#read_patent_regis_cost').html(data["regis_cost"]);
+					$('#read_patent_copy_cost').html(data["copy_cost"]);
+					$('#read_patent_name').html(data["name"]);
+					$('#read_patent_description').html(data["description"]);
+					if(data["weather"]=='None')
+						$('#read_patent_weather').html('-');
+					else
+						$('#read_patent_weather').html(data["weather"]);
+					$('#read_patent_component').html('');
+					for(var loop in data["component"])
+					{
+						$('#read_patent_component').append('<li>'+data["component"][loop]+'</li>');
+					}
+					
+					$('#read_patent_result').html('');
+					for(var loop in data["result"])
+					{
+						$('#read_patent_result').append('<li>'+data["result"][loop]+'</li>');
+					}
+					if(regis==true)
+					{
+						$('#read_patent_regis_button').html('<input type="button" id="regis_patent_button" id2="'+patentid+'" value="จดทะเบียน"/> <input type="button" id="opensource_patent_button" id2="'+patentid+'" value="เปิดฟรี"/>');
+					}
+					else{
+						$('#read_patent_regis_button').html('');
+					}
+					if(data["give_button"])
+						$('#read_patent_give_button').html('<input id="patent_give_button" id2="'+patentid+'" type="button" value="ให้"/> <input id="patent_open_button" id2="'+patentid+'" type="button" value="เปิดฟรี"/>');
+					else
+						$('#read_patent_give_button').html('');
+					$('#patent_give_button').click(function(){
+						$('#patent_give_box').fadeIn();
+						$('#patent_give_box_button').attr('id2',$(this).attr('id2'));
+						$('#patent_give_box_close').click(function(){
+							$('#patent_give_box').fadeOut();
+						});
+						$('#patent_give_box_button').click(function(){
+							$.post("/patent/give_patent/",{
+								patent_id: $(this).attr('id2'),
+								send_to: $('select[name=patent_give_box_to]').val(),
+								target_name: $('#patent_give_box_name').val()
+							},function(data){
+								Alert(data);
+								$('#patent_give_box').fadeOut();
+							},'json');
+						});
+					});
+					$('#patent_open_button').click(function(){
+						$.post("/patent/open_patent/",{
+							patent_id: $(this).attr('id2')
+						},function(data){
+							Alert(data);
+						},'json');
+					});
+					$('#regis_patent_button').click(function(){
+						$.post("/patent/regis_patent/",{
+							regis_type: 'regis',
+							patent_id: $(this).attr("id2") 
+						},function(data){
+							Alert(data);
+						},'json');
+					});
+					$('#opensource_patent_button').click(function(){
+						$.post("/patent/regis_patent/",{
+							regis_type: 'open',
+							patent_id: $(this).attr("id2") 
+						},function(data){
+							Alert(data);
+						},'json');
+					});
+					$('#read_patent_close').click(function(){
+						$('#read_patent').fadeOut();
+					});
+				}
+				else
+				{
+					Alert(data["error_message"]);
+				}
+			},'json');
+		}
+		function menu_js(locatecallback)
+		{
+					LoadMenu(locatecallback);
+					$("#menu_item_button").click(function(event){
+						$("#item_menu").animate({ height:"400px" , bottom:"175px" }, 1000 ,function(){
+							$('#item_patent').css("overflow","auto");
+						});
+						$("#menu_item_button").hide();
+						$('#item_context').show();
+					});
+					$("#menu_item_button2").click(function(event){
+						$('#item_patent').css("overflow","visible");
+						$("#item_menu").animate({ height:"214px" , bottom:"0px"}, 1000 , function(){
+							$("#menu_item_button").show();
+							$('#item_context').hide();
+						});
+					});
+					$("#menu_logout_button").click(function(event){
+						$("#blackscreen").fadeIn(function() { document.location = "/user/logout/" });
+					});
+					$("#searchsubmit").submit(function(){
+						LoadItem($('input[name=item_menu_searchtxt]').val());
+						 return false;
+					});
+					$("input[name=item_menu_searchtxt]").keypress(function(){
+						setTimeout(function(){LoadItem($("input[name=item_menu_searchtxt]").val());},500);
+					});
+					// Submenu System
+					$("#menu_msg_button").click(function(event){
+						$("#sub_menu2").fadeOut("normal");
+						submenu2 = "";
+						if(submenu == "msg")
+						{
+							$("#sub_menu").fadeOut();
+							submenu = "";
+						}
+						else
+						{
+							$("#sub_menu").fadeOut("normal",function(){
+								update_unread(function(){
+									$('.sub_menu_content_all').hide();
+									$('#sub_menu_content_msg').show();
+									$("#sub_menu").fadeIn();
+									submenu = "msg";
+								});	
+							});
+						}
+					});
+					$("#menu_user_button").click(function(event){
+						$("#sub_menu2").fadeOut("normal");
+						submenu2 = "";
+						if(submenu == "user")
+						{
+							$("#sub_menu").fadeOut();
+							submenu = "";
+						}
+						else
+						{
+							$.post("/user/status/", {},function(data) 
+							{
+								$("#sub_menu").fadeOut("normal",function(){
+									$('.sub_menu_content_all').hide();
+									$('#sub_menu_content_user_regeneration_rate').html(data["regeneration_rate"]);
+									$('#sub_menu_content_user_research_cost').html(data["research_cost"]);
+									
+									if(nowstate=="player")
+									{
+										$('#sub_menu_content_user_union_state').hide();
+										$('#sub_menu_content_user_player_state').show();
+										$('#sub_menu_content_user_travel_cost').html(data["travel_cost"]);
+										$('#sub_menu_content_user_harvest_cost').html(data["harvest_cost"]);
+									}
+									else
+									{
+										$('#sub_menu_content_user_union_state').show();
+										$('#sub_menu_content_user_player_state').hide();
+										$('#sub_menu_content_user_exp').html(data["union"]["experiences"]);
+									}
+
+									if(data["union"]==null)
+									{
+										$('#sub_menu_content_user_union_enabled').hide();
+									}
+									else
+									{
+										$('#sub_menu_content_user_union_enabled').show();
+										$('#sub_menu_content_user_union').html(data["union"]["name"]);
+									}
+									if(data["effects"].length>0)
+									{
+										var myeffect = '';
+										for(var loop in data["effects"])
+										{
+											var eff = data["effects"][loop];
+											myeffect += '<img src="/media/images/activeeffect/'+eff['name']+'.png" title="'+eff['name']+'" class="effect_tooltip" desc="<div>'+eff['name']+'</div><div>'+eff["description"]+'</div>'+eff["value"]+'"> ';
+										}
+										$('#sub_menu_content_user_effects').html(myeffect);
+										$('.effect_tooltip').mouseover(function(){
+											$('#effect_showtooltip').html($(this).attr('desc'));
+											$('#effect_showtooltip').show();
+										});
+										$('.effect_tooltip').mouseout(function(){
+											$('#effect_showtooltip').hide();
+										});
+									}
+									$('#sub_menu_content_user').show();
+									$("#sub_menu").fadeIn();
+								});
+								submenu = "user";
+							},'json');
+						}
+					});
+					$("#menu_server_button").click(function(event){
+						$("#sub_menu2").fadeOut("normal");
+						submenu2 = "";
+						if(submenu == "server")
+						{
+							$("#sub_menu").fadeOut();
+							submenu = "";
+						}
+						else
+						{
+							$("#sub_menu").fadeOut("normal",function(){
+								$('.sub_menu_content_all').hide();
+								$('#sub_menu_content_server_curresource').css("width",((serverunlock["natural_resources"]*100)/serverunlock["max_natural_resources"])+"%");
+								$('#sub_menu_content_server_curearth').css("width",((serverunlock["earth_pollution"]*100)/serverunlock["max_earth_pollution"])+"%");
+								$('#sub_menu_content_server_curair').css("width",((serverunlock["air_pollution"]*100)/serverunlock["max_air_pollution"])+"%");
+								$('#sub_menu_content_server_curwater').css("width",((serverunlock["water_pollution"]*100)/serverunlock["max_water_pollution"])+"%");
+								$('#sub_menu_content_wind').html(serverunlock["wind_speed"]);
+								$('#sub_menu_content_temp').html(serverunlock["temperature"]);
+								$('#sub_menu_content_weather').html(parseicon(serverunlock["weather"]));
+								$('#sub_menu_content_server').show();
+								$("#sub_menu").fadeIn();
+							});
+							submenu = "server";
+						}
+					});
+
+					// Submenu 2 System
+					$("#menu_hof_button").click(function(event){
+						if(submenu2 == "hof")
+						{
+							$("#sub_menu2").fadeOut("normal");
+							submenu2 = "";
+						}
+						else
+						{
+							$("#sub_menu2").fadeOut("normal",function(){
+								$('.sub_menu2_content_all').hide();
+								$('#sub_menu2_content_hof').show();
+								$("#sub_menu2").fadeIn();
+								submenu2 = "hof";
+								$('.hof_each_category').click(function(){
+									$.getJSON($(this).attr('id2'),function(data){
+										player = data['data'];
+										$('#hof_data').html('');
+										$('#hof_data').append('<div style="clear:both;width:280px;margin-top:30px;"><div id="hof_head1" class="hof_div_head">'+data['head1']+'</div><div id="hof_head2" class="hof_div_head" >'+data['head2']+'</div></div>');
+										for(var loop in player){
+											$('#hof_data').append('<div style="clear:both"><div class="hof_body1 hof_div" >'+player[loop]['name']+'</div><div class="hof_body2 hof_div" >'+player[loop]['data']+'</div></div>');
+										}
+									});
+								});
+							});
+						}
+					});
+					$("#menu_log_button").click(function(event){
+						if(submenu2 == "log")
+						{
+							$("#sub_menu2").fadeOut("normal");
+							submenu2 = "";
+						}
+						else
+						{
+							$.post("/user/research_log/", {},function(data) 
+							{
+								$("#sub_menu2").fadeOut("normal",function(){
+									$('.sub_menu2_content_all').hide();
+									var mystr = '';
+									for(var loop in data)
+									{
+										if(data[loop]["is_success"])
+											if(loop%2==0)
+												mystr += '<div class="log_content_each_ok"><div class="log_content_row"><div style="float:left">';
+											else
+												mystr += '<div class="log_content_each_ok2"><div class="log_content_row"><div style="float:left">';
+										else
+											if(loop%2==0)
+												mystr += '<div class="log_content_each_fail"><div class="log_content_row"><div style="float:left">';
+											else
+												mystr += '<div class="log_content_each_fail2"><div class="log_content_row"><div style="float:left">';
+										for(var loop2 in data[loop]["items"])
+										{
+											mystr += '<img src="'+data[loop]["items"][loop2]["icon_url"]+'" width="16px" height="16px" title="'+data[loop]["items"][loop2]["name"]+'"/>';
+											if(loop2 < data[loop]["items"].length-1)
+											{
+												mystr += ' +';
+											}
+										}
+										mystr +='</div><div style="float:right">'+parseicon(data[loop]["weather"])+'</div></div><div class="log_content_row">';
+										if(data[loop]["is_success"])
+										{
+											mystr +='<div class="log_content_formula">'+data[loop]["formula"]+'</div>';
+											if(data[loop]["registrable"] && serverunlock["patent_enabled"]==1)
+											{
+												mystr +='<input type="button" class="regis_patent" id2="'+data[loop]["patent_id"]+'" value="ดูสิทธิบัตร"/>';
+											}
+										}
+										mystr+='<div class="log_content_time">'+data[loop]["time"]+'</div>'
+										mystr+='</div></div>';
+									}
+									$('#log_content').html(mystr);
+									$('#sub_menu2_content_log').show();
+									$("#sub_menu2").fadeIn();
+									$('.regis_patent').click(function(){
+										showPatent($(this).attr('id2'),true);
+									});
+								});
+								submenu2 = "log";
+							},'json');
+						}
+					});
+					$("#menu_graph_button").click(function(event){
+						if(submenu2 == "graph")
+						{
+							$("#sub_menu2").fadeOut("normal");
+							submenu2 = "";
+						}
+						else
+						{
+							$.post("/chart/getall/", {},function(data) 
+							{
+								$("#sub_menu2").fadeOut("normal",function(){
+									$('.sub_menu2_content_all').hide();
+									$('#sub_menu2_content_graph').show();
+									$('#patent_content').html('');
+									
+									$("#sub_menu2").fadeIn("normal",function(){
+										$.plot($("#pollution_graph"), [ {
+										label: "อากาศ",
+										data: data["pollution"]["air_pollution"]
+										},
+										{
+										label: "ดิน",
+										data: data["pollution"]["earth_pollution"]
+										},
+										{
+										label: "น้ำ",
+										data: data["pollution"]["water_pollution"]
+										}])
+										$.plot($("#natural_resources_graph"), [ data["natural_resources"] ])
+										$.plot($("#researches_graph"), [ data["researches"] ])
+									});
+								});
+								submenu2 = "graph";
+							},'json');
+						}
+					});
+					$("#menu_patent_button").click(function(event){
+						if(submenu2 == "patent")
+						{
+							$("#sub_menu2").fadeOut("normal");
+							submenu2 = "";
+						}
+						else
+						{
+							$.post("/patent/show_all_patent/", {},function(data) 
+							{
+								$("#sub_menu2").fadeOut("normal",function(){
+									$('.sub_menu2_content_all').hide();
+									$('#sub_menu2_content_patent').show();
+									$('#patent_content').html('');
+									for(var loop in data["data"])
+									{
+										$('#patent_content').append('<div class="patent_line"><div class="patent_line_name button" id2="'+data["data"][loop]["id"]+'">'+data["data"][loop]["name"]+'</div><div class="patent_line_author">'+data["data"][loop]["founder"]+'</div><div class="patent_line_time">'+data["data"][loop]["found_at"].split(' ')[0]+'<br/>'+data["data"][loop]["found_at"].split(' ')[1]+'</div></div>');
+									}
+									$("#sub_menu2").fadeIn();
+									if(serverunlock['patent_enabled']==1)
+									{
+										$('.patent_line_name').click(function(){
+											showPatent($(this).attr("id2"));
+										});
+									}
+								});
+								submenu2 = "patent";
+							},'json');
+						}
+					});
+					
+					$('#menu_waiting_button').click(function(event){
+						if(submenu2 == "waiting")
+						{
+							$("#sub_menu2").fadeOut("normal");
+							submenu2 = "";
+						}
+						else
+						{
+							$.post("/mail/show_waiting/",{},function(data) 
+							{
+								$("#sub_menu2").fadeOut("normal",function(){
+									$('.sub_menu2_content_all').hide();
+									updateShow_Waiting(data);
+									$('#sub_menu2_content_inbox').show();
+									$("#sub_menu2").fadeIn();
+									update_do_delete_mail();
+									update_do_read_mail();
+								});
+								submenu2 = "waiting";
+							},'json');
+						}
+					});
+					$('#menu_inbox_button').click(function(event){
+						if(submenu2 == "inbox")
+						{
+							$("#sub_menu2").fadeOut("normal");
+							submenu2 = "";
+						}
+						else
+						{
+							$.post("/mail/show_inbox/",{},function(data) 
+							{
+								$("#sub_menu2").fadeOut("normal",function(){
+									$('.sub_menu2_content_all').hide();
+									updateShow_Inbox(data);
+									$('#sub_menu2_content_inbox').show();
+									$("#sub_menu2").fadeIn();
+									update_do_delete_mail();
+									update_do_read_mail();
+								});
+								submenu2 = "inbox";
+							},'json');
+						}
+					});
+					$('#menu_compose_button').click(function(event){
+						if(submenu2 == "compose")
+						{
+							$("#sub_menu2").fadeOut("normal");
+							submenu2 = "";
+						}
+						else
+						{
+							$("#sub_menu2").fadeOut("normal",function(){
+								$('.sub_menu2_content_all').hide();
+								
+								if(serverunlock["union_enabled"]==1)
+								{
+									$('select[name=com_send_to]').html('<option value="player">ผู้เล่น</option><option value="union">บริษัท</option>');
+								}
+								if(nowstate=="union")
+								{
+									$('#com_message_type').html('<select name="com_sendtype"><option value="message">ข้อความ</option><option value="invite">เชิญชวน</option><option value="gift">ของขวัญ</option><option value="trade">แลกเปลี่ยน</option></select>');
+								}
+								else
+								{
+									$('#com_message_type').html('<select name="com_sendtype"><option value="message">ข้อความ</option><option value="gift">ของขวัญ</option><option value="trade">แลกเปลี่ยน</option></select>');
+								}
+								$('select[name=com_sendtype]').change(function(){
+									if($(this).val()!="message" && $(this).val()!="invite")
+									{
+										$('tr[id^="com_message_op"]').show();
+										if(serverunlock["money_enabled"]==0)
+										{
+											$('#com_message_opmoney').hide();	
+										}
+									}
+									else
+									{
+										$('tr[id^="com_message_op"]').hide();
+									}
+								});
+								$('#sub_menu2_content_compose').show();
+								$("#sub_menu2").fadeIn();
+							});
+							submenu2 = "compose";
+						}
+					});
+					$('#com_submit').click(function(){
+						var sendtype = "1";
+						switch($('select[name=com_sendtype]').val()){
+							case 'invite':
+								sendtype= "2";
+								break;
+							case 'gift':
+								sendtype= "3";
+								break;
+							case 'trade':
+								sendtype= "4";
+								break;
+						}
+						var myarr = getItemList($('#com_box_slots'));
+						$.post("/mail/send_mail/", {
+							type: sendtype,
+							send_to: $('select[name=com_send_to]').val(),
+							target_name: $('input[name=com_target_name]').val(),
+							subject: $('input[name=com_subject_name]').val(),
+							message: $('textarea[name=com_message_string]').val(),
+							item_list: myarr,
+							money: $('input[name=com_money]').val(),
+							},function(data)
+							{
+								Alert(data);
+								$('select[name=com_send_to]').val('');
+								$('input[name=com_target_name]').val('');
+								$('input[name=com_subject_name]').val('');
+								$('input[name=com_money]').val('');
+								$('textarea[name=com_message_string]').val('');
+						},'json');
+					});
+					$('#sub_menu_close').click(function(){
+						$("#sub_menu").fadeOut();
+						$("#sub_menu2").fadeOut();
+						submenu2 = "";
+						submenu =  "";
+					});
+					$('#sub_menu2_close').click(function(){
+						$("#sub_menu2").fadeOut();
+						submenu2 = "";
+					});
+					$('#menu_ucswitch_button').click(function(){
+						var changeto;
+						if(nowstate == "player")
+							changeto = "union";
+						else
+							changeto = "player";
+						$.post("/user/state/", {
+							state: changeto
+						} ,function(data2) 
+						{
+							nowstate = data2;
+							check_research_lock();
+							LoadItem();
+							LoadMenu();
+						},'text');
+					});
+					$('#category_item').click(function(){
+						setOrderItem("item");
+					});
+					$('#category_tech').click(function(){
+						setOrderItem("tech");
+					});
+					$('#category_patent').click(function(){
+						setOrderItem("patent");
+					});
+					$('#leftpage').click(function(){
+						item_page--;
+						LoadItem();
+						if(item_page==1)
+						{
+							$('#leftpage').hide();
+						}
+						$('#nowpage').html(item_page);
+					});
+					$('#rightpage').click(function(){
+						item_page++;
+						LoadItem();
+						$('#leftpage').show();
+						$('#nowpage').html(item_page);
+					});
+					$("#blackscreen").fadeOut();
+					LoadItem(undefined,function(){
+						if(getItemList($('#item_slots')).length == 0)
+						{
+							setOrderItem("tech");
+							update_unread(function(){
+								$('.sub_menu_content_all').hide();
+								$('#sub_menu_content_msg').show();
+								$("#sub_menu").fadeIn();
+								submenu = "msg";
+							});	
+						}
+					});
+					$("#main_menu_content_money").contextMenu({ menu: 'money_rmenu' }, 
+					function(action, el, pos) {
+						soundManager.play('click','/media/sound/click.mp3');	// Sound Effect
+						if(action=="transfer"){
+							TrasferMoneyDialog();
+						}
+				})
+		}
+	</script>
+	<div id="main_menu">
+			<div id="menu_item"><div id="menu_item_button" class="menu_item_button button"></div></div>
+			<div id="menu_msg"><div id="menu_msg_button" class="button"></div></div>
+			<div id="menu_user"><div  id="menu_user_button" class="button"></div></div>
+			<div id="menu_server"><div id="menu_server_button" class="button"></div></div>
+			<div id="menu_logout"><div id="menu_logout_button" class="button"></div></div>
+			<div id="main_menu_content">
+				<div id="main_menu_content_name"></div>
+				<div id="menu_ucswitch_button" class="button"></div>
+				<div id="main_menu_content_money_bg"><div id="main_menu_content_money" class="button"></div></div>
+				<div id="main_menu_content_en">
+					<span>พลังงาน</span> <span id="user_menu_fullen_text"></span>
+					<div class="user_menu_fullen"><div id="user_eng" class="user_menu_curen" style="width:10%;"></div></div>
+					<div id="mech_isenabled">
+						<span>พลังงานจักรกล</span> <span id="user_menu_fullmechen_text"></span>
+						<div class="user_menu_fullen"><div id="mech_eng" class="user_menu_curen" style="width:10%;"></div></div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div id="item_menu">
+		<div id="menu_item_button2" class="menu_item_button button"></div>
+		<div id="item_cat">
+			<img id="category_item" src="/media/images/menubox/item_menu_itemcat_hover.png" class="button"/>
+			<img id="category_tech" src="/media/images/menubox/item_menu_techcat.png" class="button"/>
+			<img id="category_patent" src="/media/images/menubox/item_menu_patentcat.png" class="button"/>
+		</div>
+		<div id="item_context">
+			<div id="item_search"><form id="searchsubmit"><input id="item_menu_searchtxt" name="item_menu_searchtxt" type="text"/><input id="item_menu_search" type="submit" value=""/></form></div>
+			<div id="item_page">
+				<a id="leftpage" href="#" style="display:none;">&lt;</a> <span id="nowpage">1</span> <a id="rightpage" href="#">&gt;</a>
+			</div>
+			<div id="item_storage"><img id="item_storage_icon" src="/media/images/menubox/storage.png" alt="Storage" />&nbsp;<span id="item_storage_value"></span></div>
+			<div id="item_scope">
+				<div id="item_slots" class="item_list">
+				</div>
+			</div>
+			<div id="item_patent"></div>
+		</div>
+	</div>
+	<div id="sub_menu">
+		<div id="sub_menu_bg">
+			<div id="sub_menu_close"></div>
+			<div id="sub_menu_content">
+				<div id="sub_menu_content_msg" class="sub_menu_content_all"><br/>
+					<img class="menu_mail_icons" src="/media/images/menubox/inbox.png" alt="" />&nbsp;<a id="menu_inbox_button" href="#">ถาดข้อความ</a> (<span id="sub_menu_content_msg_arg">0</span> ข้อความใหม่)<br/><br/>
+					<img class="menu_mail_icons" src="/media/images/menubox/waiting_list.png" alt="" />&nbsp;<a id="menu_waiting_button" href="#">รอการตอบรับ</a><br/><br/>
+					<img class="menu_mail_icons" src="/media/images/menubox/new_mail.png" alt="" />&nbsp;<a id="menu_compose_button" href="#">เขียนข้อความใหม่</a>
+				</div>
+				<div id="sub_menu_content_user" class="sub_menu_content_all">
+					<div>
+					    <div id="sub_menu_content_user_union_enabled"><img id="sub_menu_content_user_union_icon" src="/media/images/menubox/union.png" alt="" title="บริษัท">&nbsp;<span id="sub_menu_content_user_union"></span></div>
+						<div>
+						    <div id="sub_menu_content_user_regen_container"><img id="sub_menu_content_user_regen_icon" src="/media/images/menubox/regeneration_rate.png" alt="" title="อัตราการฟื้นฟู"/>&nbsp;<span id="sub_menu_content_user_regeneration_rate"></span></div>
+							<div id="sub_menu_content_user_research_container"><img id="sub_menu_content_user_research_icon" src="/media/images/menubox/research_cost.png" alt="" title="ค่าวิจัย"/>&nbsp;<span id="sub_menu_content_user_research_cost"></span></div>
+						</div>
+						<div id="sub_menu_content_user_player_state">
+						    <div id="sub_menu_content_user_travel_container"><img id="sub_menu_content_user_travel_icon" src="/media/images/menubox/travel_cost.png" alt="" title="ค่าเดินทาง"/>&nbsp;<span id="sub_menu_content_user_travel_cost"></span></div>
+							<div id="sub_menu_content_user_harvest_container"><img id="sub_menu_content_user_harvest_icon" src="/media/images/menubox/harvest_cost.png" alt="" title="ค่าเก็บเกี่ยวทรัพยากร"/>&nbsp;<span id="sub_menu_content_user_harvest_cost"></span></div>
+						</div>
+						<div id="sub_menu_content_user_union_state">
+						    <div id="sub_menu_content_user_exp_container"><img id="sub_menu_content_user_exp_icon" src="/media/images/menubox/exp.png" alt="" title="ค่าประสบกรณ์"/>&nbsp;<span id="sub_menu_content_user_exp"></span></div>
+					    </div>
+						<div id="sub_menu_content_user_effects_container">Effects: <span id="sub_menu_content_user_effects"></span></div>
+					</div>
+					<div id="menu_user_log"><div id="menu_log_button" ></div></div>
+				</div>
+				<div id="sub_menu_content_server" class="sub_menu_content_all">
+					<div style="font-size:12px;text-align:center;">ทรัพยากรคงเหลือ <span id="sub_menu_content_server_maxresource"><span id="sub_menu_content_server_curresource"></span></span></div>
+					<div style="font-size:12px;text-align:center;">มลภาวะทางพื้นดิน <span id="sub_menu_content_server_maxearth"><span id="sub_menu_content_server_curearth"></span></span></div>
+					<div style="font-size:12px;text-align:center;">มลภาวะทางน้ำ <span id="sub_menu_content_server_maxwater"><span id="sub_menu_content_server_curwater"></span></span></div>
+					<div style="font-size:12px;text-align:center;">มลภาวะทางอากาศ <span id="sub_menu_content_server_maxair"><span id="sub_menu_content_server_curair"></span></span></div>
+					<div style="font-size:14px;"><img src="/media/images/menubox/windspeed.gif" title="ความเร็วลม"/><span id="sub_menu_content_wind"></span> km/hr.</div>
+					<div style="font-size:14px;"><img src="/media/images/menubox/temperature.gif" title="อุณหภูมิ"/><span id="sub_menu_content_temp"></span> องศา</div>
+					<div id="sub_menu_content_weather" style="font-size:14px;"></div>
+					<div id="menu_server_graph"><div id="menu_graph_button" ></div></div>
+					<div id="menu_server_hof"><div id="menu_hof_button" ></div></div>
+					<div id="menu_server_patent"><div id="menu_patent_button" ></div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub_menu2">
+		<div id="sub_menu2_close"></div>
+		<div id="sub_menu2_content">
+			<div id="sub_menu2_content_graph" class="sub_menu2_content_all">
+				<div style="clear:both">
+					<div class="graph_title">มลพิษ</div>
+					<div id="pollution_graph" style="width:340px;height:240px;margin-left:5px;background:rgba(220,220,220,0.6);"></div>
+				</div>
+				<div style="clear:both">
+					<div style="float:left;">
+						<div class="graph_title">ทรัพยากรธรรมชาติ</div>
+						<div id="natural_resources_graph" style="width:160px;height:120px;clear:both;background:rgba(220,220,220,0.6);"></div>
+					</div>
+					<div style="float:left;margin-left:30px;">
+						<div class="graph_title" style="clear:both">อัตราการวิจัย</div>
+					<div id="researches_graph" style="width:160px;height:120px;clear:both;background:rgba(220,220,220,0.6);"></div>
+					</div>
+				</div>
+			</div>
+			<div id="sub_menu2_content_hof" class="sub_menu2_content_all">
+				{% include "menu/hof.html" %}
+			</div>
+			<div id="sub_menu2_content_log" class="sub_menu2_content_all">
+			    <h2 id="research_log_title">บันทึกการวิจัย</h2>
+				<div id="log_content"></div>
+			</div>
+			<div id="sub_menu2_content_patent" class="sub_menu2_content_all">
+				<div id="patent_content"></div>
+			</div>
+			<div id="sub_menu2_content_compose" class="sub_menu2_content_all">
+				<table>
+					<tr>
+						<td>
+							ส่งไปยัง: 
+						</td>
+						<td>
+							<select name="com_send_to">
+								<option value="player">ผู้เล่น</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							ชื่อผู้รับ: 
+						</td>
+						<td>
+							<input type="text" name="com_target_name" size="30"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							หัวข้อ: 
+						</td>
+						<td>
+							<input type="text" name="com_subject_name" size="30"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td>
+							<textarea name="com_message_string" rows="8" cols="40"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							ประเภท:
+						</td>
+						<td id="com_message_type">
+							<select name="com_sendtype">
+							  <option value="message">ข้อความ</option>
+							  <option value="gift">ของขวัญ</option>
+							  <option value="trade">แลกเปลี่ยน</option>
+							</select>
+						</td>
+					</tr>
+					<tr id="com_message_opitem" style="display:none">
+						<td>
+							ไอเท็ม: 
+						</td>
+						<td>
+							<div id="com_box_slots" class="item_list"></div>
+						</td>
+					</tr>
+					<tr id="com_message_opmoney" style="display:none">
+						<td>
+							เงิน: 
+						</td>
+						<td>
+							<input type="text" name="com_money" value="0" size="10"/>
+						</td>
+					</tr>
+				</table>
+				<br/><center><input type="button" id="com_submit" value="ส่งข้อความ"/></center>
+			</div>
+			<div id="sub_menu2_content_inbox" class="sub_menu2_content_all">
+			</div>
+			<div id="sub_menu2_content_read_mail" class="sub_menu2_content_all">
+			</div>
+			<div id="sub_menu2_content_do_read_mail" class="sub_menu2_content_all">
+				<div>
+					<div style="float:left; width:70px">
+						<div class="readmail_title">
+							ผู้ส่ง:
+						</div>
+						<div class="readmail_title">
+							หัวข้อ:
+						</div>
+					</div>
+					<div style="float:left; width:180px" ><div class="readmail_content" id="do_read_mail_sender"></div>
+						<div class="readmail_content" id="do_read_mail_title"></div>
+					</div>
+					<div style="float:left;" class="readmail_time">
+						<div id="do_read_mail_time1"></div>
+						<div id="do_read_mail_time2"></div>
+					</div>
+				</div>
+				<div style="height:15px; clear:both; padding-top:5px;">
+					<hr style="width:250px; border: 0px; border-top:1px dashed #555555;border-width: 2px 0;">
+				</div>
+				<div class="readmail_txt"></div>
+				<textarea id="readmail_txt_form" class="readmail_txt2"></textarea>
+				<div id="readmail_attachment">
+					<div id="msg_box_slots_title"></div>
+					<div id="msg_box_slots"></div>
+					<div id="msg_box_money"></div>
+				</div>
+				<div id="readmail_attachment2">
+					<div id="msg_box_slots_title2"></div>
+					<div id="msg_box_slots2"></div>
+					<div id="msg_box_money2"></div>
+				</div>
+				<div style="text-align:center; clear:both; margin-right:20px;"><input type="button" id="readmail_decline" value="Decline" /><input type="button" id="readmail_accept" value="Accept" />
+				<input type="button" id="readmail_trade" value="Trade"/></div>
+				
+			</div>
+		</div>
+	</div>

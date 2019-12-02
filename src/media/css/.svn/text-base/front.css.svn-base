@@ -1,0 +1,79 @@
+body{
+	margin: 0;
+	cursor: url(/media/cur/pointer.cur),auto;
+}
+a{
+	cursor: url(/media/cur/pointer.cur),auto;
+}
+input[type=button],input[type=submit]{
+	cursor: url(/media/cur/pointer.cur),auto;
+}
+#tab_menu{
+	height: 30px;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	background: rgba(50,50,50,0.8);
+}
+#tab_menu_link{
+	color: #333333;
+	float: left;
+	display: block;
+	font-size: 18px;
+	width: 100%;
+	font-weight: bold;
+	padding-top: 3px;
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+#tab_menu_link a{
+	color: #FFFFFF;
+}
+#tab_menu_link a:active,#tab_menu_link a:visited,#tab_menu_link a:link{
+	text-decoration: none;
+}
+#tab_menu_link a:hover{
+	text-decoration: underline;
+}
+.regis_box{
+	border: 1px solid #666;
+}
+.wrongdata{
+	border: 1px solid red;
+}
+
+#world_map{
+	height: 220px;
+	width: 438px
+	margin-left: auto;
+	margin-right: auto;
+}
+#world_map_abs{
+	height: 220px;
+	width: 438px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+}
+#x_mark{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 22px;
+	width: 26px;
+	margin-left: -5px;
+	margin-top: -38px;
+}
+#register_form{
+    font-size: .99em;
+}
+#spinworld{
+	position: absolute;
+	display: none;
+	z-index: 5001;
+	left: 0;
+	top: 0;
+	margin: 0;
+	width: 438px;
+	height: 220px;
+	background: url(/media/images/register/world_map.gif) repeat;
+}

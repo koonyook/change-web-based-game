@@ -1,0 +1,632 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+			<title>Change - เปลี่ยนคุณ เปลี่ยนโลก</title>
+			<link rel="stylesheet" href="/media/css/menu.css" type="text/css" />
+			<link rel="stylesheet" href="/media/css/location.css" type="text/css" />
+			<link rel="stylesheet" href="/media/css/help.css" type="text/css" />
+			<link rel="stylesheet" href="/media/css/jquery-ui.css" type="text/css" />
+			<link rel="stylesheet" href="/media/css/jquery.contextMenu.css" type="text/css" />
+			<link rel="stylesheet" href="{{ css_age }}" type="text/css" />
+			<link rel="icon" href="/media/ico/change.png">
+			<script type="text/javascript" src="/media/js/lib/jquery.js"></script>
+			<script type="text/javascript" src="/media/js/lib/jquery-ui.min.js"></script>
+			<script type="text/javascript" src="/media/js/lib/jquery.contextMenu.js"></script>
+			<script type="text/javascript" src="/media/js/lib/soundmanager2.js"></script>
+			<script type="text/javascript" src="/media/js/lib/jquery.flot.min.js"></script>
+			<script type="text/javascript" src="/media/js/location.js"></script>
+			<script type="text/javascript" src="/media/js/help.js"></script>
+			<script type="text/javascript">
+			var array_items = new Array();
+			var mouseovertime = false;
+			var mousedowntime = false;
+			var tooltipcount = 0;
+			var nowstate = "player";
+			var serverunlock;
+			var haveunion = false;
+			var now_location = '';
+			function Alert(msg)
+			{
+				$('body').append('<div class="alertbox"><div class="alerttitle">System</div><div class="alertcontent">'+msg+'</div><input class="alertclose" type="button" value="OK" /></div>');
+				$('.alertbox').draggable();
+				$('.alertclose').click(function(){
+					$(this).parent().remove();
+				});
+			}
+			function AlertItem(data)
+			{
+				mystr = '';
+				mystr += '<div style="background: url('+data["icon_url"]+') no-repeat; width:32px;height:32px; border: 0px; margin-left: 5px; margin-right: 5px; margin-top: 4px; margin-bottom: 2px; text-align: center;float: left;"><div style="float: right; margin-right:-1px; margin-top: 19px; background: rgba(255,255,255,0.7);border:1px solid #999; font-size:10px;">'+data["level"]+'</div></div></div><div>'+data["name"]+'</div><div style="font-size:12px;">'+data["description"]+'</div>';
+				$('body').append('<div class="alertbox"><div class="alerttitle">System</div><div class="alertcontent" style="text-align:center"><div>คุณได้รับไอเท็ม</div><div id="alert_box_slots" style="margin-left: auto;margin-right:auto;">'+mystr+'</div><input class="alertclose" type="button" value="OK" /></div>');
+				$('.alertbox').draggable();
+				$('.alertclose').click(function(){
+					$(this).parent().remove();
+				});
+			}
+			function LoadUnlock(callback)
+			{
+				$.post("/server_status/", {},function(data) 
+				{
+					serverunlock = data;
+					if(data["market_enabled"] == 0)
+					{
+						$('#goto_market').parent().hide();
+					}
+					if(data["bank_enabled"] == 0)
+					{
+						$('#item_tooltip_price').hide();
+						$('#fulltooltip #item_tooltip_price').hide();
+					}
+					if(data["union_enabled"] == 0)
+					{
+						$('#goto_union').parent().hide();
+						$('li[class=transfer]').hide();
+					}
+					if(data["mechanical_energy_enabled"]==0)
+					{
+						$('#mech_isenabled').hide();
+					}
+					if(data["patent_enabled"]==0)
+					{
+						$('#category_patent').hide();
+					}
+					$.get("/user/state/", function(data2) 
+					{
+						nowstate = data2;
+						callback();
+					});
+				},'json');
+			}
+			function FullTooltip(el,pos){
+				if(pos.y>760)
+						$('#fulltooltip').css('top',(pos.y-125)+'px');
+					else
+						$('#fulltooltip').css('top',(pos.y+55)+'px');
+				$('#fulltooltip').css('left',(pos.x+15)+'px' );
+				var itemclass = getstringitemlevel(el);
+				$('#fulltooltip #item_tooltip_name').attr("class",itemclass);
+				$('#fulltooltip #item_tooltip_name').html(array_items[el.attr('id2')]["name"]);
+				if(array_items[el.attr('id2')]["price"]==null)
+					$('#fulltooltip #item_tooltip_price').html('');
+				else
+					$('#fulltooltip #item_tooltip_price').html(array_items[el.attr('id2')]["price"]+' $');
+				$('#fulltooltip #item_tooltip_desc').html(array_items[el.attr('id2')]["description"]);
+				if(array_items[el.attr('id2')]["expiration"]==null)
+				{
+					$('#fulltooltip #item_tooltip_expire').hide();
+					$('#fulltooltip #item_tooltip_expire_value').hide();
+				}
+				else
+				{
+					$('#fulltooltip #item_tooltip_expire').show();
+					$('#fulltooltip #item_tooltip_expire_value').show();
+					$('#fulltooltip #item_tooltip_expire_value').html(array_items[el.attr('id2')]["expiration"]);
+				}
+				if(array_items[el.attr('id2')]["durability"]==null)
+					$('#fulltooltip #item_tooltip_dura_value').html('∞');
+				else
+					$('#fulltooltip #item_tooltip_dura_value').html( array_items[el.attr('id2')]["durability"]+'/'+array_items[el.attr('id2')]["max_durability"]);
+				$('#fulltooltip #fulltooltip_airpol_value').html(array_items[el.attr('id2')]["air_pollution"]);
+				$('#fulltooltip #fulltooltip_earthpol_value').html(array_items[el.attr('id2')]["earth_pollution"]);
+				$('#fulltooltip #fulltooltip_waterpol_value').html(array_items[el.attr('id2')]["water_pollution"]);
+				var mystr = '';
+				var itemtmp = array_items[el.attr('id2')];
+				if(itemtmp["travel_cost_modifier"]!=0)
+				{
+					mystr+= '<div>ค่าเดินทาง <span style="color:';
+					if(itemtmp["travel_cost_modifier"]<0)
+						mystr += '#93ff90';
+					else
+						mystr += 'red';
+					mystr+= '">'+itemtmp["travel_cost_modifier"]+'</span></div>';
+				}
+				if(itemtmp["research_cost_modifier"]!=0)
+				{
+					mystr+= '<div>ค่าวิจัย <span style="color:';
+					if(itemtmp["research_cost_modifier"]<0)
+						mystr += '#93ff90';
+					else
+						mystr += 'red';
+					mystr+= '">'+itemtmp["research_cost_modifier"]+'</span></div>';
+				}
+				if(itemtmp["harvest_cost_modifier"]!=0)
+				{
+					mystr+= '<div>ค่าหาทรัพยากร <span style="color:';
+					if(itemtmp["harvest_cost_modifier"]<0)
+						mystr += '#93ff90';
+					else
+						mystr += 'red';
+					mystr+= '">'+itemtmp["harvest_cost_modifier"]+'</span></div>';
+				}
+				if(itemtmp["max_mechanical_energy_modifier"]!=0)
+				{
+					mystr+= '<div>พลังงานจักรสูงสุด <span style="color:';
+					if(itemtmp["max_mechanical_energy_modifier"]>0)
+						mystr += '#93ff90';
+					else
+						mystr += 'red';
+					mystr+= '">'+itemtmp["max_mechanical_energy_modifier"]+'</span></div>';
+				}
+				if(itemtmp["storage_modifier"]!=0)
+				{
+					mystr+= '<div>ขนาดคลัง <span style="color:';
+					if(itemtmp["storage_modifier"]>0)
+						mystr += '#93ff90';
+					else
+						mystr += 'red';
+					mystr+= '">'+itemtmp["storage_modifier"]+'</span></div>';
+				}
+				if(itemtmp["max_energy_modifier"]!=0)
+				{
+					mystr+= '<div>พลังงานสูงสุด <span style="color:';
+					if(itemtmp["max_energy_modifier"]>0)
+						mystr += '#93ff90';
+					else
+						mystr += 'red';
+					mystr+= '">'+itemtmp["max_energy_modifier"]+'</span></div>';
+				}
+				if(itemtmp["regeneration_rate_modifier"]!=0)
+				{
+					mystr+= '<div>อัตราการฟื้นฟู <span style="color:';
+					if(itemtmp["regeneration_rate_modifier"]>0)
+						mystr += '#93ff90';
+					else
+						mystr += 'red';
+					mystr+= '">'+itemtmp["regeneration_rate_modifier"]+'</span></div>';
+				}
+				$('#fulltooltip #fulltooltip_modifier_value').html(mystr);
+				$('#fulltooltip #fulltooltip_storage_value').html(array_items[el.attr('id2')]["storage_cost"]);
+				$('#fulltooltip').fadeIn(400);
+				$("#fulltooltip_close").click(function() {
+						$('#fulltooltip').hide();
+				})
+				$('#fulltooltip').draggable({
+					handle:'#item_tooltip_name'
+				});
+			}
+			function UseItem(el){
+				$.post("/user/use_item/", 
+				{
+					ownership_id: el.attr('id2')
+				},function(data) 
+				{
+					for(var loop in data)
+					{
+						var mydata = data[loop];
+						switch(mydata["type"])
+						{
+							case "message":
+								Alert(mydata["message"]);
+								break;
+							case "harvest_response":
+								AlertItem(mydata["message"]["item"]);
+								break;
+						}
+					}
+					LoadItem();
+				},'json');
+				if(el.attr("id") == "itemid_154")
+				{
+					OpenResearchMinibox();
+				}
+			}
+			function DropItem(el){
+				$.post("/user/remove_item/", 
+				{
+					ownership_id: el.attr('id2')
+				},function(data) 
+				{
+					Alert(data["message"]+'<div>คุณสร้างมลภาวะทางอากาศ '+array_items[el.attr('id2')]["air_pollution"]+' หน่วย</div>'
+					+'<div>คุณสร้างมลภาวะทางดิน '+array_items[el.attr('id2')]["earth_pollution"]+' หน่วย</div>'
+					+'<div>คุณสร้างมลภาวะทางน้ำ '+array_items[el.attr('id2')]["water_pollution"]+' หน่วย</div>');
+					LoadItem();
+				},'json');
+			}
+			function Trasfer(el){
+				var myarr = $(el).attr('id2');
+				$.post("/core_union/transfer_item/", 
+				{
+					item_id: myarr
+				},function(data) 
+				{
+					Alert(data["message"]);
+					if(data["success"])
+						LoadItem();
+				},'json');
+			}
+			function TrasferMoneyDialog(){
+				$('#transfer_money_box').show();
+				$('.alertbox').draggable();
+				$('.alertclose').click(function(){
+					$(this).parent().remove();
+				});
+			}
+			function TrasferMoney(){
+				$.post("/core_union/transfer_money/", 
+				{
+					item_id: myarr
+				},function(data) 
+				{
+					Alert(data["message"]);
+					if(data["success"])
+						LoadItem();
+				},'json');
+			}
+			function Askknow(el){
+				$.post("/help/next_item/", 
+				{
+					ownership_id: el.attr('id2')
+				},function(data) 
+				{
+					$('#mascot_askknow_bg').fadeIn();
+					$('#mascot_askknow_desc_content').html(data["message"]);
+					$('#mascot_askknow_desc').fadeIn();
+					$('#close_askknow').click(function(){
+						$('#mascot_askknow_desc').fadeOut();
+						$('#mascot_askknow_bg').fadeOut();
+					});
+					LoadItem();
+				},'json');
+			}
+			function getstringitemlevel(thisobj)
+			{
+				var itemclass = "itemlevel0";
+				switch(array_items[thisobj.attr('id2')]["level"]){
+						case 1:
+							itemclass = "itemlevel1";
+							break;
+						case 2:
+							itemclass = "itemlevel2";
+							break;
+						case 3:
+							itemclass = "itemlevel3";
+							break;
+						case 4:
+							itemclass = "itemlevel4";
+							break;
+						case 5:
+							itemclass = "itemlevel5";
+							break;
+						case 6:
+							itemclass = "itemlevel6";
+							break;
+						case 7:
+							itemclass = "itemlevel7";
+							break;
+					}
+					return itemclass;
+			}
+			function SyncItem()
+			{
+				$('.item_list').sortable({ connectWith: '.item_list', cursor: 'crosshair' , opacity: 0.8 , placeholder: 'ui-state-highlight' , revert: true , zIndex: '200', update:function(event,ui){
+						if($(event.target).attr('id') == "bank_box_slots")
+						{
+							var myarr = getItemList($(event.target));
+							if(myarr.length==1)
+							{
+								if(array_items[myarr[0]]["price"]!=null)
+								{
+									var sumprice = 0.0+(array_items[myarr[0]]["price"]*array_items[myarr[0]]["durability"]);
+									if(array_items[myarr[0]]["durability"]==null)
+										sumprice = 0.0+array_items[myarr[0]]["price"];
+									sumprice /= array_items[myarr[0]]["max_durability"];
+									sumprice = Math.floor(sumprice);
+									$('#bank_box_value').html(sumprice+' $');
+									$('#bank_box_submit').attr("disabled","");
+								}
+								else{
+									$('#bank_box_value').html('ไม่สามารถขายได้');
+								$('#bank_box_submit').attr("disabled","disabled");
+								}
+							}
+							else{
+								$('#bank_box_submit').attr("disabled","disabled");
+							}
+						}
+				}});
+				$('.obj_items').mouseover(function(event){
+					var thisobj = $(this);
+					if($('#items_rmenu').is(':hidden'))
+					{
+						if(array_items[thisobj.attr('id2')]["is_available"] && array_items[thisobj.attr('id2')]["usable"])
+						{
+							$('li[class=use]').show();
+						}
+						else
+						{
+							$('li[class=use]').hide();
+						}
+						if(array_items[thisobj.attr('id2')]["is_available"])
+						{
+							$('li[class=drop]').show();
+							$('li[class=askknow]').show();
+						}
+						else
+						{
+							$('li[class=drop]').hide();
+							$('li[class=askknow]').hide();
+						}
+						if(thisobj.attr('id').substring(7)=="437")	// หนังสือผู้ช่วย
+						{
+							$('li[class=read]').show();
+							$('li[class=drop]').hide();
+						}
+						else
+							$('li[class=read]').hide();
+					}
+					if(!mousedowntime)
+					{
+						tooltipcount++;
+						mouseovertime = true;
+						thisobj.css("-moz-box-shadow","0px 0px 8px #FFAA00");
+						setTimeout(function(){
+							if(tooltipcount==1 && mouseovertime && $('#fulltooltip').is(':hidden')){
+								if(event.pageY>760)
+									$('#tooltip').css('top',(event.pageY-125)+'px');
+								else
+									$('#tooltip').css('top',(event.pageY+15)+'px');
+								$('#tooltip').css('left',(event.pageX+15)+'px' );
+								var itemclass = getstringitemlevel(thisobj);
+								$('#item_tooltip_name').attr("class",itemclass);
+								$('#item_tooltip_name').html(array_items[thisobj.attr('id2')]["name"]);
+								if(array_items[thisobj.attr('id2')]["price"]==null)
+									$('#item_tooltip_price').html('');
+								else
+									$('#item_tooltip_price').html(array_items[thisobj.attr('id2')]["price"]+' $');
+								$('#item_tooltip_desc').html(array_items[thisobj.attr('id2')]["description"]);
+								if(array_items[thisobj.attr('id2')]["expiration"]==null)
+								{
+									$('#item_tooltip_expire').hide();
+									$('#item_tooltip_expire_value').hide();
+								}
+								else
+								{
+									$('#item_tooltip_expire').show();
+									$('#item_tooltip_expire_value').show();
+									$('#item_tooltip_expire_value').html(array_items[thisobj.attr('id2')]["expiration"]);
+								}
+								if(array_items[thisobj.attr('id2')]["durability"]==null)
+									$('#item_tooltip_dura_value').html('∞');
+								else
+									$('#item_tooltip_dura_value').html(array_items[thisobj.attr('id2')]["durability"]+'/'+array_items[thisobj.attr('id2')]["max_durability"]);
+								$('#tooltip').fadeIn(250);
+							}
+							tooltipcount--;
+						},500);
+					}
+				});
+				$('.obj_items').mouseout(function(){
+					mouseovertime = false;
+					mousedowntime = false;
+					$(this).css("-moz-box-shadow","none");
+					$('#tooltip').fadeOut(250);
+				});
+				$('.obj_items').mousedown(function(){
+					mouseovertime = false;
+					mousedowntime = true;
+					$(this).css("-moz-box-shadow","none");
+					$('#tooltip').fadeOut(250);
+				});
+				$('.obj_items').mouseup(function(){
+					mousedowntime = false;
+					mouseovertime = true;
+					var thisobj = $(this);
+					thisobj.css("-moz-box-shadow","0px 0px 8px #FFAA00");
+				});
+				$(".obj_items").contextMenu({ menu: 'items_rmenu' }, 
+					function(action, el, pos) {
+						soundManager.play('click','/media/sound/click.mp3');	// Sound Effect
+						if(action=="description"){
+							FullTooltip(el,pos);
+						}
+						else if(action=="use"){
+							UseItem(el);
+						}
+						else if(action=="drop"){
+							DropItem(el);
+						}
+						else if(action=="read"){
+							ShowHelp();
+						}
+						else if(action=="transfer"){
+							Trasfer(el);
+						}
+						else if(action=="askknow"){
+							Askknow(el);
+						}
+				})
+			}
+			function ChangeLocation(locate)
+			{
+				if(locate=="" || !isdefined(locate))
+				{
+					$('#menu_ucswitch_button').hide();
+					$.get("/user/location/", function(data)
+					{
+						$("#ajaxlocation").html(data);
+						setTimeout(function()
+						{ 
+							location_js();
+							SyncItem();
+						},100);
+					});
+				}
+				else
+				{
+					$.post("/user/location/", 
+					{
+						location: locate
+					},function(data) 
+					{
+						if(data!="")
+						{
+							$("#blackscreen").fadeIn();
+							setTimeout(function() {
+								$('#menu_ucswitch_button').hide();
+								$('#list_location').hide();
+								$("#ajaxlocation").html(data);
+								$("#blackscreen").fadeOut(); 
+								nowstate = 'player';
+								LoadItem();
+								LoadMenu();
+								location_js();
+								$('#research_box').hide();
+							}, 400);
+						}
+						else
+						{
+							Alert("Cannot change location");
+						}
+					});
+				}
+			}
+			function parseicon(name){
+				return '<img src="/media/images/weather/icon_'+name+'.gif"/>';
+			}
+			$(document).ready(function(){
+				LoadUnlock(function(){
+					menu_js(ChangeLocation);
+					updatefivesec();
+				});
+				soundManager.debugMode = false;
+				soundManager.url = '/media/swf/';
+				soundManager.onload = function() {
+				}
+				soundManager.onerror = function() {
+				}
+				$("#change_location").click(function() {
+						$('#list_location').show();
+				});	
+				$(".goto_location").click(function(event,myCallBack) {
+					ChangeLocation($($(this).children()).attr("value"));
+				});	
+				$("#list_location_close").click(function() {
+						$('#list_location').hide();
+				})
+				$('#transfer_money_box_cancel').click(function(){
+					$('#transfer_money_box_value').val('');
+					$('#transfer_money_box').hide();
+				});
+				$('#transfer_money_box_submit').click(function(){
+					var tmpmoney = $('#transfer_money_box_value').val();
+					$.post("/core_union/transfer_money/", {
+						money: tmpmoney
+					},function(data){
+						Alert(data["message"]);
+						$('#transfer_money_box_value').val('');
+						$('#transfer_money_box').hide();
+					},'json');
+				});
+				$('#transfer_money_box').draggable({
+					handle:'#transfer_money_box_title'
+				});
+			});
+			</script>
+	</head>
+	<body>
+	<div id="blackscreen" style="background: black; position:absolute; z-index: 10000; width: 100%; height: 100%;"></div>
+	<div id="ajaxlocation"></div>
+	{% include "menu/_menu.html" %}
+	<div id="tooltip" style=" display:none; background: rgba(40, 40, 40, 0.8); z-index:2000; border:1px solid #000000; position: absolute; width: 200px; height: 160px;">
+		<div id="item_tooltip_name"></div>
+		<div id="item_tooltip_price"></div>
+		<div id="item_tooltip_desc"></div>
+		<div id="item_tooltip_expire">หมดอายุ</div><div id="item_tooltip_expire_value"></div>
+		<div id="item_tooltip_dura">ความคงทน</div><div id="item_tooltip_dura_value"></div>
+	</div>
+	<div id="fulltooltip" style=" display:none; background: rgba(40, 40, 40, 0.8); z-index:2001; border:1px solid #000000; position: absolute; width: 200px; height: 250px;">
+		<a id="item_tooltip_name" class="button" href="#">title</a>
+		<div id="item_tooltip_price"></div>
+		<div id="item_tooltip_desc">desc</div>
+		<div id="fulltooltip_airpol">มลภาวะทางอากาศ</div><div id="fulltooltip_airpol_value"></div>
+		<div id="fulltooltip_earthpol">มลภาวะทางพื้นดิน</div><div id="fulltooltip_earthpol_value"></div>
+		<div id="fulltooltip_waterpol">มลภาวะทางน้ำ</div><div id="fulltooltip_waterpol_value"></div>
+		<div id="fulltooltip_modifier">ความสามารถ:</div><div id="fulltooltip_modifier_value"></div>
+		<div id="fulltooltip_storage">น้ำหนัก</div><div id="fulltooltip_storage_value"></div>
+		<div id="item_tooltip_expire">หมดอายุ</div><div id="item_tooltip_expire_value"></div>
+		<div id="item_tooltip_dura">ความคงทน</div><div id="item_tooltip_dura_value"></div>
+		<div id="fulltooltip_close"><div class="button">X</div></div>
+	</div>
+	<ul id="items_rmenu" class="contextMenu">
+		<li class="read"><a href="#read">อ่าน</a></li>
+		<li class="use"><a href="#use">ใช้</a></li>
+		<li class="description"><a href="#description">รายละเอียด</a></li>
+		<li class="askknow"><a href="#askknow">ถามปราชญ์</a></li>
+		<li class="transfer"><a href="#transfer">ส่งไปยังบริษัท</a></li>
+		<li class="drop"><a href="#drop">ทิ้ง</a></li>        
+	</ul>
+	<ul id="money_rmenu" class="contextMenu">
+		<li class="transfer"><a href="#transfer">ส่งไปยังบริษัท</a></li>     
+	</ul>
+	<div id="transfer_money_box">
+		<div id="transfer_money_box_title" class="button">โอนเงิน</div>
+		<div style="height:30px;"><span id="transfer_money_box_desc">จำนวนเงิน:</span><input type="text" id="transfer_money_box_value"/></div>
+		<div style="text-align:center;">
+			<input id="transfer_money_box_submit" type="button" value="ตกลง" />
+			<input id="transfer_money_box_cancel" type="button" value="ยกเลิก" />
+		</div>
+	</div>
+	<div id="effect_showtooltip"></div>
+	<div id="mascot_askknow_bg"></div>
+	<div id="mascot_askknow_desc">
+		<div id="mascot_askknow_desc_content"></div>
+		<input id="close_askknow" type="button" value="ok"/>
+	</div>
+	<div id="read_patent">
+	    <h3 id="read_patent_name"></h3>
+		<div id="read_patent_container">
+		    <div class="patent_row"><strong>สถานะ:&nbsp;</strong><span id="read_patent_status"></span></div>
+			<div class="patent_row"><strong>เจ้าของ:&nbsp;</strong><span id="read_patent_owner"></span></div>
+			<div class="patent_row"><strong>จดทะเบียนเมื่อ:&nbsp;</strong><span id="read_patent_regis_at"></span></div>
+			<div class="patent_row"><strong>ค่าจดทะเบียน:&nbsp;</strong><span id="read_patent_regis_cost"></span></div>
+			<div class="patent_row"><strong>ค่าใช้งาน:&nbsp;</strong><span id="read_patent_copy_cost"></span></div>
+			<div class="patent_row"><strong>รายละเอียด:&nbsp;</strong><p id="read_patent_description"></p></div>
+			<div class="patent_row"><strong>สภาพอากาศ:&nbsp;</strong><span id="read_patent_weather"></span></div>
+			<div class="patent_row"><strong>ส่วนประกอบ:&nbsp;</strong><ul id="read_patent_component"></ul></div>
+			<div class="patent_row"><strong>ผลลัพธ์:&nbsp;</strong><ul id="read_patent_result"></ul></div>
+		</div>
+		<div id="read_patent_give_button"></div>
+		<div id="read_patent_regis_button"></div>
+		<div id="read_patent_close" class="close_button"></div>
+	</div>
+	<div id="patent_give_box">
+	    <h3 id="patent_give_box_title">โอนสิทธิบัตร</h3>
+		<div>
+		    <select name="patent_give_box_to">
+				<option value="player">ผู้เล่น</option>
+			</select>
+		    <input type="text" id="patent_give_box_name"/>
+	    </div>
+		<div>
+		    <input type="button" id="patent_give_box_button" value="ให้"/>
+			<div id="patent_give_box_close" class="close_button"></div>
+		</div>
+	</div>
+	<div id="change_location">
+		<img id="change_location_button" src="/media/images/location/change_location.png" class="button"/>
+	</div>
+	<div id="research_box">
+				<div id="research_box_title" class="button"></div>
+				<div id="research_box_close" class="button"></div>
+				<div id="research_box_slots" class="item_list">
+				</div>
+				<div id="research_box_catas_slots" class="item_list">
+				</div>
+				<div id="researching_text">Researching</div>
+				<div id="research_box_submit" class="button">Research</div>
+	</div>
+	<div id="list_location">
+		<div class="goto_location"><div id="goto_home" value="Home" class="button">บ้าน</div></div>
+		<div class="goto_location"><div id="goto_market" value="Market" class="button">ตลาด</div></div>
+		<div class="goto_location"><div id="goto_union" value="Union" class="button">บริษัท</div></div>
+		<div class="goto_location"><div id="goto_sea" value="Sea" class="button">ทะเล</div></div>
+		<div class="goto_location"><div id="goto_river" value="River" class="button">แม่น้ำ</div></div>
+		<div class="goto_location"><div id="goto_forest" value="Forest" class="button">ป่า</div></div>
+		<div class="goto_location"><div id="goto_mountain" value="Mountain" class="button">ภูเขา</div></div>
+		<div id="list_location_close"><div class="button">X</div></div>
+	</div>
+	{% include "help/main.html" %}
+	</body>
+</html>

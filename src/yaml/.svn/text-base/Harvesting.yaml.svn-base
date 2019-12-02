@@ -1,0 +1,87 @@
+- fields:
+    resources: [75]
+    unlocker: 99
+  model: core.harvesting
+  pk: 2
+- fields:
+    resources: [75]
+    unlocker: 100
+  model: core.harvesting
+  pk: 3
+- fields:
+    resources: [76, 86]
+    unlocker: 131
+  model: core.harvesting
+  pk: 4
+- fields:
+    resources: [12]
+    unlocker: 132
+  model: core.harvesting
+  pk: 5
+- fields:
+    resources: [17, 18]
+    unlocker: 111
+  model: core.harvesting
+  pk: 6
+- fields:
+    resources: [9, 12, 75, 77, 78, 88, 89, 90]
+    unlocker: 133
+  model: core.harvesting
+  pk: 7
+- fields:
+    resources: [17, 18, 33]
+    unlocker: 135
+  model: core.harvesting
+  pk: 8
+- fields:
+    resources: [75]
+    unlocker: 141
+  model: core.harvesting
+  pk: 9
+- fields:
+    resources: [45, 63, 65, 76, 86]
+    unlocker: 215
+  model: core.harvesting
+  pk: 10
+- fields:
+    resources: [45]
+    unlocker: 322
+  model: core.harvesting
+  pk: 11
+- fields:
+    resources: [4, 5, 6, 7, 8, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
+      32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 46, 47, 48]
+    unlocker: 324
+  model: core.harvesting
+  pk: 12
+- fields:
+    resources: [45]
+    unlocker: 327
+  model: core.harvesting
+  pk: 13
+- fields:
+    resources: [86]
+    unlocker: 329
+  model: core.harvesting
+  pk: 14
+- fields:
+    resources: [75]
+    unlocker: 359
+  model: core.harvesting
+  pk: 15
+- fields:
+    resources: [4, 5, 6, 7, 8, 15, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+      31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 46, 47, 48]
+    unlocker: 363
+  model: core.harvesting
+  pk: 16
+- fields:
+    resources: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+      22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+      41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59,
+      60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78,
+      79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 438, 442]
+    unlocker: 437
+  model: core.harvesting
+  pk: 17
+

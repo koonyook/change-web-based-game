@@ -1,0 +1,11 @@
+<div style="margin-left:20px;margin-top:20px;float:left">
+	<div id2="/hof/players_max_money/10" class="button hof_each_category" > รวยสุด </div>
+	<div id2="/hof/players_most_research/10" class="button hof_each_category" > เจ๋งสุด </div>
+	<div id2="/hof/players_most_found_patent/10" class="button hof_each_category" > ค้นพบสุด </div>
+	<div id2="/hof/players_most_regis_patent/10" class="button hof_each_category" > งกสุด </div>
+	<div id2="/hof/unions_max_money/10" class="button hof_each_category" > แก๊งรวยสุด</div>
+	<div id2="/hof/unions_most_research/10" class="button hof_each_category" > แก๊งเจ๋งสุด</div>
+	<div id2="/hof/unions_most_regis_patent/10" class="button hof_each_category" > แก๊งงกสุด</div>
+</div>
+<div id="hof_data" style="float:left;margin-left:20px;text-align:center;">
+</div>

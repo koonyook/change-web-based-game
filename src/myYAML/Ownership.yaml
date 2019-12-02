@@ -1,0 +1,49 @@
+- fields: {durability: null, expire_at: null, is_available: 1, item: 437, level: 1,
+    player: 2, union: null}
+  model: core.ownership
+  pk: 1
+- fields: {durability: 1, expire_at: null, is_available: 1, item: 4, level: 1, player: 2,
+    union: null}
+  model: core.ownership
+  pk: 2
+- fields: {durability: 1, expire_at: null, is_available: 1, item: 10, level: 1, player: 2,
+    union: null}
+  model: core.ownership
+  pk: 3
+- fields: {durability: 1, expire_at: null, is_available: 1, item: 18, level: 1, player: 2,
+    union: null}
+  model: core.ownership
+  pk: 4
+- fields: {durability: 1, expire_at: null, is_available: 1, item: 67, level: 1, player: 2,
+    union: null}
+  model: core.ownership
+  pk: 5
+- fields: {durability: 1, expire_at: null, is_available: 1, item: 11, level: 1, player: 2,
+    union: null}
+  model: core.ownership
+  pk: 6
+- fields: {durability: 2, expire_at: null, is_available: 1, item: 94, level: 1, player: 2,
+    union: null}
+  model: core.ownership
+  pk: 7
+- fields: {durability: 2, expire_at: null, is_available: 1, item: 94, level: 1, player: 2,
+    union: null}
+  model: core.ownership
+  pk: 8
+- fields: {durability: 2, expire_at: null, is_available: 1, item: 94, level: 1, player: 2,
+    union: null}
+  model: core.ownership
+  pk: 9
+- fields: {durability: 2, expire_at: null, is_available: 1, item: 94, level: 1, player: 2,
+    union: null}
+  model: core.ownership
+  pk: 10
+- fields: {durability: null, expire_at: null, is_available: 1, item: 437, level: 1,
+    player: 3, union: null}
+  model: core.ownership
+  pk: 11
+- fields: {durability: 3, expire_at: null, is_available: 1, item: 21, level: 1, player: 3,
+    union: null}
+  model: core.ownership
+  pk: 12
+

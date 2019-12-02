@@ -1,0 +1,1111 @@
+- fields: {formula: 1, item: 94, quantity: 1}
+  model: core.result
+  pk: 1
+- fields: {formula: 2, item: 95, quantity: 1}
+  model: core.result
+  pk: 2
+- fields: {formula: 3, item: 96, quantity: 1}
+  model: core.result
+  pk: 3
+- fields: {formula: 4, item: 97, quantity: 1}
+  model: core.result
+  pk: 4
+- fields: {formula: 5, item: 98, quantity: 1}
+  model: core.result
+  pk: 5
+- fields: {formula: 7, item: 100, quantity: 1}
+  model: core.result
+  pk: 6
+- fields: {formula: 9, item: 101, quantity: 1}
+  model: core.result
+  pk: 7
+- fields: {formula: 10, item: 102, quantity: 1}
+  model: core.result
+  pk: 8
+- fields: {formula: 11, item: 102, quantity: 2}
+  model: core.result
+  pk: 9
+- fields: {formula: 11, item: 104, quantity: 1}
+  model: core.result
+  pk: 10
+- fields: {formula: 11, item: 105, quantity: 1}
+  model: core.result
+  pk: 11
+- fields: {formula: 11, item: 103, quantity: 1}
+  model: core.result
+  pk: 12
+- fields: {formula: 12, item: 102, quantity: 4}
+  model: core.result
+  pk: 13
+- fields: {formula: 12, item: 104, quantity: 3}
+  model: core.result
+  pk: 14
+- fields: {formula: 12, item: 105, quantity: 2}
+  model: core.result
+  pk: 15
+- fields: {formula: 12, item: 103, quantity: 3}
+  model: core.result
+  pk: 16
+- fields: {formula: 12, item: 108, quantity: 1}
+  model: core.result
+  pk: 17
+- fields: {formula: 13, item: 102, quantity: 9}
+  model: core.result
+  pk: 18
+- fields: {formula: 13, item: 104, quantity: 5}
+  model: core.result
+  pk: 19
+- fields: {formula: 13, item: 105, quantity: 4}
+  model: core.result
+  pk: 20
+- fields: {formula: 13, item: 103, quantity: 5}
+  model: core.result
+  pk: 21
+- fields: {formula: 13, item: 108, quantity: 2}
+  model: core.result
+  pk: 22
+- fields: {formula: 14, item: 106, quantity: 1}
+  model: core.result
+  pk: 23
+- fields: {formula: 15, item: 107, quantity: 1}
+  model: core.result
+  pk: 24
+- fields: {formula: 16, item: 109, quantity: 1}
+  model: core.result
+  pk: 25
+- fields: {formula: 17, item: 110, quantity: 1}
+  model: core.result
+  pk: 26
+- fields: {formula: 18, item: 110, quantity: 1}
+  model: core.result
+  pk: 27
+- fields: {formula: 19, item: 111, quantity: 1}
+  model: core.result
+  pk: 28
+- fields: {formula: 20, item: 112, quantity: 1}
+  model: core.result
+  pk: 29
+- fields: {formula: 21, item: 113, quantity: 1}
+  model: core.result
+  pk: 30
+- fields: {formula: 22, item: 114, quantity: 1}
+  model: core.result
+  pk: 31
+- fields: {formula: 23, item: 115, quantity: 1}
+  model: core.result
+  pk: 32
+- fields: {formula: 24, item: 116, quantity: 1}
+  model: core.result
+  pk: 33
+- fields: {formula: 25, item: 117, quantity: 1}
+  model: core.result
+  pk: 34
+- fields: {formula: 26, item: 118, quantity: 1}
+  model: core.result
+  pk: 35
+- fields: {formula: 27, item: 119, quantity: 1}
+  model: core.result
+  pk: 36
+- fields: {formula: 28, item: 102, quantity: 1}
+  model: core.result
+  pk: 37
+- fields: {formula: 29, item: 120, quantity: 1}
+  model: core.result
+  pk: 38
+- fields: {formula: 29, item: 136, quantity: 1}
+  model: core.result
+  pk: 39
+- fields: {formula: 30, item: 121, quantity: 1}
+  model: core.result
+  pk: 40
+- fields: {formula: 31, item: 122, quantity: 1}
+  model: core.result
+  pk: 41
+- fields: {formula: 32, item: 123, quantity: 1}
+  model: core.result
+  pk: 42
+- fields: {formula: 33, item: 124, quantity: 1}
+  model: core.result
+  pk: 43
+- fields: {formula: 34, item: 125, quantity: 1}
+  model: core.result
+  pk: 44
+- fields: {formula: 35, item: 126, quantity: 1}
+  model: core.result
+  pk: 45
+- fields: {formula: 36, item: 127, quantity: 1}
+  model: core.result
+  pk: 46
+- fields: {formula: 37, item: 128, quantity: 1}
+  model: core.result
+  pk: 47
+- fields: {formula: 38, item: 129, quantity: 1}
+  model: core.result
+  pk: 48
+- fields: {formula: 39, item: 436, quantity: 1}
+  model: core.result
+  pk: 49
+- fields: {formula: 106, item: 208, quantity: 1}
+  model: core.result
+  pk: 122
+- fields: {formula: 40, item: 131, quantity: 1}
+  model: core.result
+  pk: 51
+- fields: {formula: 41, item: 135, quantity: 1}
+  model: core.result
+  pk: 52
+- fields: {formula: 42, item: 137, quantity: 1}
+  model: core.result
+  pk: 53
+- fields: {formula: 43, item: 138, quantity: 1}
+  model: core.result
+  pk: 54
+- fields: {formula: 44, item: 139, quantity: 1}
+  model: core.result
+  pk: 55
+- fields: {formula: 45, item: 359, quantity: 1}
+  model: core.result
+  pk: 56
+- fields: {formula: 46, item: 142, quantity: 1}
+  model: core.result
+  pk: 57
+- fields: {formula: 46, item: 143, quantity: 1}
+  model: core.result
+  pk: 58
+- fields: {formula: 47, item: 144, quantity: 1}
+  model: core.result
+  pk: 59
+- fields: {formula: 48, item: 145, quantity: 1}
+  model: core.result
+  pk: 60
+- fields: {formula: 49, item: 146, quantity: 1}
+  model: core.result
+  pk: 61
+- fields: {formula: 50, item: 147, quantity: 1}
+  model: core.result
+  pk: 62
+- fields: {formula: 51, item: 148, quantity: 1}
+  model: core.result
+  pk: 63
+- fields: {formula: 52, item: 149, quantity: 1}
+  model: core.result
+  pk: 64
+- fields: {formula: 53, item: 152, quantity: 1}
+  model: core.result
+  pk: 65
+- fields: {formula: 54, item: 151, quantity: 1}
+  model: core.result
+  pk: 66
+- fields: {formula: 55, item: 151, quantity: 1}
+  model: core.result
+  pk: 67
+- fields: {formula: 56, item: 154, quantity: 1}
+  model: core.result
+  pk: 68
+- fields: {formula: 57, item: 155, quantity: 1}
+  model: core.result
+  pk: 69
+- fields: {formula: 58, item: 156, quantity: 1}
+  model: core.result
+  pk: 70
+- fields: {formula: 59, item: 157, quantity: 1}
+  model: core.result
+  pk: 71
+- fields: {formula: 60, item: 161, quantity: 1}
+  model: core.result
+  pk: 72
+- fields: {formula: 60, item: 164, quantity: 1}
+  model: core.result
+  pk: 73
+- fields: {formula: 61, item: 165, quantity: 1}
+  model: core.result
+  pk: 74
+- fields: {formula: 62, item: 168, quantity: 1}
+  model: core.result
+  pk: 75
+- fields: {formula: 63, item: 166, quantity: 1}
+  model: core.result
+  pk: 76
+- fields: {formula: 64, item: 167, quantity: 1}
+  model: core.result
+  pk: 77
+- fields: {formula: 65, item: 169, quantity: 1}
+  model: core.result
+  pk: 78
+- fields: {formula: 66, item: 162, quantity: 1}
+  model: core.result
+  pk: 79
+- fields: {formula: 67, item: 170, quantity: 1}
+  model: core.result
+  pk: 80
+- fields: {formula: 68, item: 163, quantity: 1}
+  model: core.result
+  pk: 81
+- fields: {formula: 69, item: 158, quantity: 1}
+  model: core.result
+  pk: 82
+- fields: {formula: 70, item: 171, quantity: 1}
+  model: core.result
+  pk: 83
+- fields: {formula: 71, item: 214, quantity: 1}
+  model: core.result
+  pk: 84
+- fields: {formula: 72, item: 172, quantity: 1}
+  model: core.result
+  pk: 85
+- fields: {formula: 73, item: 159, quantity: 1}
+  model: core.result
+  pk: 86
+- fields: {formula: 74, item: 176, quantity: 1}
+  model: core.result
+  pk: 87
+- fields: {formula: 75, item: 178, quantity: 1}
+  model: core.result
+  pk: 88
+- fields: {formula: 76, item: 175, quantity: 1}
+  model: core.result
+  pk: 89
+- fields: {formula: 77, item: 177, quantity: 1}
+  model: core.result
+  pk: 90
+- fields: {formula: 78, item: 179, quantity: 1}
+  model: core.result
+  pk: 91
+- fields: {formula: 79, item: 181, quantity: 1}
+  model: core.result
+  pk: 92
+- fields: {formula: 80, item: 182, quantity: 1}
+  model: core.result
+  pk: 93
+- fields: {formula: 81, item: 182, quantity: 1}
+  model: core.result
+  pk: 94
+- fields: {formula: 82, item: 183, quantity: 1}
+  model: core.result
+  pk: 95
+- fields: {formula: 83, item: 277, quantity: 1}
+  model: core.result
+  pk: 96
+- fields: {formula: 84, item: 180, quantity: 1}
+  model: core.result
+  pk: 97
+- fields: {formula: 85, item: 184, quantity: 1}
+  model: core.result
+  pk: 98
+- fields: {formula: 86, item: 186, quantity: 1}
+  model: core.result
+  pk: 99
+- fields: {formula: 87, item: 134, quantity: 1}
+  model: core.result
+  pk: 100
+- fields: {formula: 88, item: 188, quantity: 1}
+  model: core.result
+  pk: 101
+- fields: {formula: 89, item: 193, quantity: 1}
+  model: core.result
+  pk: 102
+- fields: {formula: 89, item: 192, quantity: 1}
+  model: core.result
+  pk: 103
+- fields: {formula: 90, item: 194, quantity: 2}
+  model: core.result
+  pk: 104
+- fields: {formula: 91, item: 189, quantity: 1}
+  model: core.result
+  pk: 105
+- fields: {formula: 92, item: 195, quantity: 1}
+  model: core.result
+  pk: 106
+- fields: {formula: 93, item: 190, quantity: 1}
+  model: core.result
+  pk: 107
+- fields: {formula: 94, item: 191, quantity: 1}
+  model: core.result
+  pk: 108
+- fields: {formula: 95, item: 174, quantity: 1}
+  model: core.result
+  pk: 109
+- fields: {formula: 96, item: 198, quantity: 1}
+  model: core.result
+  pk: 110
+- fields: {formula: 97, item: 197, quantity: 1}
+  model: core.result
+  pk: 111
+- fields: {formula: 98, item: 199, quantity: 1}
+  model: core.result
+  pk: 112
+- fields: {formula: 99, item: 206, quantity: 1}
+  model: core.result
+  pk: 113
+- fields: {formula: 99, item: 153, quantity: 1}
+  model: core.result
+  pk: 114
+- fields: {formula: 100, item: 202, quantity: 1}
+  model: core.result
+  pk: 115
+- fields: {formula: 100, item: 200, quantity: 1}
+  model: core.result
+  pk: 116
+- fields: {formula: 101, item: 201, quantity: 1}
+  model: core.result
+  pk: 117
+- fields: {formula: 102, item: 196, quantity: 1}
+  model: core.result
+  pk: 118
+- fields: {formula: 103, item: 203, quantity: 1}
+  model: core.result
+  pk: 119
+- fields: {formula: 348, item: 67, quantity: 6}
+  model: core.result
+  pk: 365
+- fields: {formula: 105, item: 207, quantity: 1}
+  model: core.result
+  pk: 121
+- fields: {formula: 106, item: 209, quantity: 1}
+  model: core.result
+  pk: 123
+- fields: {formula: 107, item: 211, quantity: 1}
+  model: core.result
+  pk: 124
+- fields: {formula: 108, item: 439, quantity: 1}
+  model: core.result
+  pk: 125
+- fields: {formula: 109, item: 440, quantity: 1}
+  model: core.result
+  pk: 126
+- fields: {formula: 110, item: 217, quantity: 1}
+  model: core.result
+  pk: 127
+- fields: {formula: 111, item: 218, quantity: 1}
+  model: core.result
+  pk: 128
+- fields: {formula: 112, item: 216, quantity: 1}
+  model: core.result
+  pk: 129
+- fields: {formula: 113, item: 221, quantity: 1}
+  model: core.result
+  pk: 130
+- fields: {formula: 113, item: 220, quantity: 1}
+  model: core.result
+  pk: 131
+- fields: {formula: 114, item: 222, quantity: 1}
+  model: core.result
+  pk: 132
+- fields: {formula: 115, item: 223, quantity: 1}
+  model: core.result
+  pk: 133
+- fields: {formula: 116, item: 224, quantity: 1}
+  model: core.result
+  pk: 134
+- fields: {formula: 117, item: 226, quantity: 1}
+  model: core.result
+  pk: 135
+- fields: {formula: 118, item: 227, quantity: 1}
+  model: core.result
+  pk: 136
+- fields: {formula: 118, item: 225, quantity: 1}
+  model: core.result
+  pk: 137
+- fields: {formula: 119, item: 228, quantity: 1}
+  model: core.result
+  pk: 138
+- fields: {formula: 120, item: 229, quantity: 1}
+  model: core.result
+  pk: 139
+- fields: {formula: 121, item: 231, quantity: 1}
+  model: core.result
+  pk: 140
+- fields: {formula: 122, item: 232, quantity: 1}
+  model: core.result
+  pk: 141
+- fields: {formula: 123, item: 233, quantity: 1}
+  model: core.result
+  pk: 142
+- fields: {formula: 124, item: 234, quantity: 1}
+  model: core.result
+  pk: 143
+- fields: {formula: 125, item: 235, quantity: 1}
+  model: core.result
+  pk: 144
+- fields: {formula: 126, item: 236, quantity: 1}
+  model: core.result
+  pk: 145
+- fields: {formula: 127, item: 237, quantity: 1}
+  model: core.result
+  pk: 146
+- fields: {formula: 128, item: 238, quantity: 1}
+  model: core.result
+  pk: 147
+- fields: {formula: 129, item: 239, quantity: 1}
+  model: core.result
+  pk: 148
+- fields: {formula: 130, item: 241, quantity: 1}
+  model: core.result
+  pk: 149
+- fields: {formula: 131, item: 242, quantity: 1}
+  model: core.result
+  pk: 150
+- fields: {formula: 132, item: 405, quantity: 1}
+  model: core.result
+  pk: 151
+- fields: {formula: 133, item: 205, quantity: 3}
+  model: core.result
+  pk: 152
+- fields: {formula: 134, item: 243, quantity: 1}
+  model: core.result
+  pk: 153
+- fields: {formula: 135, item: 244, quantity: 1}
+  model: core.result
+  pk: 154
+- fields: {formula: 136, item: 245, quantity: 1}
+  model: core.result
+  pk: 155
+- fields: {formula: 137, item: 246, quantity: 1}
+  model: core.result
+  pk: 156
+- fields: {formula: 138, item: 248, quantity: 1}
+  model: core.result
+  pk: 157
+- fields: {formula: 139, item: 250, quantity: 1}
+  model: core.result
+  pk: 158
+- fields: {formula: 140, item: 251, quantity: 1}
+  model: core.result
+  pk: 159
+- fields: {formula: 141, item: 253, quantity: 1}
+  model: core.result
+  pk: 160
+- fields: {formula: 142, item: 255, quantity: 1}
+  model: core.result
+  pk: 161
+- fields: {formula: 143, item: 258, quantity: 1}
+  model: core.result
+  pk: 162
+- fields: {formula: 144, item: 259, quantity: 1}
+  model: core.result
+  pk: 163
+- fields: {formula: 145, item: 257, quantity: 1}
+  model: core.result
+  pk: 164
+- fields: {formula: 146, item: 263, quantity: 1}
+  model: core.result
+  pk: 165
+- fields: {formula: 147, item: 264, quantity: 1}
+  model: core.result
+  pk: 166
+- fields: {formula: 148, item: 260, quantity: 1}
+  model: core.result
+  pk: 167
+- fields: {formula: 149, item: 270, quantity: 1}
+  model: core.result
+  pk: 168
+- fields: {formula: 150, item: 261, quantity: 1}
+  model: core.result
+  pk: 169
+- fields: {formula: 152, item: 262, quantity: 1}
+  model: core.result
+  pk: 170
+- fields: {formula: 153, item: 267, quantity: 1}
+  model: core.result
+  pk: 171
+- fields: {formula: 154, item: 265, quantity: 1}
+  model: core.result
+  pk: 172
+- fields: {formula: 155, item: 269, quantity: 1}
+  model: core.result
+  pk: 173
+- fields: {formula: 156, item: 271, quantity: 1}
+  model: core.result
+  pk: 174
+- fields: {formula: 157, item: 273, quantity: 1}
+  model: core.result
+  pk: 175
+- fields: {formula: 158, item: 272, quantity: 1}
+  model: core.result
+  pk: 176
+- fields: {formula: 159, item: 275, quantity: 1}
+  model: core.result
+  pk: 177
+- fields: {formula: 160, item: 274, quantity: 1}
+  model: core.result
+  pk: 178
+- fields: {formula: 161, item: 276, quantity: 1}
+  model: core.result
+  pk: 179
+- fields: {formula: 162, item: 185, quantity: 1}
+  model: core.result
+  pk: 180
+- fields: {formula: 163, item: 279, quantity: 1}
+  model: core.result
+  pk: 181
+- fields: {formula: 166, item: 281, quantity: 1}
+  model: core.result
+  pk: 182
+- fields: {formula: 167, item: 282, quantity: 1}
+  model: core.result
+  pk: 183
+- fields: {formula: 168, item: 280, quantity: 1}
+  model: core.result
+  pk: 184
+- fields: {formula: 169, item: 284, quantity: 1}
+  model: core.result
+  pk: 185
+- fields: {formula: 170, item: 283, quantity: 1}
+  model: core.result
+  pk: 186
+- fields: {formula: 171, item: 286, quantity: 1}
+  model: core.result
+  pk: 187
+- fields: {formula: 172, item: 288, quantity: 1}
+  model: core.result
+  pk: 188
+- fields: {formula: 173, item: 291, quantity: 1}
+  model: core.result
+  pk: 189
+- fields: {formula: 174, item: 290, quantity: 1}
+  model: core.result
+  pk: 190
+- fields: {formula: 175, item: 294, quantity: 1}
+  model: core.result
+  pk: 191
+- fields: {formula: 176, item: 254, quantity: 1}
+  model: core.result
+  pk: 192
+- fields: {formula: 177, item: 297, quantity: 1}
+  model: core.result
+  pk: 193
+- fields: {formula: 178, item: 299, quantity: 1}
+  model: core.result
+  pk: 194
+- fields: {formula: 179, item: 295, quantity: 1}
+  model: core.result
+  pk: 195
+- fields: {formula: 180, item: 301, quantity: 3}
+  model: core.result
+  pk: 196
+- fields: {formula: 181, item: 302, quantity: 1}
+  model: core.result
+  pk: 197
+- fields: {formula: 182, item: 296, quantity: 1}
+  model: core.result
+  pk: 198
+- fields: {formula: 183, item: 300, quantity: 1}
+  model: core.result
+  pk: 199
+- fields: {formula: 184, item: 285, quantity: 1}
+  model: core.result
+  pk: 200
+- fields: {formula: 185, item: 303, quantity: 1}
+  model: core.result
+  pk: 201
+- fields: {formula: 186, item: 304, quantity: 1}
+  model: core.result
+  pk: 202
+- fields: {formula: 101, item: 125, quantity: 1}
+  model: core.result
+  pk: 367
+- fields: {formula: 188, item: 325, quantity: 1}
+  model: core.result
+  pk: 204
+- fields: {formula: 189, item: 360, quantity: 1}
+  model: core.result
+  pk: 205
+- fields: {formula: 190, item: 293, quantity: 1}
+  model: core.result
+  pk: 206
+- fields: {formula: 191, item: 361, quantity: 1}
+  model: core.result
+  pk: 207
+- fields: {formula: 192, item: 324, quantity: 1}
+  model: core.result
+  pk: 208
+- fields: {formula: 193, item: 332, quantity: 1}
+  model: core.result
+  pk: 209
+- fields: {formula: 194, item: 432, quantity: 1}
+  model: core.result
+  pk: 210
+- fields: {formula: 195, item: 289, quantity: 1}
+  model: core.result
+  pk: 211
+- fields: {formula: 196, item: 365, quantity: 1}
+  model: core.result
+  pk: 212
+- fields: {formula: 197, item: 367, quantity: 1}
+  model: core.result
+  pk: 213
+- fields: {formula: 198, item: 368, quantity: 1}
+  model: core.result
+  pk: 214
+- fields: {formula: 198, item: 369, quantity: 1}
+  model: core.result
+  pk: 215
+- fields: {formula: 199, item: 371, quantity: 1}
+  model: core.result
+  pk: 216
+- fields: {formula: 200, item: 372, quantity: 1}
+  model: core.result
+  pk: 217
+- fields: {formula: 201, item: 373, quantity: 1}
+  model: core.result
+  pk: 218
+- fields: {formula: 202, item: 363, quantity: 1}
+  model: core.result
+  pk: 219
+- fields: {formula: 203, item: 374, quantity: 1}
+  model: core.result
+  pk: 220
+- fields: {formula: 204, item: 375, quantity: 1}
+  model: core.result
+  pk: 221
+- fields: {formula: 205, item: 326, quantity: 1}
+  model: core.result
+  pk: 222
+- fields: {formula: 206, item: 376, quantity: 1}
+  model: core.result
+  pk: 223
+- fields: {formula: 207, item: 366, quantity: 1}
+  model: core.result
+  pk: 224
+- fields: {formula: 208, item: 377, quantity: 1}
+  model: core.result
+  pk: 225
+- fields: {formula: 209, item: 370, quantity: 1}
+  model: core.result
+  pk: 226
+- fields: {formula: 210, item: 133, quantity: 1}
+  model: core.result
+  pk: 227
+- fields: {formula: 211, item: 173, quantity: 1}
+  model: core.result
+  pk: 228
+- fields: {formula: 212, item: 266, quantity: 1}
+  model: core.result
+  pk: 229
+- fields: {formula: 214, item: 132, quantity: 1}
+  model: core.result
+  pk: 230
+- fields: {formula: 215, item: 130, quantity: 1}
+  model: core.result
+  pk: 231
+- fields: {formula: 216, item: 240, quantity: 1}
+  model: core.result
+  pk: 232
+- fields: {formula: 217, item: 307, quantity: 1}
+  model: core.result
+  pk: 233
+- fields: {formula: 218, item: 307, quantity: 3}
+  model: core.result
+  pk: 234
+- fields: {formula: 219, item: 212, quantity: 1}
+  model: core.result
+  pk: 235
+- fields: {formula: 220, item: 308, quantity: 1}
+  model: core.result
+  pk: 236
+- fields: {formula: 221, item: 160, quantity: 1}
+  model: core.result
+  pk: 237
+- fields: {formula: 222, item: 306, quantity: 1}
+  model: core.result
+  pk: 238
+- fields: {formula: 223, item: 210, quantity: 1}
+  model: core.result
+  pk: 239
+- fields: {formula: 224, item: 309, quantity: 1}
+  model: core.result
+  pk: 240
+- fields: {formula: 225, item: 310, quantity: 1}
+  model: core.result
+  pk: 241
+- fields: {formula: 226, item: 311, quantity: 1}
+  model: core.result
+  pk: 242
+- fields: {formula: 227, item: 213, quantity: 1}
+  model: core.result
+  pk: 243
+- fields: {formula: 228, item: 205, quantity: 1}
+  model: core.result
+  pk: 244
+- fields: {formula: 229, item: 215, quantity: 1}
+  model: core.result
+  pk: 245
+- fields: {formula: 230, item: 312, quantity: 1}
+  model: core.result
+  pk: 246
+- fields: {formula: 231, item: 352, quantity: 1}
+  model: core.result
+  pk: 247
+- fields: {formula: 232, item: 351, quantity: 1}
+  model: core.result
+  pk: 248
+- fields: {formula: 233, item: 249, quantity: 1}
+  model: core.result
+  pk: 249
+- fields: {formula: 234, item: 353, quantity: 1}
+  model: core.result
+  pk: 250
+- fields: {formula: 235, item: 354, quantity: 1}
+  model: core.result
+  pk: 251
+- fields: {formula: 236, item: 355, quantity: 2}
+  model: core.result
+  pk: 252
+- fields: {formula: 237, item: 357, quantity: 1}
+  model: core.result
+  pk: 253
+- fields: {formula: 238, item: 318, quantity: 1}
+  model: core.result
+  pk: 254
+- fields: {formula: 239, item: 219, quantity: 1}
+  model: core.result
+  pk: 255
+- fields: {formula: 240, item: 359, quantity: 1}
+  model: core.result
+  pk: 256
+- fields: {formula: 241, item: 141, quantity: 1}
+  model: core.result
+  pk: 257
+- fields: {formula: 242, item: 187, quantity: 1}
+  model: core.result
+  pk: 258
+- fields: {formula: 243, item: 247, quantity: 1}
+  model: core.result
+  pk: 259
+- fields: {formula: 244, item: 252, quantity: 1}
+  model: core.result
+  pk: 260
+- fields: {formula: 245, item: 315, quantity: 1}
+  model: core.result
+  pk: 261
+- fields: {formula: 246, item: 316, quantity: 1}
+  model: core.result
+  pk: 262
+- fields: {formula: 247, item: 230, quantity: 1}
+  model: core.result
+  pk: 263
+- fields: {formula: 248, item: 313, quantity: 1}
+  model: core.result
+  pk: 264
+- fields: {formula: 249, item: 314, quantity: 1}
+  model: core.result
+  pk: 265
+- fields: {formula: 252, item: 319, quantity: 1}
+  model: core.result
+  pk: 266
+- fields: {formula: 252, item: 321, quantity: 1}
+  model: core.result
+  pk: 267
+- fields: {formula: 253, item: 322, quantity: 1}
+  model: core.result
+  pk: 268
+- fields: {formula: 254, item: 323, quantity: 1}
+  model: core.result
+  pk: 269
+- fields: {formula: 255, item: 411, quantity: 1}
+  model: core.result
+  pk: 270
+- fields: {formula: 256, item: 327, quantity: 1}
+  model: core.result
+  pk: 271
+- fields: {formula: 257, item: 328, quantity: 1}
+  model: core.result
+  pk: 272
+- fields: {formula: 258, item: 330, quantity: 1}
+  model: core.result
+  pk: 273
+- fields: {formula: 259, item: 329, quantity: 1}
+  model: core.result
+  pk: 274
+- fields: {formula: 260, item: 320, quantity: 1}
+  model: core.result
+  pk: 275
+- fields: {formula: 261, item: 331, quantity: 1}
+  model: core.result
+  pk: 276
+- fields: {formula: 262, item: 150, quantity: 1}
+  model: core.result
+  pk: 277
+- fields: {formula: 263, item: 334, quantity: 1}
+  model: core.result
+  pk: 278
+- fields: {formula: 264, item: 333, quantity: 1}
+  model: core.result
+  pk: 279
+- fields: {formula: 265, item: 335, quantity: 1}
+  model: core.result
+  pk: 280
+- fields: {formula: 266, item: 338, quantity: 1}
+  model: core.result
+  pk: 281
+- fields: {formula: 267, item: 336, quantity: 1}
+  model: core.result
+  pk: 282
+- fields: {formula: 268, item: 340, quantity: 1}
+  model: core.result
+  pk: 283
+- fields: {formula: 269, item: 341, quantity: 1}
+  model: core.result
+  pk: 284
+- fields: {formula: 270, item: 342, quantity: 1}
+  model: core.result
+  pk: 285
+- fields: {formula: 271, item: 343, quantity: 1}
+  model: core.result
+  pk: 286
+- fields: {formula: 272, item: 344, quantity: 1}
+  model: core.result
+  pk: 287
+- fields: {formula: 273, item: 339, quantity: 1}
+  model: core.result
+  pk: 288
+- fields: {formula: 274, item: 345, quantity: 1}
+  model: core.result
+  pk: 289
+- fields: {formula: 275, item: 298, quantity: 1}
+  model: core.result
+  pk: 290
+- fields: {formula: 276, item: 346, quantity: 1}
+  model: core.result
+  pk: 291
+- fields: {formula: 277, item: 347, quantity: 1}
+  model: core.result
+  pk: 292
+- fields: {formula: 277, item: 348, quantity: 1}
+  model: core.result
+  pk: 293
+- fields: {formula: 278, item: 349, quantity: 1}
+  model: core.result
+  pk: 294
+- fields: {formula: 279, item: 350, quantity: 1}
+  model: core.result
+  pk: 295
+- fields: {formula: 280, item: 380, quantity: 1}
+  model: core.result
+  pk: 296
+- fields: {formula: 281, item: 383, quantity: 1}
+  model: core.result
+  pk: 297
+- fields: {formula: 282, item: 385, quantity: 1}
+  model: core.result
+  pk: 298
+- fields: {formula: 283, item: 386, quantity: 1}
+  model: core.result
+  pk: 299
+- fields: {formula: 284, item: 419, quantity: 1}
+  model: core.result
+  pk: 300
+- fields: {formula: 285, item: 337, quantity: 1}
+  model: core.result
+  pk: 301
+- fields: {formula: 286, item: 387, quantity: 1}
+  model: core.result
+  pk: 302
+- fields: {formula: 287, item: 390, quantity: 1}
+  model: core.result
+  pk: 303
+- fields: {formula: 288, item: 420, quantity: 1}
+  model: core.result
+  pk: 304
+- fields: {formula: 289, item: 421, quantity: 1}
+  model: core.result
+  pk: 305
+- fields: {formula: 290, item: 422, quantity: 1}
+  model: core.result
+  pk: 306
+- fields: {formula: 291, item: 423, quantity: 1}
+  model: core.result
+  pk: 307
+- fields: {formula: 292, item: 392, quantity: 1}
+  model: core.result
+  pk: 308
+- fields: {formula: 293, item: 407, quantity: 1}
+  model: core.result
+  pk: 309
+- fields: {formula: 294, item: 424, quantity: 1}
+  model: core.result
+  pk: 310
+- fields: {formula: 295, item: 400, quantity: 1}
+  model: core.result
+  pk: 311
+- fields: {formula: 296, item: 401, quantity: 1}
+  model: core.result
+  pk: 312
+- fields: {formula: 297, item: 402, quantity: 1}
+  model: core.result
+  pk: 313
+- fields: {formula: 298, item: 403, quantity: 1}
+  model: core.result
+  pk: 314
+- fields: {formula: 299, item: 404, quantity: 1}
+  model: core.result
+  pk: 315
+- fields: {formula: 300, item: 406, quantity: 1}
+  model: core.result
+  pk: 316
+- fields: {formula: 301, item: 408, quantity: 1}
+  model: core.result
+  pk: 317
+- fields: {formula: 302, item: 409, quantity: 1}
+  model: core.result
+  pk: 318
+- fields: {formula: 101, item: 17, quantity: 1}
+  model: core.result
+  pk: 366
+- fields: {formula: 304, item: 410, quantity: 1}
+  model: core.result
+  pk: 320
+- fields: {formula: 305, item: 412, quantity: 1}
+  model: core.result
+  pk: 321
+- fields: {formula: 306, item: 305, quantity: 1}
+  model: core.result
+  pk: 322
+- fields: {formula: 307, item: 153, quantity: 1}
+  model: core.result
+  pk: 323
+- fields: {formula: 308, item: 413, quantity: 1}
+  model: core.result
+  pk: 324
+- fields: {formula: 309, item: 414, quantity: 1}
+  model: core.result
+  pk: 325
+- fields: {formula: 310, item: 415, quantity: 3}
+  model: core.result
+  pk: 326
+- fields: {formula: 311, item: 416, quantity: 1}
+  model: core.result
+  pk: 327
+- fields: {formula: 312, item: 417, quantity: 1}
+  model: core.result
+  pk: 328
+- fields: {formula: 313, item: 425, quantity: 1}
+  model: core.result
+  pk: 329
+- fields: {formula: 314, item: 426, quantity: 1}
+  model: core.result
+  pk: 330
+- fields: {formula: 315, item: 427, quantity: 1}
+  model: core.result
+  pk: 331
+- fields: {formula: 316, item: 418, quantity: 1}
+  model: core.result
+  pk: 332
+- fields: {formula: 317, item: 430, quantity: 1}
+  model: core.result
+  pk: 333
+- fields: {formula: 318, item: 443, quantity: 1}
+  model: core.result
+  pk: 334
+- fields: {formula: 319, item: 278, quantity: 1}
+  model: core.result
+  pk: 335
+- fields: {formula: 320, item: 434, quantity: 1}
+  model: core.result
+  pk: 336
+- fields: {formula: 321, item: 287, quantity: 1}
+  model: core.result
+  pk: 337
+- fields: {formula: 322, item: 435, quantity: 1}
+  model: core.result
+  pk: 338
+- fields: {formula: 323, item: 292, quantity: 1}
+  model: core.result
+  pk: 339
+- fields: {formula: 324, item: 358, quantity: 1}
+  model: core.result
+  pk: 340
+- fields: {formula: 325, item: 362, quantity: 1}
+  model: core.result
+  pk: 341
+- fields: {formula: 326, item: 428, quantity: 1}
+  model: core.result
+  pk: 342
+- fields: {formula: 327, item: 429, quantity: 1}
+  model: core.result
+  pk: 343
+- fields: {formula: 328, item: 431, quantity: 1}
+  model: core.result
+  pk: 344
+- fields: {formula: 329, item: 364, quantity: 1}
+  model: core.result
+  pk: 345
+- fields: {formula: 330, item: 433, quantity: 1}
+  model: core.result
+  pk: 346
+- fields: {formula: 331, item: 399, quantity: 1}
+  model: core.result
+  pk: 347
+- fields: {formula: 332, item: 398, quantity: 1}
+  model: core.result
+  pk: 348
+- fields: {formula: 333, item: 397, quantity: 1}
+  model: core.result
+  pk: 349
+- fields: {formula: 334, item: 396, quantity: 1}
+  model: core.result
+  pk: 350
+- fields: {formula: 335, item: 110, quantity: 1}
+  model: core.result
+  pk: 351
+- fields: {formula: 335, item: 164, quantity: 1}
+  model: core.result
+  pk: 352
+- fields: {formula: 336, item: 395, quantity: 1}
+  model: core.result
+  pk: 353
+- fields: {formula: 337, item: 394, quantity: 1}
+  model: core.result
+  pk: 354
+- fields: {formula: 338, item: 393, quantity: 1}
+  model: core.result
+  pk: 355
+- fields: {formula: 339, item: 391, quantity: 1}
+  model: core.result
+  pk: 356
+- fields: {formula: 340, item: 389, quantity: 1}
+  model: core.result
+  pk: 357
+- fields: {formula: 341, item: 388, quantity: 1}
+  model: core.result
+  pk: 358
+- fields: {formula: 342, item: 384, quantity: 1}
+  model: core.result
+  pk: 359
+- fields: {formula: 343, item: 382, quantity: 1}
+  model: core.result
+  pk: 360
+- fields: {formula: 344, item: 381, quantity: 1}
+  model: core.result
+  pk: 361
+- fields: {formula: 345, item: 379, quantity: 1}
+  model: core.result
+  pk: 362
+- fields: {formula: 346, item: 378, quantity: 1}
+  model: core.result
+  pk: 363
+- fields: {formula: 347, item: 204, quantity: 1}
+  model: core.result
+  pk: 364
+- fields: {formula: 8, item: 99, quantity: 1}
+  model: core.result
+  pk: 368
+- fields: {formula: 251, item: 317, quantity: 1}
+  model: core.result
+  pk: 369
+- fields: {formula: 349, item: 140, quantity: 1}
+  model: core.result
+  pk: 370
+- fields: {formula: 350, item: 256, quantity: 1}
+  model: core.result
+  pk: 371
+- fields: {formula: 165, item: 268, quantity: 1}
+  model: core.result
+  pk: 372
+- fields: {formula: 351, item: 356, quantity: 1}
+  model: core.result
+  pk: 373
+- fields: {formula: 351, item: 66, quantity: 1}
+  model: core.result
+  pk: 374
+

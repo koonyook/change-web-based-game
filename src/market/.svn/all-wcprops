@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/change/!svn/ver/828/trunk/newtype/market
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/change/!svn/ver/497/trunk/newtype/market/admin.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/change/!svn/ver/828/trunk/newtype/market/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/change/!svn/ver/57/trunk/newtype/market/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/change/!svn/ver/57/trunk/newtype/market/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/change/!svn/ver/209/trunk/newtype/market/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/change/!svn/ver/499/trunk/newtype/market/urls.py
+END

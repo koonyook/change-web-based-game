@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/change/!svn/ver/742/trunk/newtype/core_union
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/change/!svn/ver/497/trunk/newtype/core_union/admin.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/change/!svn/ver/742/trunk/newtype/core_union/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/change/!svn/ver/124/trunk/newtype/core_union/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/change/!svn/ver/124/trunk/newtype/core_union/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/change/!svn/ver/584/trunk/newtype/core_union/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/change/!svn/ver/497/trunk/newtype/core_union/urls.py
+END

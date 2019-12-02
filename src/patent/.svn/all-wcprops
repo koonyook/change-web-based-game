@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/change/!svn/ver/669/trunk/newtype/patent
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/change/!svn/ver/497/trunk/newtype/patent/admin.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/change/!svn/ver/669/trunk/newtype/patent/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/change/!svn/ver/108/trunk/newtype/patent/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/change/!svn/ver/108/trunk/newtype/patent/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/change/!svn/ver/666/trunk/newtype/patent/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/change/!svn/ver/504/trunk/newtype/patent/urls.py
+END

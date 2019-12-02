@@ -1,0 +1,3 @@
+<div id="location_sea" class="location">
+	<input type="button" id="sea_button" />
+</div>

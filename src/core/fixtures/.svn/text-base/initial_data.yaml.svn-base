@@ -1,0 +1,351 @@
+# Server-wide modifiers
+- model: core.ServerStatus
+  pk: 1
+  fields:
+    name: storage_modifier
+    value: 0
+- model: core.ServerStatus
+  pk: 2
+  fields:
+    name: energy_modifier
+    value: 0
+- model: core.ServerStatus
+  pk: 3
+  fields:
+    name: travel_cost_modifier
+    value: 0
+- model: core.ServerStatus
+  pk: 4
+  fields:
+    name: research_cost_modifier
+    value: 0
+- model: core.ServerStatus
+  pk: 40
+  fields:
+    name: harvest_cost_modifier
+    value: 0
+    
+# Server statuses
+- model: core.ServerStatus
+  pk: 5
+  fields:
+    name: weather_id
+    value: 1
+- model: core.ServerStatus
+  pk: 6
+  fields:
+    name: age_id
+    value: 1
+
+# Enabled feature
+- model: core.ServerStatus
+  pk: 7
+  fields:
+    name: market_enabled
+    value: 0
+- model: core.ServerStatus
+  pk: 8
+  fields:
+    name: union_enabled
+    value: 0
+- model: core.ServerStatus
+  pk: 9
+  fields:
+    name: patent_enabled
+    value: 0
+    
+- model: core.ServerStatus
+  pk: 10
+  fields:
+    name: bank_enabled
+    value: 0
+
+- model: core.ServerStatus
+  pk: 11
+  fields:
+    name: money_enabled
+    value: 0
+
+- model: core.ServerStatus
+  pk: 12
+  fields:
+    name: mechanical_energy_enabled
+    value: 0
+
+# For wind turbine
+- model: core.ServerStatus
+  pk: 13
+  fields:
+    name: wind_speed
+    value: 0
+    
+- model: core.ServerStatus
+  pk: 14
+  fields:
+    name: server_event_id
+    value: 1
+    
+# Pollutions and Natural Resources
+- model: core.ServerStatus
+  pk: 15
+  fields:
+    name: air_pollution
+    value: 0
+- model: core.ServerStatus
+  pk: 16
+  fields:
+    name: max_air_pollution
+    value: 1000000
+- model: core.ServerStatus
+  pk: 17
+  fields:
+    name: water_pollution
+    value: 0
+- model: core.ServerStatus
+  pk: 18
+  fields:
+    name: max_water_pollution
+    value: 1000000
+- model: core.ServerStatus
+  pk: 19
+  fields:
+    name: earth_pollution
+    value: 0
+- model: core.ServerStatus
+  pk: 20
+  fields:
+    name: max_earth_pollution
+    value: 1000000
+- model: core.ServerStatus
+  pk: 21
+  fields:
+    name: natural_resources
+    value: 1000000
+- model: core.ServerStatus
+  pk: 22
+  fields:
+    name: max_natural_resources
+    value: 1000000
+- model: core.ServerStatus
+  pk: 23
+  fields:
+    name: natural_resources_regeneration_rate
+    value: 150
+- model: core.ServerStatus
+  pk: 24
+  fields:
+    name: air_pollution_degeneration_rate
+    value: 500
+- model: core.ServerStatus
+  pk: 25
+  fields:
+    name: water_pollution_degeneration_rate
+    value: 500
+- model: core.ServerStatus
+  pk: 26
+  fields:
+    name: earth_pollution_degeneration_rate
+    value: 500
+- model: core.ServerStatus
+  pk: 27
+  fields:
+    name: temperature
+    value: 28.0
+# For water turbine
+- model: core.ServerStatus
+  pk: 28
+  fields:
+    name: rain_rate
+    value: 0.0
+# Variables
+- model: core.ServerStatus
+  pk: 29
+  fields:
+    name: images_path
+    value: /media/images/
+
+- model: core.ServerStatus
+  pk: 30
+  fields:
+    name: middle_age_start
+    value: 0
+
+- model: core.ServerStatus
+  pk: 31
+  fields:
+    name: industrialism_start
+    value: 0
+
+- model: core.ServerStatus
+  pk: 32
+  fields:
+    name: environvent_found
+    value: 0
+
+- model: core.ServerStatus
+  pk: 33
+  fields:
+    name: tax_rate
+    value: 0.01
+    
+- model: core.ServerStatus
+  pk: 34
+  fields: 
+    name: disease_chance
+    value: 30
+    
+- model: core.ServerStatus
+  pk: 35
+  fields: 
+    name: disaster_modifier
+    value: 1.0
+
+- model: core.ServerStatus
+  pk: 36
+  fields:
+    name: pollution_state_id
+    value: 1
+    
+- model: core.ServerStatus
+  pk: 37
+  fields:
+    name: last_cron
+    value: "2009-12-10 19:59:49"
+    
+- model: core.ServerStatus
+  pk: 38
+  fields:
+    name: game_over
+    value: 0
+    
+- model: core.ServerStatus
+  pk: 39
+  fields:
+    name: game_over_date
+    value: ""
+    
+- model: core.ServerStatus
+  pk: 41
+  fields:
+    name: start_date
+    value: "2010-01-01 00:00:00"
+    
+# Server Events
+- model: core.ServerEvent
+  pk: 1
+  fields:
+    name: Normal
+    description: Normal is best.
+
+# Locations
+- model: core.Location
+  pk: 1
+  fields:
+    name: Home
+    description: Home, sweet home.
+- model: core.Location
+  pk: 2
+  fields:
+    name: Market
+    description: Market
+- model: core.Location
+  pk: 3
+  fields:
+    name: Union
+    description: Union
+- model: core.Location
+  pk: 4
+  fields:
+    name: Mountain
+    description: Mountain
+- model: core.Location
+  pk: 5
+  fields:
+    name: Sea
+    description: Sea
+- model: core.Location
+  pk: 6
+  fields:
+    name: Forest
+    description: Forest
+- model: core.Location
+  pk: 7
+  fields:
+    name: River
+    description: River
+    
+# Ages
+- model: core.Age
+  pk: 1
+  fields:
+    name: StoneAge
+
+- model: core.Age
+  pk: 2
+  fields:
+    name: MiddleAge
+
+- model: core.Age
+  pk: 3
+  fields:
+    name: Industrialism
+
+- model: core.Age
+  pk: 4
+  fields:
+    name: DarkAge
+
+- model: core.Age
+  pk: 5
+  fields:
+    name: Renaissance
+
+# Weathers
+- model: core.Weather
+  pk: 1
+  fields:
+    name: Sunny
+- model: core.Weather
+  pk: 2
+  fields:
+    name: Cloudy
+- model: core.Weather
+  pk: 3
+  fields:
+    name: Raining
+- model: core.Weather
+  pk: 4
+  fields:
+    name: Snowing
+    
+# PollutionState
+- model: core.PollutionState
+  pk: 1
+  fields:
+    name: Normal
+    next_at: 65
+    previous_at: -99999
+- model: core.PollutionState
+  pk: 2
+  fields:
+    name: Warning
+    next_at: 70
+    previous_at: 50
+- model: core.PollutionState
+  pk: 3
+  fields:
+    name: Dangerous
+    next_at: 80
+    previous_at: 60
+- model: core.PollutionState
+  pk: 4
+  fields:
+    name: Emergency
+    next_at: 100
+    previous_at: 70
+- model: core.PollutionState
+  pk: 5
+  fields:
+    name: Critical
+    previous_at: 80
+    next_at: 99999

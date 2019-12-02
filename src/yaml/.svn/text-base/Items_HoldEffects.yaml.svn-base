@@ -1,0 +1,19 @@
+- fields: {effect: 12, item: 351, value: '{ ''rate'':25 }'}
+  model: core.items_holdeffects
+  pk: 2
+- fields: {effect: 11, item: 384, value: '{ ''type'':''water'', ''magnitude'':1 }'}
+  model: core.items_holdeffects
+  pk: 3
+- fields: {effect: 12, item: 394, value: '{ ''rate'':95 }'}
+  model: core.items_holdeffects
+  pk: 4
+- fields: {effect: 11, item: 399, value: '{ ''type'':''solar'', ''magnitude'':1 }'}
+  model: core.items_holdeffects
+  pk: 5
+- fields: {effect: 11, item: 406, value: '{ ''type'':''wind'', ''magnitude'':1 }'}
+  model: core.items_holdeffects
+  pk: 6
+- fields: {effect: 11, item: 408, value: '{ ''type'':''water'', ''magnitude'':2 }'}
+  model: core.items_holdeffects
+  pk: 7
+

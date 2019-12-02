@@ -1,0 +1,1 @@
+python manage.py dumpdata auth.user --format yaml --indent 2 > yaml/chart.yaml

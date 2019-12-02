@@ -1,0 +1,1373 @@
+- fields: {copy_cost: 1, formula: 1, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 1
+- fields: {copy_cost: 2, formula: 2, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 2
+- fields: {copy_cost: 3, formula: 3, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 110, status: 0, union: null}
+  model: patent.patent
+  pk: 3
+- fields: {copy_cost: 3, formula: 4, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 120, status: 0, union: null}
+  model: patent.patent
+  pk: 4
+- fields: {copy_cost: 3, formula: 5, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 5
+- fields: {copy_cost: 5, formula: 7, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 150, status: 0, union: null}
+  model: patent.patent
+  pk: 6
+- fields: {copy_cost: 10, formula: 8, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 200, status: 0, union: null}
+  model: patent.patent
+  pk: 7
+- fields: {copy_cost: 15, formula: 9, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 250, status: 0, union: null}
+  model: patent.patent
+  pk: 8
+- fields: {copy_cost: 3, formula: 10, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 110, status: 0, union: null}
+  model: patent.patent
+  pk: 9
+- fields: {copy_cost: 10, formula: 118, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 200, status: 0, union: null}
+  model: patent.patent
+  pk: 10
+- fields: {copy_cost: 25, formula: 117, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 250, status: 0, union: null}
+  model: patent.patent
+  pk: 11
+- fields: {copy_cost: 30, formula: 116, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 1000, status: 0, union: null}
+  model: patent.patent
+  pk: 12
+- fields: {copy_cost: 30, formula: 115, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 1000, status: 0, union: null}
+  model: patent.patent
+  pk: 13
+- fields: {copy_cost: 15, formula: 114, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 300, status: 0, union: null}
+  model: patent.patent
+  pk: 14
+- fields: {copy_cost: 100, formula: 113, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 1500, status: 0, union: null}
+  model: patent.patent
+  pk: 15
+- fields: {copy_cost: 11, formula: 112, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 800, status: 0, union: null}
+  model: patent.patent
+  pk: 16
+- fields: {copy_cost: 1, formula: 111, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 17
+- fields: {copy_cost: 1, formula: 110, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 18
+- fields: {copy_cost: 1, formula: 109, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 19
+- fields: {copy_cost: 1, formula: 108, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 20
+- fields: {copy_cost: 1, formula: 107, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 21
+- fields: {copy_cost: 1, formula: 106, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 22
+- fields: {copy_cost: 1, formula: 105, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 23
+- fields: {copy_cost: 1, formula: 348, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 347
+- fields: {copy_cost: 1, formula: 103, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 25
+- fields: {copy_cost: 1, formula: 102, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 26
+- fields: {copy_cost: 1, formula: 101, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 27
+- fields: {copy_cost: 1, formula: 100, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 28
+- fields: {copy_cost: 1, formula: 99, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 29
+- fields: {copy_cost: 1, formula: 98, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 30
+- fields: {copy_cost: 1, formula: 97, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 31
+- fields: {copy_cost: 1, formula: 96, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 32
+- fields: {copy_cost: 1, formula: 95, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 33
+- fields: {copy_cost: 1, formula: 94, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 34
+- fields: {copy_cost: 1, formula: 93, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 35
+- fields: {copy_cost: 1, formula: 92, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 36
+- fields: {copy_cost: 1, formula: 91, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 37
+- fields: {copy_cost: 1, formula: 90, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 38
+- fields: {copy_cost: 1, formula: 89, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 39
+- fields: {copy_cost: 1, formula: 88, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 40
+- fields: {copy_cost: 1, formula: 87, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 41
+- fields: {copy_cost: 1, formula: 86, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 42
+- fields: {copy_cost: 1, formula: 85, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 43
+- fields: {copy_cost: 1, formula: 84, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 44
+- fields: {copy_cost: 1, formula: 83, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 45
+- fields: {copy_cost: 1, formula: 82, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 46
+- fields: {copy_cost: 1, formula: 81, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 47
+- fields: {copy_cost: 1, formula: 80, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 48
+- fields: {copy_cost: 1, formula: 79, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 49
+- fields: {copy_cost: 1, formula: 78, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 50
+- fields: {copy_cost: 1, formula: 77, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 51
+- fields: {copy_cost: 1, formula: 76, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 52
+- fields: {copy_cost: 1, formula: 75, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 53
+- fields: {copy_cost: 1, formula: 74, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 54
+- fields: {copy_cost: 1, formula: 73, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 55
+- fields: {copy_cost: 1, formula: 72, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 56
+- fields: {copy_cost: 1, formula: 71, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 57
+- fields: {copy_cost: 1, formula: 70, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 58
+- fields: {copy_cost: 1, formula: 69, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 59
+- fields: {copy_cost: 1, formula: 68, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 60
+- fields: {copy_cost: 1, formula: 67, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 61
+- fields: {copy_cost: 1, formula: 66, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 62
+- fields: {copy_cost: 1, formula: 65, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 63
+- fields: {copy_cost: 1, formula: 64, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 64
+- fields: {copy_cost: 1, formula: 63, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 65
+- fields: {copy_cost: 1, formula: 62, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 66
+- fields: {copy_cost: 1, formula: 61, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 67
+- fields: {copy_cost: 1, formula: 60, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 68
+- fields: {copy_cost: 1, formula: 59, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 69
+- fields: {copy_cost: 1, formula: 58, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 70
+- fields: {copy_cost: 1, formula: 57, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 71
+- fields: {copy_cost: 1, formula: 56, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 72
+- fields: {copy_cost: 1, formula: 55, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 73
+- fields: {copy_cost: 1, formula: 54, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 74
+- fields: {copy_cost: 1, formula: 53, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 75
+- fields: {copy_cost: 1, formula: 52, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 76
+- fields: {copy_cost: 1, formula: 51, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 77
+- fields: {copy_cost: 1, formula: 50, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 78
+- fields: {copy_cost: 1, formula: 49, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 79
+- fields: {copy_cost: 1, formula: 48, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 80
+- fields: {copy_cost: 1, formula: 47, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 81
+- fields: {copy_cost: 1, formula: 46, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 82
+- fields: {copy_cost: 1, formula: 45, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 83
+- fields: {copy_cost: 1, formula: 44, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 84
+- fields: {copy_cost: 1, formula: 43, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 85
+- fields: {copy_cost: 1, formula: 42, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 86
+- fields: {copy_cost: 1, formula: 41, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 87
+- fields: {copy_cost: 1, formula: 40, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 88
+- fields: {copy_cost: 1, formula: 39, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 89
+- fields: {copy_cost: 1, formula: 38, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 90
+- fields: {copy_cost: 1, formula: 37, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 91
+- fields: {copy_cost: 1, formula: 36, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 92
+- fields: {copy_cost: 1, formula: 35, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 93
+- fields: {copy_cost: 1, formula: 34, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 94
+- fields: {copy_cost: 1, formula: 33, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 95
+- fields: {copy_cost: 1, formula: 32, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 96
+- fields: {copy_cost: 1, formula: 31, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 97
+- fields: {copy_cost: 1, formula: 30, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 98
+- fields: {copy_cost: 1, formula: 29, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 99
+- fields: {copy_cost: 1, formula: 28, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 100
+- fields: {copy_cost: 1, formula: 27, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 101
+- fields: {copy_cost: 1, formula: 26, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 102
+- fields: {copy_cost: 1, formula: 25, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 103
+- fields: {copy_cost: 1, formula: 24, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 104
+- fields: {copy_cost: 1, formula: 23, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 105
+- fields: {copy_cost: 1, formula: 22, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 106
+- fields: {copy_cost: 1, formula: 21, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 107
+- fields: {copy_cost: 1, formula: 20, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 108
+- fields: {copy_cost: 1, formula: 19, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 109
+- fields: {copy_cost: 1, formula: 18, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 110
+- fields: {copy_cost: 1, formula: 17, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 111
+- fields: {copy_cost: 1, formula: 16, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 112
+- fields: {copy_cost: 1, formula: 15, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 113
+- fields: {copy_cost: 1, formula: 14, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 114
+- fields: {copy_cost: 1, formula: 13, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 115
+- fields: {copy_cost: 1, formula: 12, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 116
+- fields: {copy_cost: 1, formula: 11, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 117
+- fields: {copy_cost: 1, formula: 119, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 118
+- fields: {copy_cost: 1, formula: 120, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 119
+- fields: {copy_cost: 1, formula: 121, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 120
+- fields: {copy_cost: 1, formula: 122, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 121
+- fields: {copy_cost: 1, formula: 123, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 122
+- fields: {copy_cost: 1, formula: 124, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 123
+- fields: {copy_cost: 1, formula: 125, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 124
+- fields: {copy_cost: 1, formula: 126, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 125
+- fields: {copy_cost: 1, formula: 127, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 126
+- fields: {copy_cost: 1, formula: 128, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 127
+- fields: {copy_cost: 1, formula: 129, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 128
+- fields: {copy_cost: 1, formula: 130, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 129
+- fields: {copy_cost: 1, formula: 131, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 130
+- fields: {copy_cost: 1, formula: 132, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 131
+- fields: {copy_cost: 1, formula: 133, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 132
+- fields: {copy_cost: 1, formula: 134, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 133
+- fields: {copy_cost: 1, formula: 135, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 134
+- fields: {copy_cost: 1, formula: 136, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 135
+- fields: {copy_cost: 1, formula: 137, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 136
+- fields: {copy_cost: 1, formula: 138, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 137
+- fields: {copy_cost: 1, formula: 139, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 138
+- fields: {copy_cost: 1, formula: 140, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 139
+- fields: {copy_cost: 1, formula: 141, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 140
+- fields: {copy_cost: 1, formula: 142, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 141
+- fields: {copy_cost: 1, formula: 143, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 142
+- fields: {copy_cost: 1, formula: 144, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 143
+- fields: {copy_cost: 1, formula: 145, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 144
+- fields: {copy_cost: 1, formula: 146, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 145
+- fields: {copy_cost: 1, formula: 147, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 146
+- fields: {copy_cost: 1, formula: 148, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 147
+- fields: {copy_cost: 1, formula: 149, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 148
+- fields: {copy_cost: 1, formula: 150, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 149
+- fields: {copy_cost: 1, formula: 153, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 152
+- fields: {copy_cost: 1, formula: 152, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 151
+- fields: {copy_cost: 1, formula: 154, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 153
+- fields: {copy_cost: 1, formula: 155, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 154
+- fields: {copy_cost: 1, formula: 156, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 155
+- fields: {copy_cost: 1, formula: 157, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 156
+- fields: {copy_cost: 1, formula: 158, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 157
+- fields: {copy_cost: 1, formula: 159, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 158
+- fields: {copy_cost: 1, formula: 160, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 159
+- fields: {copy_cost: 1, formula: 161, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 160
+- fields: {copy_cost: 1, formula: 162, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 161
+- fields: {copy_cost: 1, formula: 163, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 162
+- fields: {copy_cost: 1, formula: 166, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 165
+- fields: {copy_cost: 1, formula: 165, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 164
+- fields: {copy_cost: 1, formula: 167, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 166
+- fields: {copy_cost: 1, formula: 168, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 167
+- fields: {copy_cost: 1, formula: 169, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 168
+- fields: {copy_cost: 1, formula: 170, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 169
+- fields: {copy_cost: 1, formula: 171, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 170
+- fields: {copy_cost: 1, formula: 172, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 171
+- fields: {copy_cost: 1, formula: 173, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 172
+- fields: {copy_cost: 1, formula: 174, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 173
+- fields: {copy_cost: 1, formula: 175, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 174
+- fields: {copy_cost: 1, formula: 176, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 175
+- fields: {copy_cost: 1, formula: 177, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 176
+- fields: {copy_cost: 1, formula: 178, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 177
+- fields: {copy_cost: 1, formula: 179, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 178
+- fields: {copy_cost: 1, formula: 180, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 179
+- fields: {copy_cost: 1, formula: 181, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 180
+- fields: {copy_cost: 1, formula: 182, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 181
+- fields: {copy_cost: 1, formula: 183, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 182
+- fields: {copy_cost: 1, formula: 184, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 183
+- fields: {copy_cost: 1, formula: 185, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 184
+- fields: {copy_cost: 1, formula: 186, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 185
+- fields: {copy_cost: 1, formula: 188, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 187
+- fields: {copy_cost: 1, formula: 189, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 188
+- fields: {copy_cost: 1, formula: 190, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 189
+- fields: {copy_cost: 1, formula: 191, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 190
+- fields: {copy_cost: 1, formula: 192, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 191
+- fields: {copy_cost: 1, formula: 193, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 192
+- fields: {copy_cost: 1, formula: 194, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 193
+- fields: {copy_cost: 1, formula: 195, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 194
+- fields: {copy_cost: 1, formula: 196, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 195
+- fields: {copy_cost: 1, formula: 197, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 196
+- fields: {copy_cost: 1, formula: 198, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 197
+- fields: {copy_cost: 1, formula: 199, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 198
+- fields: {copy_cost: 1, formula: 200, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 199
+- fields: {copy_cost: 1, formula: 201, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 200
+- fields: {copy_cost: 1, formula: 202, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 201
+- fields: {copy_cost: 1, formula: 203, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 202
+- fields: {copy_cost: 1, formula: 204, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 203
+- fields: {copy_cost: 1, formula: 205, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 204
+- fields: {copy_cost: 1, formula: 206, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 205
+- fields: {copy_cost: 1, formula: 207, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 206
+- fields: {copy_cost: 1, formula: 208, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 207
+- fields: {copy_cost: 1, formula: 209, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 208
+- fields: {copy_cost: 1, formula: 210, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 209
+- fields: {copy_cost: 1, formula: 211, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 210
+- fields: {copy_cost: 1, formula: 212, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 211
+- fields: {copy_cost: 1, formula: 214, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 213
+- fields: {copy_cost: 1, formula: 215, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 214
+- fields: {copy_cost: 1, formula: 216, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 215
+- fields: {copy_cost: 1, formula: 217, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 216
+- fields: {copy_cost: 1, formula: 218, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 217
+- fields: {copy_cost: 1, formula: 219, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 218
+- fields: {copy_cost: 1, formula: 220, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 219
+- fields: {copy_cost: 1, formula: 221, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 220
+- fields: {copy_cost: 1, formula: 222, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 221
+- fields: {copy_cost: 1, formula: 223, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 222
+- fields: {copy_cost: 1, formula: 224, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 223
+- fields: {copy_cost: 1, formula: 225, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 224
+- fields: {copy_cost: 1, formula: 226, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 225
+- fields: {copy_cost: 1, formula: 227, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 226
+- fields: {copy_cost: 1, formula: 228, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 227
+- fields: {copy_cost: 1, formula: 229, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 228
+- fields: {copy_cost: 1, formula: 230, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 229
+- fields: {copy_cost: 1, formula: 231, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 230
+- fields: {copy_cost: 1, formula: 232, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 231
+- fields: {copy_cost: 1, formula: 233, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 232
+- fields: {copy_cost: 1, formula: 234, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 233
+- fields: {copy_cost: 1, formula: 235, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 234
+- fields: {copy_cost: 1, formula: 236, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 235
+- fields: {copy_cost: 1, formula: 237, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 236
+- fields: {copy_cost: 1, formula: 238, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 237
+- fields: {copy_cost: 1, formula: 239, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 238
+- fields: {copy_cost: 1, formula: 240, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 239
+- fields: {copy_cost: 1, formula: 241, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 240
+- fields: {copy_cost: 1, formula: 242, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 241
+- fields: {copy_cost: 1, formula: 243, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 242
+- fields: {copy_cost: 1, formula: 244, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 243
+- fields: {copy_cost: 1, formula: 245, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 244
+- fields: {copy_cost: 1, formula: 246, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 245
+- fields: {copy_cost: 1, formula: 247, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 246
+- fields: {copy_cost: 1, formula: 248, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 247
+- fields: {copy_cost: 1, formula: 249, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 248
+- fields: {copy_cost: 1, formula: 252, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 251
+- fields: {copy_cost: 1, formula: 251, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 250
+- fields: {copy_cost: 1, formula: 253, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 252
+- fields: {copy_cost: 1, formula: 254, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 253
+- fields: {copy_cost: 1, formula: 255, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 254
+- fields: {copy_cost: 1, formula: 256, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 255
+- fields: {copy_cost: 1, formula: 257, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 256
+- fields: {copy_cost: 1, formula: 258, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 257
+- fields: {copy_cost: 1, formula: 259, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 258
+- fields: {copy_cost: 1, formula: 260, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 259
+- fields: {copy_cost: 1, formula: 261, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 260
+- fields: {copy_cost: 1, formula: 262, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 261
+- fields: {copy_cost: 1, formula: 263, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 262
+- fields: {copy_cost: 1, formula: 264, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 263
+- fields: {copy_cost: 1, formula: 265, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 264
+- fields: {copy_cost: 1, formula: 266, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 265
+- fields: {copy_cost: 1, formula: 267, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 266
+- fields: {copy_cost: 1, formula: 268, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 267
+- fields: {copy_cost: 1, formula: 269, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 268
+- fields: {copy_cost: 1, formula: 270, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 269
+- fields: {copy_cost: 1, formula: 271, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 270
+- fields: {copy_cost: 1, formula: 272, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 271
+- fields: {copy_cost: 1, formula: 273, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 272
+- fields: {copy_cost: 1, formula: 274, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 273
+- fields: {copy_cost: 1, formula: 275, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 274
+- fields: {copy_cost: 1, formula: 276, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 275
+- fields: {copy_cost: 1, formula: 277, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 276
+- fields: {copy_cost: 1, formula: 278, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 277
+- fields: {copy_cost: 1, formula: 279, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 278
+- fields: {copy_cost: 1, formula: 280, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 279
+- fields: {copy_cost: 1, formula: 281, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 280
+- fields: {copy_cost: 1, formula: 282, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 281
+- fields: {copy_cost: 1, formula: 283, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 282
+- fields: {copy_cost: 1, formula: 284, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 283
+- fields: {copy_cost: 1, formula: 285, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 284
+- fields: {copy_cost: 1, formula: 286, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 285
+- fields: {copy_cost: 1, formula: 287, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 286
+- fields: {copy_cost: 1, formula: 288, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 287
+- fields: {copy_cost: 1, formula: 289, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 288
+- fields: {copy_cost: 1, formula: 290, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 289
+- fields: {copy_cost: 1, formula: 291, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 290
+- fields: {copy_cost: 1, formula: 292, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 291
+- fields: {copy_cost: 1, formula: 293, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 292
+- fields: {copy_cost: 1, formula: 294, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 293
+- fields: {copy_cost: 1, formula: 295, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 294
+- fields: {copy_cost: 1, formula: 296, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 295
+- fields: {copy_cost: 1, formula: 297, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 296
+- fields: {copy_cost: 1, formula: 298, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 297
+- fields: {copy_cost: 1, formula: 299, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 298
+- fields: {copy_cost: 1, formula: 300, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 299
+- fields: {copy_cost: 1, formula: 301, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 300
+- fields: {copy_cost: 1, formula: 302, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 301
+- fields: {copy_cost: 1, formula: 304, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 303
+- fields: {copy_cost: 1, formula: 305, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 304
+- fields: {copy_cost: 1, formula: 306, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 305
+- fields: {copy_cost: 1, formula: 307, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 306
+- fields: {copy_cost: 1, formula: 308, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 307
+- fields: {copy_cost: 1, formula: 309, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 308
+- fields: {copy_cost: 1, formula: 310, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 309
+- fields: {copy_cost: 1, formula: 311, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 310
+- fields: {copy_cost: 1, formula: 312, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 311
+- fields: {copy_cost: 1, formula: 313, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 312
+- fields: {copy_cost: 1, formula: 314, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 313
+- fields: {copy_cost: 1, formula: 315, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 314
+- fields: {copy_cost: 1, formula: 316, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 315
+- fields: {copy_cost: 1, formula: 317, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 316
+- fields: {copy_cost: 1, formula: 318, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 317
+- fields: {copy_cost: 1, formula: 319, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 318
+- fields: {copy_cost: 1, formula: 320, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 319
+- fields: {copy_cost: 1, formula: 321, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 320
+- fields: {copy_cost: 1, formula: 322, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 321
+- fields: {copy_cost: 1, formula: 323, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 322
+- fields: {copy_cost: 1, formula: 324, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 323
+- fields: {copy_cost: 1, formula: 325, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 324
+- fields: {copy_cost: 1, formula: 326, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 325
+- fields: {copy_cost: 1, formula: 327, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 326
+- fields: {copy_cost: 1, formula: 328, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 327
+- fields: {copy_cost: 1, formula: 329, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 328
+- fields: {copy_cost: 1, formula: 330, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 329
+- fields: {copy_cost: 1, formula: 331, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 330
+- fields: {copy_cost: 1, formula: 332, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 331
+- fields: {copy_cost: 1, formula: 333, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 332
+- fields: {copy_cost: 1, formula: 334, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 333
+- fields: {copy_cost: 1, formula: 335, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 334
+- fields: {copy_cost: 1, formula: 336, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 335
+- fields: {copy_cost: 1, formula: 337, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 336
+- fields: {copy_cost: 1, formula: 338, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 337
+- fields: {copy_cost: 1, formula: 339, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 338
+- fields: {copy_cost: 1, formula: 340, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 339
+- fields: {copy_cost: 1, formula: 341, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 340
+- fields: {copy_cost: 1, formula: 342, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 341
+- fields: {copy_cost: 1, formula: 343, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 342
+- fields: {copy_cost: 1, formula: 344, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 343
+- fields: {copy_cost: 1, formula: 345, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 344
+- fields: {copy_cost: 1, formula: 346, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 345
+- fields: {copy_cost: 1, formula: 347, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 346
+- fields: {copy_cost: 1, formula: 349, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 348
+- fields: {copy_cost: 1, formula: 350, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 349
+- fields: {copy_cost: 1, formula: 351, found_at: null, founder: null, is_available: 1,
+    player: null, regis_at: null, regis_cost: 100, status: 0, union: null}
+  model: patent.patent
+  pk: 350
+

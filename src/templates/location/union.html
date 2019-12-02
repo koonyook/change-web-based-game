@@ -1,0 +1,86 @@
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#menu_ucswitch_button').show();
+	});
+</script>
+<div id="location_union" class="location">
+	<div id="doc_bg">
+		<div id="doc_content">
+			<div id="doc_research" class="doc_object button"><img src="/media/images/doc/research.png"></div>
+			<div id="doc_forum" class="doc_object button"><img src="/media/images/doc/forum.png"></div>
+			<div id="doc_setting" class="doc_object button"><img src="/media/images/doc/setting.png"></div>
+			<div id="doc_market" class="doc_object button"><img src="/media/images/doc/market.png"></div>
+		</div>
+	</div>
+	<div id="create_union_button"></div>
+	<div id="create_union_box">
+		<a href="#" id="create_union_boxtitle">ก่อตั้งบริษัท</a>
+		<div id="create_union_boxdescription">ชื่อบริษัท:</div><input type="text" id="create_union_boxname" name="create_union_name" />
+		<input type="button" id="create_union_boxok" value="จดทะเบียน"/>
+		<a id="create_union_boxclose" href="#">X</a>
+	</div>
+	<div id="forum_box">
+		<div id="forum_box_show_topic" class="forum_box_content">
+			<div id="forum_box_new_topic_button" class="button">ตั้งกระทู้</div>
+			<div id="forum_box_show_topic_list" style="margin-top:30px;height:335px;overflow-x:hidden;overflow-y:auto;"></div>
+		</div>
+		<div id="forum_box_new_topic" class="forum_box_content">
+			<div id="forum_box_new_topic_title_desc">หัวข้อ:</div><input type="text" id="forum_box_new_topic_title" name="forum_box_new_topic_title" />
+			<div id="forum_box_new_topic_message_desc">ข้อความ:</div>
+			<div><textarea type="text" id="forum_box_new_topic_message" name="forum_box_message"></textarea></div>
+			<div id="forum_box_new_topic_submit" class="button">ตั้งกระทู้</div>
+		</div>
+		<div id="forum_box_read_topic" class="forum_box_content">
+			<div id="forum_box_read_topic_title" class="button"></div>
+			<hr class="forum_box_read_topic_hr" size="1"/><div id="forum_box_read_topic_message"></div>
+			<div id="forum_box_read_topic_reply" class="button">ตอบกระทู้</div>
+		</div>
+		<div id="forum_box_reply_topic" class="forum_box_content">
+			<div style="clear:both"><div id="forum_box_reply_topic_title_desc">หัวข้อ:</div><div id="forum_box_reply_topic_title"></div></div>
+			<div style="clear:both"><div id="forum_box_reply_topic_message_desc">ข้อความ:</div></div><textarea id="forum_box_reply_topic_message"></textarea>
+			<div id="forum_box_reply_topic_reply" class="button">ตอบกระทู้</div>
+		</div>
+		<a id="forum_box_close" href="#">X</a>
+	</div>
+	<div id="setting_box">
+		<input type="checkbox" id="setting_auto_share" name="auto_share" value="auto_share"/><span id="union_auto_share_desc">กระจายส่วนแบ่งอัตโนมัติ</span>
+		<div id="setting_person"></div>
+		<div id="setting_save" class="button">บันทึก</div>
+		<a id="setting_box_close" href="#">X</a>
+	</div>
+	<div id="union_market_box">
+		<div id="view_buy_shop_button" class="union_market_each button">ดูร้านรับซื้อ</div>
+		<div id="view_sell_shop_button" class="union_market_each button">ดูร้านขาย</div>
+		<div id="set_buy_shop_button" class="union_market_each button">ตั้งร้านรับซื้อ</div>
+		<div id="set_sell_shop_button" class="union_market_each button">ตั้งร้านขาย</div>
+		<div id="close_shop_button" class="union_market_each button">ปิด</div>
+	</div>
+	<div id="view_buy_shop_box"></div>
+	<div id="view_sell_shop_box"></div>
+	<div id="set_buy_shop_box">
+		ไอเท็ม
+		<select id="union_buy_box_slots"></select>
+		<div>ราคา <input type="text" name="price" id="union_buy_box_price" value="0"/></div>
+		<div>เลเวล <input type="text" name="lvl" id="union_buy_box_lvl" value="0"/></div>
+		<div>จำนวน <input type="text" name="quantity" id="union_buy_box_quantity" value="0"/></div>
+		<div>ต้องเต็มประสิทธิภาพ <input type="checkbox" name="must_complete" id="union_buy_box_must_complete" value="must_complete" /></div>
+		<div id="union_buy_box_submit" class="button">ตั้งซื้อ</div>
+		<div id="set_buy_shop_box_close" class="button">X</div>
+	</div>
+	<div id="set_sell_shop_box">
+		<div id="union_market_set_sell_shop_box_name">ไอเท็ม</div>
+		<div id="union_sell_box_slots" class="item_list"></div>
+		<div><input type="text" name="price" id="union_sell_box_value" value="0"/></div>
+		<div id="union_sell_box_submit" class="button">ตั้งขาย</div>
+		<div id="set_sell_shop_box_close" class="button">X</div>
+	</div>
+	<div id="union_research_box">
+		<div id="union_research_box_title" class="button">ห้องปฏิบัติการ</div>
+		<div id="union_research_box_close" class="button">X</div>
+		<div id="union_research_box_slots_bg"><div id="union_research_box_slots" class="item_list">
+		</div></div>
+		<div id="union_research_box_catas_slots_bg"><div id="union_research_box_catas_slots" class="item_list">
+		</div></div>
+		<div id="union_research_box_submit" class="button">Research</div>
+	</div>
+</div>

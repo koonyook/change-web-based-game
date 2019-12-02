@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/change/!svn/ver/863/trunk/newtype/helpers
+END
+trim_time.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/change/!svn/ver/574/trunk/newtype/helpers/trim_time.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/change/!svn/ver/21/trunk/newtype/helpers/__init__.py
+END
+http.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/change/!svn/ver/171/trunk/newtype/helpers/http.py
+END
+item_dict.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/change/!svn/ver/827/trunk/newtype/helpers/item_dict.py
+END
+decorators.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/change/!svn/ver/517/trunk/newtype/helpers/decorators.py
+END
+engine.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/change/!svn/ver/886/trunk/newtype/helpers/engine.py
+END
+person.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/change/!svn/ver/209/trunk/newtype/helpers/person.py
+END
+feeds.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/change/!svn/ver/628/trunk/newtype/helpers/feeds.py
+END

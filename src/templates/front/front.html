@@ -1,0 +1,324 @@
+{% extends "front/_base.html" %}
+{% block css %}<link rel="stylesheet" href="/media/css/login.css" type="text/css" />
+<style>
+	div.login_blog_img{
+		background-image: url({{ logo_img_url }});
+	}
+</style>{% endblock %}
+{% block javascript %}<script type="text/javascript">	
+			var myspin=false;
+			var spinx = 0;
+			function startspinworld(){
+				if(myspin)
+				{
+					spinx = (spinx + 6);
+					if(spinx >= 438)
+						spinx -= 438;
+					$('#spinworld').css('background-position',spinx+'px 0px');
+					setTimeout(startspinworld,1);
+				}
+			}
+			function stopspinworld(){
+				if(!myspin)
+				{
+					spinx = (spinx +6)%438;
+					$('#spinworld').css('background-position',spinx+'px 0px');
+					if(spinx != 0)
+						setTimeout(stopspinworld,1);
+					else
+					{
+						$('#spinworld').fadeOut();
+					}
+				}
+			}
+			function spinworld2(){
+				myspin = false;
+				spinx = 0;
+				$('#spinworld').hide();
+			}
+			function spinworld(checkworld){
+				myspin = checkworld;
+				if(myspin)
+				{
+					$('#spinworld').fadeIn();
+					startspinworld();
+				}
+				else
+				{
+					stopspinworld();
+				}
+			}
+			function check_confirmpass(){
+					if( $("#regiscpass").val() == $("#regispass").val())
+					{
+						$("#regiscpass").removeClass("wrongdata");
+						$("#confirm_password").html("");
+						return true;
+					}
+					else
+					{
+						$("#regiscpass").addClass("wrongdata");
+						$("#confirm_password").html("รหัสผ่านไม่ตรง");
+						return false;
+					}
+				}
+
+			function LoadWeather()
+			{
+				$.getJSON("/weather/", function(data) 
+					{
+						$('.bg_body').css("background","url(media/images/bg_"+data+".png)");
+					});
+			}
+
+
+			$(document).ready(function(){
+				LoadWeather();
+				$("#register_button").click(function() {
+						$('#dialog').dialog('open');
+						return false;
+				});	
+				soundManager.debugMode = false;
+				soundManager.url = '/media/swf/';
+				soundManager.onload = function() {
+					soundManager.play('op','/media/music/open_summerlight.mp3');	// Sound OP
+					//soundManager.play('op','/media/music/ai.mp3');	// Sound OP
+				
+				}
+				soundManager.onerror = function() {
+				}
+				
+				// Check Coordinate
+				random_coor = function(){
+					var latitude = Math.ceil(181*Math.random())-90;
+					var longitude = Math.ceil(361*Math.random())-180;
+					$("#x_mark").css("top",""+((90 - latitude)*100/180)+"%");
+					$("#x_mark").css("left",""+((180 + longitude)*100/360)+"%");
+					$("[name=latitude]").val(latitude);
+					$("[name=longitude]").val(longitude);
+				}
+				$("input[name=confirm_password]").change( check_confirmpass );
+				// Dialog
+				$('#dialog').dialog({
+					autoOpen: false,
+					bgiframe: true,
+					modal: true,
+					width: 600,
+					buttons: {
+						"Register": function() { 
+							if(check_confirmpass()==false){
+								return false;
+							}
+							spinworld(true);
+							$.post("{{ register_url }}", $("[name=register_form]").serialize(), 
+								function(data) {
+									spinworld(false);
+									var len = 0;
+									$("#regisuser").removeClass("wrongdata");
+									$("#regispass").removeClass("wrongdata");
+									$("input[name=confirm_password]").removeClass("wrongdata");
+									$("input[name=email]").removeClass("wrongdata");
+									$("#username").html("");
+									$("#password").html("");
+									$("#confirm_password").html("");
+									$("#email").html("");
+									for(var myobj in data)
+									{
+										len++;
+										$("[name="+myobj+"]").addClass("wrongdata");
+										$("#"+myobj+"").html(data[myobj]);
+										
+									}
+									if(len == 0){
+										spinworld2();
+										$('#dialog').dialog("close"); 
+										$('#dialog2').dialog('open');
+										$("#regisuser").val("");
+										$("#regispass").val("");
+										$("#regisemail").val("");
+										$("#regiscpass").val("");
+									}
+								}
+							,'json');
+						},
+						"Random": function() { 
+							random_coor();
+						},
+						"Cancel": function() { 
+							$('#dialog').dialog("close"); 
+						} 
+					}
+				});
+				$('#dialog2').dialog({
+					autoOpen: false,
+					bgiframe: true,
+					modal: true,
+					width: 600,
+					buttons: {
+						"OK": function() { 
+							$(this).dialog("close"); 
+						} 
+					}
+				});
+				// On Load
+				random_coor();
+
+				var cloudMoved = false;
+				var cloud2Moved = false;
+				var cloud3Moved = false;
+				var WAVE_TIME = 6000;
+
+				cloudMove();
+				cloud2Move();
+				cloud3Move();
+				function cloudMove()
+				{
+					if (!cloudMoved)
+					{
+						$("#cloud")
+							.css("left", $("#cloud").offset().left)
+					}
+					
+					$("#cloud")
+						.animate(
+							{
+								left: $("#sky").width()
+							},
+							cloudMoved ? 180000 : 150000,
+							"linear",
+							function()
+							{
+								$(this)
+									.css("left", -parseInt($(this).css("width")))
+								
+								cloudMoved = true;
+								
+								cloudMove();
+							}
+						)
+				}
+				function cloud2Move()
+				{
+					if (!cloud2Moved)
+					{
+						$("#cloud2")
+							.css("left", $("#cloud2").offset().left)
+					}
+					
+					$("#cloud2")
+						.animate(
+							{
+								left: $("#sky").width()
+							},
+							cloud2Moved ? 120000 : 60000,
+							"linear",
+							function()
+							{
+								$(this)
+									.css("left", -parseInt($(this).css("width")))
+								
+								cloud2Moved = true;
+								
+								cloud2Move();
+							}
+						)
+				}
+
+				function cloud3Move()
+				{
+					if (!cloud3Moved)
+					{
+						$("#cloud3")
+							.css("left", $("#cloud3").offset().left)
+					}
+					
+					$("#cloud3")
+						.animate(
+							{
+								left: $("#sky").width()
+							},
+							cloud3Moved ? 400000 : 150000,
+							"linear",
+							function()
+							{
+								$(this)
+									.css("left", -parseInt($(this).css("width")))
+								
+								cloud3Moved = true;
+								
+								cloud3Move();
+							}
+						)
+				}
+				$("#form_login").submit(function(){
+					if($("#form_login").attr("action")=="/user/login/")
+						return true;
+					
+					$("#blackscreen").fadeIn(function(){
+						$("#form_login").attr("action","/user/login/");
+						$('#form_login').submit();
+					});
+				});	
+			});
+</script>{% endblock %}
+{% block content %}
+			<div id="sky">
+				<div id="cloud"></div>
+				<div id="cloud2"></div>
+				<div id="cloud3"></div>
+			</div>
+			<div class="login_blog_center">
+				<div class="login_blog_img"></div>
+				<div class="login_blog">
+					<div class="login_blog_head">Login</div>
+					<div class="login_blog_content">
+						<form id="form_login" action="javascript:void(0)" method="post">
+						<div class="login_blog_form">Username&nbsp;<input name="username" type="text" /></div>
+						<div class="login_blog_form">Password&nbsp;&nbsp;<input name="password" type="password" /></div>
+						<div class="login_blog_form_submit"><input type="submit" id="Login" value="Login" class="login_blog_form_button"/> <input type="button" value="Register" id="register_button" class="login_blog_form_button"/></div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="tagline-container">
+			    <div class="mytext">"สร้างสรรค์งานวิจัยเปลี่ยนโลก เพื่อชิงความเป็นหนึ่ง"</div>
+		    </div>
+			<div class="announcement_blog_center">
+				<div class="announcement_blog_head">Online players</div>
+				<div class="announcement_blog_content">{{ online_players }}</div>
+			</div>
+		</div>
+		<div id="dialog"  title="Register">
+			<p><form name="register_form" id="register_form" method="post" action="#">
+				<table>
+					<tr>
+						<td>User:</td>
+						<td><input name="username" id="regisuser" class="regis_box" type="text" /><div id="username" style="float: right;"></div></td>
+					</tr>
+					<tr>
+						<td>Password:</td>
+						<td><input name="password" id="regispass" class="regis_box" type="password" /><div id="password" style="float: right;"></div></td>
+					</tr>
+					<tr>
+						<td>Confirm Password:</td>
+						<td><input name="confirm_password" id="regiscpass" class="regis_box" type="password" /><div id="confirm_password" style="float: right;"></div></td>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td><input name="email" id="regisemail" class="regis_box" type="text" /><div id="email" style="float: right;"></div></td>
+					</tr>
+					<tr>
+						<td>Coordinate:</td>
+						<td><input name="latitude" id="latitude" type="text" size="5" style="float: left; border: 0px" readonly /><div style="float:left;">,</div><input name="longitude" id="longitude" type="text" size="5" style="float: left;border: 0px" readonly/></td>
+					</tr>
+				</table>
+			</form>
+			<div id="world_map"><div id="world_map_abs"><div id="spinworld"></div><div id="x_mark"><img src="/media/images/register/x_mark.png" /></div><img src="/media/images/register/world_map.gif" /></div></div>
+			</p>
+		</div>
+		<div id="dialog2" title="Register Complete">
+			<p>Register Complete.
+			</p>
+		</div>
+
+{% endblock %}

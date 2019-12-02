@@ -1,0 +1,1428 @@
+.button{
+	cursor:pointer;
+}
+a:active {
+	border: 0px;
+}
+.location{
+	position: absolute;
+	z-index: 10;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	margin-top: 0%;
+	margin-left: 0%;
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+#location_home{
+	background: url(/media/images/location/home_bg.jpg) no-repeat;
+	background-position: center center;
+}
+#location_mountain{
+	background: url(/media/images/location/mountain_bg.jpg);
+	background-position: center left;
+}
+#location_forest{
+	background: url(/media/images/location/forest_bg.jpg);
+	background-position: center left;
+}
+#location_sea{
+	background: url(/media/images/location/sea_bg.jpg);
+	background-position: center left;
+}
+#location_river{
+	background: url(/media/images/location/river_bg.jpg);
+}
+#location_market{
+	background: url(/media/images/location/market_bg.png);
+	background-position: top center;
+}
+#location_union{
+	background: url(/media/images/location/union_bg.jpg);
+}
+#read_patent{
+    text-align: justify;
+	position: absolute;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-image: url(/media/images/dialog/patent.png);
+	display:none;
+	z-index: 100;
+	left: 50%;
+	top: 50%;
+	width: 342px;
+	height: 466px;
+	margin-top: -250px;
+	margin-left: -225px;
+	font-family: verdana,helvetica,arial,sans-serif;
+	padding: 10px;
+}
+#read_patent_container{
+    overflow: auto;
+    width: 310px;
+    height: 370px;
+}
+#read_patent_give_button{
+    margin-top: 10px;
+}
+#read_patent_regis_button{
+    margin-top: 10px;
+}
+#read_patent_name{
+    margin: 0px;
+    padding: 2px 0px;
+    width: 320px;
+    text-align: center;
+}
+#read_patent_description{
+    margin: 4px 0 4px 0px;
+    padding: 0px;
+}
+#read_patent_component{
+    margin: 4px 0 4px 24px;
+    padding: 0px;
+}
+#read_patent_result{
+    margin: 4px 0 4px 24px;
+    padding: 0px;
+}
+#read_patent_close{
+    float: right;
+/*    position: absolute;*/
+/*    margin-left: 296px;*/
+/*    margin-right: 34px;*/
+/*    margin-top: -442px;*/
+/*    margin-left: 289;*/
+    right: 42px;
+    top: 8px;
+    position: absolute;
+}
+.close_button{
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-image: url(/media/images/dialog/x.png);
+}
+.close_button:hover{
+    background-image: url(/media/images/dialog/x_hover.png);
+}
+.patent_row{
+    margin: 4px;
+    padding: 0px;
+}
+.place{
+	position: absolute;
+	z-index: 20;
+	left: 50%;
+	top: 50%;
+	width: 600px;
+	height: 600px;
+	margin-top: -300px;
+	margin-left: -300px;
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+#change_location{
+	position: absolute;
+	z-index: 20;
+	top: 10px;
+	right: 10px;
+}
+#list_location{
+	display: none;
+	position: absolute;
+	z-index: 30;
+	top: 10px;
+	right: 10px;
+	width: 160px;
+	padding: 10px;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.4);
+	line-height: 25px;
+	-moz-border-radius: 8px 8px;
+}
+.goto_location{
+	background: rgba(40, 40, 40, 0.7);
+	width: 140px;
+	height: 20px;
+	margin: 5px;
+	text-align: left;
+	padding-left: 5px;
+	padding-top: 5px;
+	font-size: 11px;
+	font-family: verdana,helvetica,arial,sans-serif;
+	-moz-border-radius: 4px 4px;
+}
+.goto_location div{
+	color: white;
+	margin: 0px;
+	padding: 0px 5px 1px 28px;
+	line-height: 15px;
+	display:block;
+	height: 20px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	outline-width: medium;
+	background-position: 6px center;
+}
+.goto_location div:hover{
+	color: #D0D;
+}
+#list_location_close{
+	background: rgba(40, 40, 40, 0.7);
+	text-align: center;
+	margin-left: auto ;
+	margin-right: auto ;
+	width: 20px;
+	height: 20px;
+	-moz-border-radius: 6px 6px;
+	line-height: 17px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+}
+#list_location_close div{
+	font-size: 14px;
+	color: #DDD;
+	font-weight: bold;
+}
+#list_location_close div:hover{
+	color: #D0D;
+}
+#goto_home{
+	background: url(/media/images/dialog/changelocation/icon-home.png) no-repeat;
+}
+#goto_forest{
+	background: url(/media/images/dialog/changelocation/icon-forest.png) no-repeat;
+}
+#goto_mountain{
+	background: url(/media/images/dialog/changelocation/icon-mountain.png) no-repeat;
+}
+#goto_river{
+	background: url(/media/images/dialog/changelocation/icon-river.png) no-repeat;
+}
+#goto_sea{
+	background: url(/media/images/dialog/changelocation/icon-sea.png) no-repeat;
+}
+#goto_union{
+	background: url(/media/images/dialog/changelocation/icon-union.png) no-repeat;
+}
+#goto_market{
+	background: url(/media/images/dialog/changelocation/icon-market.png) no-repeat;
+}
+#research_button{
+	position: absolute;
+	background-image: url(/media/images/research/research_button.jpg);
+	opacity: 0.0;
+	top: 50%;
+	margin-top: -64px;
+	margin-left: 115px;
+	left: 50%;
+	z-index: 15;
+	width: 291px;
+	height: 289px;
+	border: 0px;
+}
+#create_union_button{
+	position: absolute;
+	display: none;
+	top: 240px;
+	left: 350px;
+	z-index: 15;
+	width: 150px;
+	height: 150px;
+	border: 0px;
+	background: url(/media/images/location/create_union_button.png);
+}
+#research_box{
+	z-index: 100; 
+	position: absolute;
+	display: none;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -100px;
+	width: 200px;
+	height: 200px;
+	background: url(/media/images/research/researchbox.png);
+}
+#research_box_title{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 110px;
+	height: 23px;
+}
+#research_box_submit{
+	position: absolute;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 4px;
+	font-weight: bold;
+	font-family: monospace;
+	top: 160px;
+	left: 90px;
+	width: 80px;
+	height: 23px;
+	border: 1px solid #332308;
+	background-color: #CA9B4A;
+	color: #2f1d02;
+	background: rgba(40, 40, 40, 0.4);
+	-moz-border-radius: 8px 8px;
+	text-shadow: 0px 0px 2px #f9d28f;
+}
+#research_box_submit:hover{
+	background: rgba(150, 150, 150, 0.4);
+}
+#research_box_slots{
+	position: absolute;
+	top: 33px;
+	left: 10px;
+	width: 180px;
+	height: 75px;
+}
+#research_box_catas_slots{
+	position: absolute;
+	top: 138px;
+	left: 10px;
+	width: 32px;
+	height: 32px;
+}
+#research_box_slots{
+	float: left;
+}
+#research_box_close{
+	position: absolute;
+	top: 0px;
+	background: url(/media/images/research/close.png);
+	right: 14px;
+	width: 54px;
+	height: 21px;
+}
+#create_union_box{
+	display: none;
+	position: absolute;
+	z-index: 30;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -105px;
+	width: 210px;
+	height: 100px;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.4);
+	-moz-border-radius: 8px 8px;
+}
+#create_union_boxtitle{
+	position: absolute;
+	display:block;
+	top: 2px;
+	left: 2px;
+	background: url(/media/images/dialog/titlebar.png);
+	opacity: 0.8;
+	width: 201px;
+	height: 20px;
+	text-align: left;
+	padding-left: 5px;
+	padding-top: 5px;
+	font-size: 11px;
+	color: #DDD;
+	font-family: verdana,helvetica,arial,sans-serif;
+	-moz-border-radius: 4px 4px;
+}
+#create_union_boxname{
+	position: absolute;
+	top: 37px;
+	left: 70px;
+	size: 10px;
+	background: rgba(40, 40, 40, 0.4);
+	border: 1px solid #999999;
+	color: #EEEEEE;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+}
+#create_union_boxdescription{
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	color: #EEEEEE;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+}
+#create_union_boxok{
+	position: absolute;
+	top: 70px;
+	right: 6px;
+	height: 22px;
+	background: rgba(200, 200, 200, 0.5);
+	border: 1px solid #999999;
+	-moz-border-radius: 4px 4px;
+}
+#create_union_boxclose{
+	position: absolute;
+	display:block;
+	top: 6px;
+	right: 10px;
+	color: white;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	font-weight: bold;
+}
+#create_union_boxclose:hover{
+	color: #D0D;
+}
+#forum_box{
+	display: none;
+	position: absolute;
+	z-index: 30;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -200px;
+	width: 400px;
+	height: 400px;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.4);
+	-moz-border-radius: 8px 8px;
+	padding: 10px;
+}
+#forum_box_new_topic{
+    margin-top: 62px;
+    margin-left: 70px;
+}
+#forum_box_new_topic_button{
+	width: 60px;
+	height: 15px;
+	padding: 7px;
+	color: white;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	-moz-border-radius: 8px 8px;
+}
+#forum_box_new_topic_button:hover{
+	background: rgba(150, 150, 150, 0.7);
+}
+#forum_box_new_topic_title_desc{
+	width: 50px;
+	height: 14px;
+	padding: 3px;
+	color: white;
+	font-size: 12px;
+	float:left;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+}
+#forum_box_new_topic_title{
+	width: 222px;
+	height: 18px;
+	font-size: 12px;
+	float:left;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	color: white;
+}
+#forum_box_new_topic_title:hover{
+	background: rgba(100, 100, 100, 0.7);
+}
+#forum_box_new_topic_message_desc{
+	width: 50px;
+	height: 14px;
+	padding: 3px;
+	color: white;
+	font-size: 12px;
+	clear:both;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+}
+#forum_box_new_topic_message{
+	width: 280px;
+	height: 200px;
+	font-size: 12px;
+	clear:both;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	color: white;
+}
+#forum_box_new_topic_message:hover{
+	background: rgba(100, 100, 100, 0.7);
+}
+#forum_box_new_topic_submit{
+	width: 40px;
+	height: 15px;
+	padding: 7px;
+	margin-top: 4px;
+	color: white;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	-moz-border-radius: 4px 4px;
+	margin-right: 18px;
+	margin-left: 225px;
+}
+#forum_box_new_topic_submit:hover{
+	background: rgba(150, 150, 150, 0.7);
+}
+.forum_show_topic_list_each{
+	font-size: 14px;
+	color:white;
+	width: 310px;
+	height:40px;
+}
+#forum_box_close{
+	position: absolute;
+	display:block;
+	top: 6px;
+	right: 10px;
+	color: white;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	font-weight: bold;
+}
+#forum_box_read_topic_reply{
+	color:white;
+	clear:both;
+	font-size: 12px;
+	width: 60px;
+	height:25px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	-moz-border-radius: 4px 4px;
+	padding-top: 4px;
+	text-align: center;
+	margin-left: 6px;
+}
+#forum_box_read_topic_reply:hover{
+	background: rgba(150, 150, 150, 0.7);
+}
+#forum_box_reply_topic_reply{
+	text-align: center;
+	color:white;
+	clear:both;
+	font-size: 12px;
+	width: 60px;
+	height:20px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	-moz-border-radius: 4px 4px;
+}
+#forum_box_reply_topic_reply:hover{
+	background: rgba(150, 150, 150, 0.7);
+}
+.forum_box_content{
+	display:none;
+}
+.forum_table{
+	width: 385px;
+}
+.forum_table tbody tr:hover{
+	background: rgba(0,0,0,0.3);
+}
+.forum_table , .forum_table td{
+	padding-left: 3px;
+	border-width: 1px;
+	border-spacing: 0px;
+	border-color: white;
+	border-collapse: collapse;
+	border-style: solid;
+	background-color: rgba(200,200,200,0.4);
+}
+.forum_table thead td{
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+}
+#setting_box{
+	display: none;
+	position: absolute;
+	padding: 20px;
+	z-index: 30;
+	top: 50%;
+	left: 50%;
+	margin-top: -170px;
+	margin-left: -150px;
+	width: 300px;
+	height: 340px;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.4);
+	-moz-border-radius: 8px 8px;
+}
+#setting_box_close{
+	position: absolute;
+	display:block;
+	top: 6px;
+	right: 10px;
+	color: white;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	font-weight: bold;
+}
+#sell_box_slots{
+	width: 42px;
+	height: 38px;
+	background: url(/media/images/menubox/bg_slot.png);
+}
+#union_sell_box_slots{
+	width: 42px;
+	height: 38px;
+	background: url(/media/images/menubox/bg_slot.png);
+}
+#union_sell_box_value{
+    margin-top: 10px;
+}
+#union_sell_box_submit{
+	width: 60px;
+	height: 15px;
+	text-align:center;
+	padding: 3px;
+    margin-top: 10px;
+	color: white;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	-moz-border-radius: 8px 8px;
+}
+#buy_box_price{
+    margin-top: 10px;    
+}
+#buy_box_lvl{
+    margin-top: 10px;
+}
+#buy_box_quantity{
+    margin-top: 10px;
+}
+#buy_box_must_complete{
+    margin-top: 10px;    
+}
+.market_component{
+	display: none;
+	margin: -20px;
+	padding: 0px;
+	overflow: auto;
+	width: 440px;
+	height: 390px;
+}
+.component{
+	padding: 0px;
+	overflow: auto;
+	width: 440px;
+	height: 390px;
+}
+#market_box{
+	z-index: 100; 
+	position: absolute;
+	display: none;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -200px;
+	width: 497px;
+	height: 470px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-image: url(/media/images/dialog/market_dialog.png);
+}
+.tab{
+    padding-top: 6px;
+    position: absolute;
+    width: 119px;
+    height: 37px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.tab:hover{
+    background-repeat: no-repeat;
+    background-image: url(/media/images/dialog/tab_hover.png);
+}
+.selected_tab{
+	color: white;
+    background-repeat: no-repeat;
+	background-image: url(/media/images/dialog/tab_selected.png);
+}
+.selected_tab:hover{
+	color: white;
+    background-repeat: no-repeat;
+	background-image: url(/media/images/dialog/tab_selected.png);
+}
+#viewbuyshop{
+    width: 119px;
+    height: 37px;
+    margin-top: -50px;
+    margin-left: -38px;
+}
+#viewsellshop{
+    width: 119px;
+    height: 37px;
+    margin-top: -50px;
+    margin-left: 80px;
+}
+#setbuyshop{
+    width: 119px;
+    height: 37px;
+    margin-top: -50px;
+    margin-left: 198px;
+}
+#setsellshop{
+    width: 119px;
+    height: 37px;
+    margin-top: -50px;
+    margin-left: 316px;
+}
+#sellshop_box{
+    text-align: center;
+}
+#sellshop_box>div{
+/*    padding: 4px;*/
+}
+#sell_box_slots{
+    margin-top: 70px;
+    margin-left: 200px;
+    background-repeat: no-repeat;
+}
+#buyshop_box>div{
+    margin: 4px 0px 4px 120px;
+}
+#buy_box_slots{
+    margin-top: 50px;
+}
+.buy_box_slots{
+	width: 42px;
+	height: 38px;
+	background: url(/media/images/menubox/bg_slot.png);
+}
+#bank_box_slots{
+	width: 42px;
+	height: 38px;
+	background: url(/media/images/menubox/bg_slot.png);
+}
+#bank_box{
+	z-index: 100; 
+	position: absolute;
+	display: none;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -150px;
+	width: 280px;
+	height: 277px;
+	background-color: transparent;
+	background: url(/media/images/dialog/bank_dialog.png);
+}
+#bank_title{
+    position: absolute;
+	color: white;
+    margin-top: 6px;
+    margin-left: 34px;
+}
+#bank_box_slots{
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 60px;
+}
+#bank_box_draft{
+    position: absolute;
+    text-align: center;
+    margin-left: 110px;
+    margin-top: 120px;
+}
+#bank_box_value{
+    position: absolute;
+    margin-left: -94px;
+    margin-top: 10px;
+    text-align: center;
+    width: 240px;
+}
+#bank_box_close{
+    text-align: center;
+    position: absolute;
+    margin-left: 98px;
+    margin-top: 40px;
+    width: 84px;
+    height: 23px;				    
+    background-repeat: no-repeat;
+}
+#bank_box_close:hover{
+    background: url(/media/images/dialog/close_hover.png);
+}
+#bank_box_submit{
+    margin-left: 120px;
+    margin-top: 190px;
+}
+#patent_box{
+	z-index: 100; 
+	position: absolute;
+	display: none;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -200px;
+	width: 498px;
+	height: 469px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background: url(/media/images/dialog/patent_market_dialog.png);
+}
+#mountain_button{
+	z-index: 15;
+	position: absolute;
+	top: 400px;
+	left: 500px;
+	width: 160px;
+	height: 160px;
+	border: 0px;
+	background: url(/media/images/location/mountain_do.png);
+	background-repeat: no-repeat;
+	
+}
+#mountain_button:hover{
+    background: url(/media/images/location/mountain_do_hover.png);
+}
+#forest_button{
+	z-index: 15;
+	position: absolute;
+	top: 400px;
+	left: 500px;
+	width: 160px;
+	height: 160px;
+	border: 0px;
+	background: url(/media/images/location/forest_do.png);
+	background-repeat: no-repeat;
+}
+#forest_button:hover{
+    background: url(/media/images/location/forest_do_hover.png);
+}
+#sea_button{
+	z-index: 15;
+	position: absolute;
+	top: 400px;
+	left: 500px;
+	width: 160px;
+	height: 160px;
+	border: 0px;
+	background: url(/media/images/location/sea_do.png);
+	background-repeat: no-repeat;
+}
+#sea_button:hover{
+    background: url(/media/images/location/sea_do_hover.png);
+}
+#river_button{
+	z-index: 15;
+	position: absolute;
+	top: 400px;
+	left: 500px;
+	width: 160px;
+	height: 160px;
+	border: 0px;
+	background: url(/media/images/location/river_do.png);
+	background-repeat: no-repeat;
+}
+#river_button:hover{
+    background: url(/media/images/location/river_do_hover.png);
+}
+#bank_button{
+	z-index: 15;
+	position: absolute;
+	top: 174px;
+	left: 50%;
+	margin-left: -285px;
+	width: 208px;
+	height: 342px;
+	border: 0px;
+	background: transparent;
+}
+#bank_button:hover{
+	background: url(/media/images/location/market_do_bank.png);
+}
+#market_button{
+	z-index: 15;
+	position: absolute;
+	top: 237px;
+	left: 50%;
+	width: 300px;
+	height: 529px;
+	margin-left: 111px;
+	border: 0px;
+	background: transparent;
+}
+#market_button:hover{
+	background: url(/media/images/location/market_do.png);
+}
+#patent_button{
+	z-index: 15;
+	position: absolute;
+	top: 208px;
+	left: 50%;
+	margin-left: -486px;
+	width: 138px;
+	height: 383px;
+	border: 0px;
+	background: transparent;
+}
+#patent_button:hover{
+	background: url(/media/images/location/market_do_patent.png);
+}
+#main_shop{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+#patent_title_view{
+    text-align: center;
+    margin-left: 12px;
+    width: 119px;
+    height: 37px;
+    background-repeat: no-repeat;
+}
+#patent_title_setup{
+    text-align: center;
+    margin-left: 130px;
+    width: 119px;
+    height: 37px;
+    background-repeat: no-repeat;
+}
+#patent_box_showall{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+#patent_box_slots{
+    margin-top: 80px;
+}
+#patent_box_price{
+    margin-top: 10px;
+}
+#patent_box_submit{
+    margin-top: 10px;
+}
+#patent_box_close{
+	position: absolute;
+	bottom: 0px;
+	margin-left: 206px;
+	text-align: center;
+	position: absolute;
+    width: 84px;
+    height: 23px;
+}
+#patent_box_close:hover{
+    background: url(/media/images/dialog/close_hover.png);
+}
+#patent_box_setup_content>div{
+    margin: 4px 0px 4px 130px;
+}
+#patent_title{
+    height: 37px;
+	position: absolute;
+}
+.patent_component{
+	display:none;
+	position:absolute;
+	top: 25px;
+	left: 25px;
+}
+#viewbuyshop{
+	float: left;
+}
+#viewsellshop{
+	float: left;
+}
+#setbuyshop{
+	float: left;
+}
+#setsellshop{
+	float: left;
+}
+#market_box_close{
+	position: absolute;
+	bottom: 0px;
+/*                    left: 50%;*/
+	margin-left: 206px;
+	width: 84px;
+	height: 23px;
+	text-align: center;
+	background-repeat: no-repeat;
+}
+#market_box_close:hover{
+    background: url(/media/images/dialog/close_hover.png);
+}
+#shop_content{
+	position: absolute;
+	top: 70px;
+	left: 50px;
+}
+.table_solid,
+.table_solid th,
+.table_solid td{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	border: 1px solid black;
+}
+#doc_bg{
+	position: absolute;
+	display: none;
+	top:0px;
+	left: 50%;
+	width: 385px;
+	height: 60px;
+	margin-left: -192px;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.4);
+	padding-top: 5px;
+	-moz-border-radius: 0px 0px 8px 8px;
+}
+.doc_object{
+	height: 50px;
+	width: 50px;
+	background: rgba(40, 40, 40, 0.4);
+	float:left;
+	margin-left: 35px;
+}
+.doc_object:hover{
+	background: rgba(250, 250, 250, 0.4);
+}
+.doc_object_disable, .doc_object_disable:hover{
+	background: rgba(200, 200, 200, 0.4);
+}
+#union_market_box{
+	display: none;
+	position: absolute;
+	z-index: 100;
+	top: 55px;
+	left: 50%;
+	margin-top: 0px;
+	margin-left: 110px;
+	width: 120px;
+	height: 110px;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.4);
+	font-size: 14px;
+	color: #DDD;
+}
+.union_market_each{
+	padding-top: 4px;
+	height: 20px;
+	background: rgba(40, 40, 40, 0.4);
+	padding-top: 2px;
+	text-align: center;
+}
+#set_buy_shop_box{
+	position: absolute;
+	display: none;
+	color: #DDD;
+	z-index: 100;
+	padding: 10px;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 300px;
+	margin-left: -150px;
+	margin-top: -150px;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.4);
+}
+#set_sell_shop_box{
+	position: absolute;
+	display: none;
+	padding: 10px;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	width: 150px;
+	height: 150px;
+	margin-left: -75px;
+	margin-top: -75px;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.4);
+}
+#view_buy_shop_box{
+	position: absolute;
+	display: none;
+	padding: 20px;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	width: 350px;
+	height: 350px;
+	margin-left: -175px;
+	margin-top: -175px;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.4);
+}
+#view_sell_shop_box{
+	position: absolute;
+	display: none;
+	padding: 20px;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	width: 350px;
+	height: 350px;
+	margin-left: -175px;
+	margin-top: -175px;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.4);
+}
+.market_table{
+    border-collapse: collapse;
+    font-size: .5em;
+    width: 420px;
+    border-style: solid;
+    border-width: 0px 0px 1px 1px ;
+    margin: 2px;
+    padding: 0px;
+}
+.market_table td{
+    margin: 0px;
+    padding: 0px;
+    height: 20px;
+    border-width: 1px 1px 0px 0px;
+    border-style: solid;
+}
+.market_table thead td{
+    text-align: center;
+}
+#patent_give_box{
+	position: absolute;
+	z-index: 100;
+	display: none;
+	height: 118px;
+	width: 258px;
+	left: 50%;
+	top: 50%;
+	margin-left: -60px;
+	margin-top: -60px;
+	background-color: transparent;
+	background-image: url(/media/images/dialog/patent_tranfer.png);
+	background-repeat: no-repeat;
+	padding: 10px 0px 0px 14px
+}
+#patent_give_box_title{
+    text-align: center;
+    margin: 2px;
+    padding: 0px;
+    width: 220px;
+}
+#patent_give_box>div{
+    margin: 4px;
+}
+#patent_give_box_close{
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 206px;
+}
+#forum_box_read_topic_title_desc{
+	position: absolute;
+	left: 10px;
+	top:10px;
+}
+#forum_box_read_topic_title{
+	position: absolute;
+	color: #85BCFF;
+	font-weight: bold;
+	left: 60px;
+	top:10px;
+}
+.forum_box_read_topic_hr{
+	margin-top:20px;
+	width:350px;
+}
+#forum_box_read_topic_message{
+	width: 400px;
+	height: 340px;
+	overflow:auto;
+}
+#forum_box_read_topic_message_desc{
+	position: absolute;
+	left: 10px;
+	top:25px;
+}
+.forum_read_topic_lefthand{
+	float:left;
+	height:200px;
+	width: 110px;
+	overflow-x:auto;
+}
+.forum_read_topic_righthand{
+	float:left;
+	height:200px;
+	width: 260px;
+	overflow-x: auto;
+	overflow-y: visible;
+}
+.forum_read_topic_each_post{
+	clear:both;
+	height:200px;
+	margin: 5px;
+	background: rgba(255,255,255,0.4);
+}
+.forum_read_topic_poster{
+	font-weight: bold;
+	color: #222;
+}
+.forum_read_topic_postdate , .forum_read_topic_postdate2{
+	font-size: 12px;
+}
+#forum_box_reply_topic_title_desc{
+	float:left;
+	color: #CCC;
+}
+#forum_box_reply_topic_title{
+	float:left;
+	color: #85BCFF;
+	font-weight: bold;
+	margin-left: 6px;
+}
+#forum_box_reply_topic_message{
+	width: 280px;
+	height: 200px;
+	font-size: 12px;
+	clear:both;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	color: white;
+	width: 300px;
+	height: 140px;
+}
+#forum_box_reply_topic_message:hover{
+	background: rgba(100, 100, 100, 0.7);
+}
+#forum_box_new_topic_button{
+	text-align: center;
+}
+#forum_box_reply_topic_message_desc{
+	color: #CCC;
+}
+#share_rate{
+	width: 80px;
+	margin-left: 4px;
+	margin-right: 8px;
+	height: 14px;
+	font-size: 12px;
+	float:left;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	color: white;
+}
+#setting_person{
+	background: rgba(255, 255, 255, 0.4);
+	height: 290px;
+	width: 300px;
+	overflow: auto;
+}
+.setting_person_name{
+	font-weight: bold;
+	margin-left: 5px;
+}
+#setting_save{
+	width: 60px;
+	height: 15px;
+	text-align:center;
+	padding: 7px;
+	margin: 4px;
+	margin-left: 110px;
+	color: white;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	-moz-border-radius: 8px 8px;
+}
+#setting_save:hover{
+	background: rgba(150, 150, 150, 0.7);
+}
+.union_market_table{
+	width: 100%;
+}
+.union_market_table , .union_market_table td{
+	border-width: 1px;
+	border-spacing: 0px;
+	border-color: white;
+	border-collapse: collapse;
+	border-style: solid;
+	background-color: rgba(200,200,200,0.4);
+}
+.union_market_table thead td{
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+}
+#set_buy_shop_box_close , #view_buy_shop_box_close , #view_sell_shop_box_close, #set_sell_shop_box_close{
+	position: absolute;
+	display:block;
+	top: 6px;
+	right: 10px;
+	color: white;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	font-weight: bold;
+}
+#union_buy_box_slots{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+}
+#union_buy_box_price{
+	width: 135px;
+	height: 18px;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	color: white;
+}
+#union_buy_box_lvl{
+	width: 135px;
+	height: 18px;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	color: white;
+}
+#union_buy_box_quantity{
+	width: 135px;
+	height: 18px;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	color: white;
+}
+#union_buy_box_submit{
+	width: 60px;
+	height: 15px;
+	text-align:center;
+	padding: 3px;
+	margin: 4px;
+	color: white;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	-moz-border-radius: 8px 8px;
+}
+#union_market_set_sell_shop_box_name{
+	color: #DDD;
+}
+#union_sell_box_value{
+	width: 85px;
+	height: 18px;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	border: 1px solid #999999;
+	background: rgba(40, 40, 40, 0.7);
+	color: white;
+}
+#union_auto_share_desc{
+	color: #EEE
+}
+#union_research_box{
+	z-index: 100; 
+	position: absolute;
+	display: none;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -100px;
+	width: 200px;
+	height: 200px;
+	background: rgba(40,40,40,0.4);
+}
+#union_research_box_title{
+	position: absolute;
+	color:#EEE;
+	margin: 5px;
+	font-size: 12px;
+	top: 0px;
+	left: 0px;
+	width: 140px;
+	height: 23px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	font-weight: bold;
+}
+#union_research_box_submit{
+	position: absolute;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 4px;
+	font-weight: bold;
+	font-family: Helvetica;
+	top: 155px;
+	left: 100px;
+	width: 80px;
+	height: 23px;
+	border: 1px solid #111;
+	color: #222;
+	background: rgba(20, 20, 20, 0.5);
+	-moz-border-radius: 8px 8px;
+	text-shadow: 0px 0px 2px #f9d28f;
+}
+#union_research_box_submit:hover{
+	color: #DDD;
+	background: rgba(0, 0, 0, 0.6);
+}
+#union_research_box_slots{
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 168px;
+	height: 75px;
+	background: url(/media/images/menubox/bg_slot.png) repeat;
+}
+#union_research_box_slots_bg{
+	position: absolute;
+	top: 33px;
+	left: 10px;
+	width: 172px;
+	height: 79px;
+	background:rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 5px #000;
+}
+#union_research_box_slots_bg:hover{
+	background:rgba(0,0,0,0.7);
+	-moz-box-shadow: 0px 0px 5px #000 , 0px 0px 3px #000;
+}
+#union_research_box_catas_slots{
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 39px;
+	height: 39px;
+	background: url(/media/images/menubox/bg_slot.png) repeat;
+}
+#union_research_box_catas_slots_bg{
+	position: absolute;
+	top: 136px;
+	left: 8px;
+	width: 45px;
+	height: 45px;
+	background:rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 5px #000;
+}
+#union_research_box_catas_slots_bg:hover{
+	background:rgba(0,0,0,0.7);
+	-moz-box-shadow: 0px 0px 5px #000 , 0px 0px 3px #000;
+}
+#union_research_box_close{
+	position: absolute;
+	display:block;
+	top: 6px;
+	right: 10px;
+	color: white;
+	font-size: 12px;
+	font-family: Trebuchet MS,Arial,sans-serif,Tahoma;
+	font-weight: bold;
+}
+#researching_text{
+	position: absolute;
+	display:none;
+	font-size: 14px;
+	top: 140px;
+	left: 70px;
+	text-shadow: 0px 0px 2px #f9d28f;
+}

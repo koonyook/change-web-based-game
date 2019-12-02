@@ -1,0 +1,53 @@
+WSGIRestrictStdout Off
+<VirtualHost *:80>
+	ServerAdmin webmaster@localhost
+	
+#	DocumentRoot /var/www
+#	<Directory />
+#		Options FollowSymLinks
+#		AllowOverride None
+#	</Directory>
+#	<Directory /var/www/>
+#		Options Indexes FollowSymLinks MultiViews
+#		AllowOverride None
+#		Order allow,deny
+#		allow from all
+#	</Directory>
+
+    Alias /robots.txt /home/koon/newtype/media/robots.txt
+    Alias /favicon.ico /home/koon/newtype/media/favicon.ico
+
+    # AliasMatch /([^/]*\.css) /home/koon/newtype/media/css/$1
+
+    Alias /media/ /home/koon/newtype/media/
+    Alias /media /home/koon/newtype/media/
+    Alias /forum/ /home/koon/newtype/media/forum/
+    Alias /forum /home/koon/newtype/media/forum/
+
+    <Directory /home/koon/newtype/media>
+        Order deny,allow
+        Allow from all
+    </Directory>
+
+	DocumentRoot /home/koon/newtype/media/forum
+    <Directory /home/koon/newtype/media/forum>
+        Order deny,allow
+        Allow from all
+    </Directory>
+
+    WSGIScriptAlias / /home/koon/newtype/apache/django.wsgi
+
+    <Directory /home/koon/newtype/apache>
+        Order allow,deny
+        Allow from all
+    </Directory>
+
+	ErrorLog /var/log/apache2/error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	CustomLog /var/log/apache2/access.log combined
+
+</VirtualHost>

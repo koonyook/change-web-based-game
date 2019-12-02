@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp
+END
+ucp_main.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_main.php
+END
+ucp_register.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_register.php
+END
+ucp_pm_options.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_pm_options.php
+END
+ucp_confirm.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_confirm.php
+END
+ucp_activate.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_activate.php
+END
+ucp_profile.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_profile.php
+END
+ucp_pm_compose.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_pm_compose.php
+END
+ucp_pm_viewfolder.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_pm_viewfolder.php
+END
+ucp_zebra.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_zebra.php
+END
+ucp_attachments.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_attachments.php
+END
+ucp_pm_viewmessage.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_pm_viewmessage.php
+END
+ucp_pm.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_pm.php
+END
+ucp_remind.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_remind.php
+END
+ucp_groups.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_groups.php
+END
+ucp_prefs.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_prefs.php
+END
+ucp_resend.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/ucp/ucp_resend.php
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/captcha/plugins
+END
+phpbb_captcha_qa_plugin.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/captcha/plugins/phpbb_captcha_qa_plugin.php
+END
+phpbb_captcha_nogd_plugin.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/captcha/plugins/phpbb_captcha_nogd_plugin.php
+END
+phpbb_recaptcha_plugin.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/captcha/plugins/phpbb_recaptcha_plugin.php
+END
+captcha_abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/captcha/plugins/captcha_abstract.php
+END
+phpbb_captcha_gd_plugin.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/captcha/plugins/phpbb_captcha_gd_plugin.php
+END
+phpbb_captcha_gd_wave_plugin.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/includes/captcha/plugins/phpbb_captcha_gd_wave_plugin.php
+END

@@ -1,0 +1,141 @@
+- fields: {effect: 3, item: 65, value: '{ ''energy'':+150}'}
+  model: core.items_useeffects
+  pk: 2
+- fields: {effect: 2, item: 65, value: '{ ''regis_effect'':''disease'', ''chance'':50,
+      ''expiration'':datetime.timedelta(days=2), ''data'':{''max_energy'':-50,''regeneration_rate'':-10,''research_cost'':+5,''travel_cost'':+3}
+      } '}
+  model: core.items_useeffects
+  pk: 3
+- fields: {effect: 3, item: 66, value: '{ ''energy'':+300 }'}
+  model: core.items_useeffects
+  pk: 4
+- fields: {effect: 3, item: 67, value: '{ ''energy'':+50}'}
+  model: core.items_useeffects
+  pk: 5
+- fields: {effect: 3, item: 68, value: '{ ''energy'':+40}'}
+  model: core.items_useeffects
+  pk: 6
+- fields: {effect: 3, item: 69, value: '{ ''energy'':+55}'}
+  model: core.items_useeffects
+  pk: 7
+- fields: {effect: 3, item: 70, value: '{ ''energy'':+60}'}
+  model: core.items_useeffects
+  pk: 8
+- fields: {effect: 3, item: 71, value: '{ ''energy'':+88}'}
+  model: core.items_useeffects
+  pk: 9
+- fields: {effect: 3, item: 72, value: '{ ''energy'':+220}'}
+  model: core.items_useeffects
+  pk: 10
+- fields: {effect: 8, item: 77, value: '{ ''time_rate'':80 }'}
+  model: core.items_useeffects
+  pk: 11
+- fields: {effect: 8, item: 92, value: '{ ''time_rate'':75 }'}
+  model: core.items_useeffects
+  pk: 12
+- fields: {effect: 3, item: 102, value: '{ ''energy'':+210}'}
+  model: core.items_useeffects
+  pk: 14
+- fields: {effect: 2, item: 102, value: '{ ''regis_effect'':''disease'', ''chance'':33,
+      ''expiration'':datetime.timedelta(days=2), ''data'':{''max_energy'':-50,''regeneration_rate'':-10,''research_cost'':+5,''travel_cost'':+3}
+      } '}
+  model: core.items_useeffects
+  pk: 15
+- fields: {effect: 5, item: 118, value: '{ ''regis_effect'':''immunity'', ''expiration'':datetime.timedelta(days=1),
+      ''data'':{''chance'':80} }'}
+  model: core.items_useeffects
+  pk: 16
+- fields: {effect: 7, item: 119, value: '{ ''regis_effect'':''modify_storage'', ''data'':{''step'':1,''storage'':+25}
+      }'}
+  model: core.items_useeffects
+  pk: 17
+- fields: {effect: 3, item: 126, value: '{ ''energy'':+220}'}
+  model: core.items_useeffects
+  pk: 18
+- fields: {effect: 3, item: 127, value: '{ ''energy'':+160}'}
+  model: core.items_useeffects
+  pk: 19
+- fields: {effect: 3, item: 128, value: '{ ''energy'':+230}'}
+  model: core.items_useeffects
+  pk: 20
+- fields: {effect: 3, item: 129, value: '{ ''energy'':+200}'}
+  model: core.items_useeffects
+  pk: 21
+- fields: {effect: 5, item: 130, value: '{ ''regis_effect'':''immunity'', ''expiration'':datetime.timedelta(days=3),
+      ''data'':{''chance'':50} }'}
+  model: core.items_useeffects
+  pk: 22
+- fields: {effect: 13, item: 154, value: ''}
+  model: core.items_useeffects
+  pk: 23
+- fields: {effect: 3, item: 198, value: '{''mechanical_energy'':+70 }'}
+  model: core.items_useeffects
+  pk: 24
+- fields: {effect: 3, item: 200, value: '{ ''energy'':+40}'}
+  model: core.items_useeffects
+  pk: 25
+- fields: {effect: 3, item: 207, value: '{ ''energy'':+200 }'}
+  model: core.items_useeffects
+  pk: 26
+- fields: {effect: 14, item: 215, value: ''}
+  model: core.items_useeffects
+  pk: 27
+- fields: {effect: 17, item: 227, value: "{ 'regis_effect':'modify_general', 'chance':100,\
+      \ 'expiration':datetime.timedelta(hours=5), 'data':{'name':u'\u0E40\u0E25\u0E48\
+      \u0E19\u0E01\u0E25\u0E2D\u0E07','regeneration_rate':+20} }"}
+  model: core.items_useeffects
+  pk: 28
+- fields: {effect: 3, item: 285, value: '{''mechanical_energy'':+35 }'}
+  model: core.items_useeffects
+  pk: 29
+- fields: {effect: 5, item: 294, value: '{ ''regis_effect'':''immunity'', ''expiration'':datetime.timedelta(days=10),
+      ''data'':{''chance'':5} }'}
+  model: core.items_useeffects
+  pk: 30
+- fields: {effect: 3, item: 319, value: '{''mechanical_energy'':+100 }'}
+  model: core.items_useeffects
+  pk: 31
+- fields: {effect: 3, item: 317, value: '{''mechanical_energy'':+70 }'}
+  model: core.items_useeffects
+  pk: 32
+- fields: {effect: 14, item: 324, value: ''}
+  model: core.items_useeffects
+  pk: 33
+- fields: {effect: 10, item: 291, value: '{ ''regis_effect'':''vehicle'', ''times_left'':5,
+      ''mechanical_energy'':-45, ''data'':{''vehicle'':''balloon'',''travel_cost'':-15}
+      }'}
+  model: core.items_useeffects
+  pk: 34
+- fields: {effect: 10, item: 361, value: '{ ''regis_effect'':''vehicle'', ''times_left'':5,
+      ''mechanical_energy'':-95, ''data'':{''vehicle'':''train'',''travel_cost'':-13}
+      }'}
+  model: core.items_useeffects
+  pk: 35
+- fields: {effect: 8, item: 364, value: '{ ''time_rate'': 0 }'}
+  model: core.items_useeffects
+  pk: 36
+- fields: {effect: 10, item: 369, value: '{ ''regis_effect'':''vehicle'', ''times_left'':8,
+      ''mechanical_energy'':-60, ''data'':{''vehicle'':''plane'',''travel_cost'':-24}
+      }'}
+  model: core.items_useeffects
+  pk: 37
+- fields: {effect: 10, item: 403, value: '{ ''regis_effect'':''vehicle'', ''times_left'':6,
+      ''mechanical_energy'':-22, ''data'':{''vehicle'':''car'',''travel_cost'':-10}
+      }'}
+  model: core.items_useeffects
+  pk: 38
+- fields: {effect: 10, item: 404, value: '{ ''regis_effect'':''vehicle'', ''times_left'':7,
+      ''mechanical_energy'':-40, ''data'':{''vehicle'':''car'',''travel_cost'':-10}
+      }'}
+  model: core.items_useeffects
+  pk: 39
+- fields: {effect: 3, item: 412, value: '{''mechanical_energy'':+100 }'}
+  model: core.items_useeffects
+  pk: 40
+- fields: {effect: 8, item: 432, value: '{ ''time_rate'':30 }'}
+  model: core.items_useeffects
+  pk: 42
+- fields: {effect: 16, item: 436, value: '{''natural_resource'':+13}'}
+  model: core.items_useeffects
+  pk: 43
+

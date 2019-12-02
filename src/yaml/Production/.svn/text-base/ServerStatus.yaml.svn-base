@@ -1,0 +1,7 @@
+# Variables
+- model: core.ServerStatus
+  pk: 29
+  fields:
+    name: images_path
+    value: /media/images/
+    

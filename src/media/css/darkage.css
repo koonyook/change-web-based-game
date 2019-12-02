@@ -1,0 +1,45 @@
+#main_menu{
+	background-image: url(/media/images/darkage/menubox/main_menu.png);
+}
+.menu_item_button{
+	background-image: url(/media/images/darkage/menubox/menu_item_button.png);
+}
+.menu_item_button:hover{
+	background-image: url(/media/images/darkage/menubox/menu_item_button_hover.png);
+}
+#item_menu{
+	background-image: url(/media/images/darkage/menubox/item_menu.png);
+}
+#main_menu_content_money_bg{
+	background-image: url(/media/images/darkage/menubox/main_menu_money.png);
+}
+#sub_menu2{
+	background-image:  url(/media/images/darkage/menubox/sub_menu2_bg.png);
+}
+#sub_menu_bg{
+	background-image: url(/media/images/darkage/menubox/sub_menu_bg.png);
+}
+.alertbox{
+	background-image: url(/media/images/darkage/dialog/alertbox.png);
+}
+#location_forest{
+	background: url(/media/images/darkage/location/forest_bg.jpg);
+	background-position: bottom center;
+}
+#location_sea{
+	background: url(/media/images/darkage/location/sea_bg.jpg);
+}
+#location_mountain{
+	background: url(/media/images/darkage/location/mountain_bg.jpg);
+}
+#location_home{
+	background: url(/media/images/darkage/location/home_bg.jpg) no-repeat;
+	background-position: center center;
+}
+#research_button{
+	background-image: url(/media/images/woodage/research/research_button.png);
+	margin-left: -308px;
+	margin-top: -339px;
+	width: 690px;
+	height: 470px;
+}

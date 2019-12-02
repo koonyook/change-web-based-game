@@ -1,0 +1,13 @@
+python manage.py dumpdata core.EffectType --format yaml --indent 2 > yaml/EffectType.yaml
+python manage.py dumpdata core.Effect --format yaml --indent 2 > yaml/Effect.yaml
+python manage.py dumpdata core.ItemType --format yaml --indent 2 > yaml/ItemType.yaml
+python manage.py dumpdata core.Item --format yaml --indent 2 > yaml/Item.yaml
+python manage.py dumpdata core.Items_UseEffects --format yaml --indent 2 > yaml/Items_UseEffects.yaml
+python manage.py dumpdata core.Items_HoldEffects --format yaml --indent 2 > yaml/Items_HoldEffects.yaml
+python manage.py dumpdata core.Rarity --format yaml --indent 2 > yaml/Rarity.yaml
+python manage.py dumpdata core.Harvesting --format yaml --indent 2 > yaml/Harvesting.yaml
+python manage.py dumpdata core.Formula --format yaml --indent 2 > yaml/Formula.yaml
+python manage.py dumpdata core.Result --format yaml --indent 2 > yaml/Result.yaml
+python manage.py dumpdata core.Formulas_Effects --format yaml --indent 2 > yaml/Formulas_Effects.yaml
+python manage.py dumpdata patent.Patent --format yaml --indent 2 > yaml/Patent.yaml
+python manage.py dumpdata help.QuestionAnswer --format yaml --indent 2 > yaml/QuestionAnswer.yaml

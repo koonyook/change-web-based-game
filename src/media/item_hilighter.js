@@ -1,0 +1,51 @@
+function hilight()
+{
+	x=document.getElementsByName('components')[0];
+	y=document.getElementsByName('component_types')[0];
+	inp=document.getElementsByName('number')[0];
+	s=inp.value;
+	a=s.split(",");
+	
+	for(i=0;i<a.length;i++)
+	{
+		j=0;
+		while(true)
+		{
+			tmp=x.options[j]
+			if(tmp==undefined)
+				break;
+			if(a[i]==tmp.value)
+			{
+				x.options[j].selected=true;
+				break;
+			}
+			j++;
+		}
+	}
+	j=0;
+	w='';
+	while(true)
+	{
+		tmp=x.options[j];
+		if(tmp==undefined)
+			break;
+		if(x.options[j].selected==true)
+		{
+			w=w+x.options[j].innerHTML+', ';
+		}
+		j++;
+	}
+	j=0;
+	while(true)
+	{
+		tmp=y.options[j];
+		if(tmp==undefined)
+			break;
+		if(y.options[j].selected==true)
+		{
+			w=w+'('+y.options[j].innerHTML+'), ';
+		}
+		j++;
+	}
+	document.getElementsByName('showlist')[0].innerHTML=w;
+}

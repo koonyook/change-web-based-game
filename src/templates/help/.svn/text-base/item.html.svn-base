@@ -1,0 +1,79 @@
+<h2>คุณสมบัติของไอเทม</h2>
+<p>ไอเทมในเกมมีอยู่ 
+{% if patent_enabled %}
+3 
+{% else %}
+2
+{% endif %}
+ประเภท</p>
+<p>มีคุณสมบัติต่างๆ ดังตารางนี้</p>
+
+<div class="top"/>
+<table class="box" width="100%" border="0">
+  <tr style="font-size:14px">
+    <td></td>
+    <td>มีขนาด</td>
+    <td>วิจัยได้</td>
+    <td>เปลี่ยนเจ้าของ</td>
+    <td>ใช้แล้วพัง</td>
+  </tr>
+  <tr>
+    <td style="font-size:14px">ทั่วไป</td>
+    <td align="center"><div class="true"/></td>
+    <td align="center"><div class="true"/></td>
+    <td align="center"><div class="true"/></td>
+    <td align="center"><div class="true"/></td>
+  </tr>
+  <tr>
+    <td style="font-size:14px">เทคโนโลยี</td>
+    <td align="center"><div class="false"/></td>
+    <td align="center"><div class="true"/></td>
+    <td align="center"><div class="false"/></td>
+    <td align="center"><div class="false"/></td>
+  </tr>
+  {% if patent_enabled %}
+  <tr>
+    <td style="font-size:14px">สิทธิบัตร</td>
+    <td align="center"><div class="false"/></td>
+    <td align="center"><div class="false"/></td>
+    <td align="center"><div class="true"/></td>
+    <td align="center"><div class="false"/></td>
+  </tr>
+  {% endif %}
+</table>
+<div class="bottom"/>
+
+<p class="paragraph">คุณสามารถเลือกดูไอเทมประเภทต่างๆ โดยเลือกคลิกดังรูป</p>
+{% if patent_enabled %}
+<center><img src="/media/images/help/3_item_tab.jpg"/></center>
+{% else %}
+<center><img src="/media/images/help/2_item_tab.jpg"/></center>
+{% endif %}
+<p class="paragraph">โดยไอเทมทั่วไปและเทคโนโลยี เมื่อคลิกขวาที่ไอเทมเพื่อดูรายละเอียด จะมีรายละเอียดดังนี้</p>
+{% if bank_enabled %}
+<center><img src="/media/images/help/item_description_and_price.jpg"/></center>
+{% else %}
+<center><img src="/media/images/help/item_description.jpg"/></center>
+{% endif %}
+
+<p>1.ชื่อไอเทม ถ้ามีไอเทมเป็นจำนวนมาก คุณสามารถหาไอเทมที่ต้องการได้ด้วยการพิมพ์บางส่วนของชื่อไอเทมในช่องค้นหา ดังรูป</p>
+<center><img src="/media/images/help/search.jpg"/></center>
+<p>2.รายละเอียดของไอเทม ที่จะบอกว่าไอเทมนี้ใช้ทำอะไรได้บ้าง</p>
+<p>3.ปริมาณการสร้างมลภาวะ โดยมลภาวะจะถูกปล่อยออกสู่สิ่งแวดล้อมเมื่อนำไอเทมนี้ไปใช้ นำไปวิจัย หรือทิ้ง</p>
+<p>4.ผลจากการถือไอเทมนี้ อาจจะทำให้ลดหรือเพิ่มค่าสถานะบางอย่างของคุณ มีทั้งที่เป็นผลดีและผลเสีย</p>
+<p>5.น้ำหนัก ไอเทมแต่ละชิ้นจะกินพื้นที่เก็บของไปตามค่าน้ำหนัก ถ้าที่เก็บของเต็มคุณจะไม่สามารถเก็บของได้อีก คุณสามารถดูพื้นที่ที่ใช้ไปได้ที่นี่</p>
+<!--<center><img src="/media/images/help/storage_value.jpg"/></center>-->
+<p>6.เวลาที่ไอเทมนี้จะหมดอายุ และหายไป</p>
+<p>7.จำนวนครั้งในการใช้งานที่เหลืออยู่ / จำนวนครั้งของการใช้งานสูงสุด</p>
+<p>8.ระดับของไอเทม ตัวเลขที่อยู่ด้านล่างขวาของรูปไอเทมทุกชิ้นคือระดับ ซึ่งจะทำให้ไอเทมบางชิ้นมีความสามารถมากขึ้น</p>
+{% if bank_enabled %}
+<p>9.ราคาที่ธนาคารรับซื้อ เป็นราคาเมื่อไอเทมยังสมบูรณ์อยู่ เมื่อความคงทนลดลง ราคาขายก็จะลดลงไปตามอัตราส่วน</p>
+{% endif %}
+<h2>จะหาไอเทมได้จากที่ไหน?</h2>
+<p class="paragraph">คุณสามารถหาไอเทมได้จากแหล่งทรัพยากรธรรมชาติแต่ละแหล่ง ซึ่งแต่ละที่ก็จะเก็บทรัพยากรแตกต่างกันออกไป</p>
+<center><img src="/media/images/help/four_resource_place.jpg"/></center>
+<p class="paragraph">เช่น ที่ภูเขาอาจจะมีแร่อยู่เป็นจำนวนมาก ในป่าอาจจะมีพืชและสัตว์อยู่มาก เป็นต้น</p>
+<center><img src="/media/images/help/magnifier.png"/></center>
+<p>ในแต่ละครั้งที่คุณหาทรัพยากรธรรมชาติ คุณจะได้ไอเทมมา 1 ชิ้น</p>
+<center><img src="/media/images/help/get_item.jpg"/></center>
+

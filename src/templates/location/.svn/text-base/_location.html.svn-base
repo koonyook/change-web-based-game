@@ -1,0 +1,13 @@
+<div id="location">
+	<div id="place">
+		<input type="button" id="research_button" />
+	</div>
+	<div id="research_box">
+				<div id="research_box_close">[<a href="#">x</a>]</div>
+				<div id="research_box_slots" class="item_list">
+				</div>
+				<div id="research_box_catas_slots" class="item_list">
+				</div>
+				<input type="button" id="research_box_submit" value="Research"/>
+	</div>
+</div>

@@ -1,0 +1,481 @@
+- fields: {chance: 80, item: 4, location: 7}
+  model: core.rarity
+  pk: 8
+- fields: {chance: 80, item: 4, location: 6}
+  model: core.rarity
+  pk: 7
+- fields: {chance: 20, item: 4, location: 5}
+  model: core.rarity
+  pk: 6
+- fields: {chance: 85, item: 4, location: 4}
+  model: core.rarity
+  pk: 5
+- fields: {chance: 70, item: 5, location: 4}
+  model: core.rarity
+  pk: 9
+- fields: {chance: 95, item: 5, location: 5}
+  model: core.rarity
+  pk: 10
+- fields: {chance: 20, item: 5, location: 6}
+  model: core.rarity
+  pk: 11
+- fields: {chance: 90, item: 5, location: 7}
+  model: core.rarity
+  pk: 12
+- fields: {chance: 95, item: 6, location: 4}
+  model: core.rarity
+  pk: 13
+- fields: {chance: 10, item: 6, location: 5}
+  model: core.rarity
+  pk: 14
+- fields: {chance: 10, item: 6, location: 6}
+  model: core.rarity
+  pk: 15
+- fields: {chance: 70, item: 6, location: 7}
+  model: core.rarity
+  pk: 16
+- fields: {chance: 30, item: 7, location: 4}
+  model: core.rarity
+  pk: 17
+- fields: {chance: 10, item: 7, location: 5}
+  model: core.rarity
+  pk: 18
+- fields: {chance: 20, item: 7, location: 6}
+  model: core.rarity
+  pk: 19
+- fields: {chance: 95, item: 7, location: 7}
+  model: core.rarity
+  pk: 20
+- fields: {chance: 30, item: 8, location: 4}
+  model: core.rarity
+  pk: 21
+- fields: {chance: 95, item: 9, location: 6}
+  model: core.rarity
+  pk: 22
+- fields: {chance: 20, item: 9, location: 4}
+  model: core.rarity
+  pk: 23
+- fields: {chance: 20, item: 9, location: 7}
+  model: core.rarity
+  pk: 24
+- fields: {chance: 99, item: 10, location: 6}
+  model: core.rarity
+  pk: 25
+- fields: {chance: 23, item: 10, location: 7}
+  model: core.rarity
+  pk: 26
+- fields: {chance: 85, item: 11, location: 6}
+  model: core.rarity
+  pk: 27
+- fields: {chance: 50, item: 11, location: 7}
+  model: core.rarity
+  pk: 28
+- fields: {chance: 10, item: 11, location: 4}
+  model: core.rarity
+  pk: 29
+- fields: {chance: 80, item: 12, location: 6}
+  model: core.rarity
+  pk: 30
+- fields: {chance: 69, item: 13, location: 6}
+  model: core.rarity
+  pk: 31
+- fields: {chance: 70, item: 14, location: 7}
+  model: core.rarity
+  pk: 32
+- fields: {chance: 10, item: 14, location: 6}
+  model: core.rarity
+  pk: 33
+- fields: {chance: 50, item: 15, location: 7}
+  model: core.rarity
+  pk: 34
+- fields: {chance: 15, item: 15, location: 6}
+  model: core.rarity
+  pk: 35
+- fields: {chance: 80, item: 16, location: 5}
+  model: core.rarity
+  pk: 36
+- fields: {chance: 40, item: 16, location: 7}
+  model: core.rarity
+  pk: 37
+- fields: {chance: 100, item: 17, location: 7}
+  model: core.rarity
+  pk: 38
+- fields: {chance: 100, item: 18, location: 5}
+  model: core.rarity
+  pk: 39
+- fields: {chance: 22, item: 19, location: 4}
+  model: core.rarity
+  pk: 40
+- fields: {chance: 70, item: 20, location: 4}
+  model: core.rarity
+  pk: 41
+- fields: {chance: 60, item: 20, location: 7}
+  model: core.rarity
+  pk: 42
+- fields: {chance: 60, item: 21, location: 4}
+  model: core.rarity
+  pk: 43
+- fields: {chance: 40, item: 21, location: 7}
+  model: core.rarity
+  pk: 44
+- fields: {chance: 40, item: 22, location: 4}
+  model: core.rarity
+  pk: 45
+- fields: {chance: 20, item: 22, location: 7}
+  model: core.rarity
+  pk: 46
+- fields: {chance: 40, item: 23, location: 4}
+  model: core.rarity
+  pk: 47
+- fields: {chance: 55, item: 24, location: 4}
+  model: core.rarity
+  pk: 48
+- fields: {chance: 35, item: 25, location: 4}
+  model: core.rarity
+  pk: 49
+- fields: {chance: 13, item: 26, location: 4}
+  model: core.rarity
+  pk: 50
+- fields: {chance: 45, item: 27, location: 4}
+  model: core.rarity
+  pk: 51
+- fields: {chance: 55, item: 28, location: 4}
+  model: core.rarity
+  pk: 52
+- fields: {chance: 5, item: 29, location: 4}
+  model: core.rarity
+  pk: 53
+- fields: {chance: 55, item: 30, location: 4}
+  model: core.rarity
+  pk: 54
+- fields: {chance: 37, item: 31, location: 5}
+  model: core.rarity
+  pk: 55
+- fields: {chance: 45, item: 31, location: 4}
+  model: core.rarity
+  pk: 56
+- fields: {chance: 40, item: 32, location: 4}
+  model: core.rarity
+  pk: 57
+- fields: {chance: 10, item: 32, location: 6}
+  model: core.rarity
+  pk: 58
+- fields: {chance: 3, item: 33, location: 4}
+  model: core.rarity
+  pk: 59
+- fields: {chance: 2, item: 33, location: 7}
+  model: core.rarity
+  pk: 60
+- fields: {chance: 30, item: 34, location: 4}
+  model: core.rarity
+  pk: 61
+- fields: {chance: 25, item: 34, location: 6}
+  model: core.rarity
+  pk: 62
+- fields: {chance: 25, item: 35, location: 4}
+  model: core.rarity
+  pk: 63
+- fields: {chance: 30, item: 35, location: 6}
+  model: core.rarity
+  pk: 64
+- fields: {chance: 28, item: 36, location: 4}
+  model: core.rarity
+  pk: 65
+- fields: {chance: 15, item: 36, location: 6}
+  model: core.rarity
+  pk: 66
+- fields: {chance: 20, item: 37, location: 4}
+  model: core.rarity
+  pk: 67
+- fields: {chance: 35, item: 37, location: 6}
+  model: core.rarity
+  pk: 68
+- fields: {chance: 15, item: 38, location: 4}
+  model: core.rarity
+  pk: 69
+- fields: {chance: 15, item: 38, location: 6}
+  model: core.rarity
+  pk: 70
+- fields: {chance: 20, item: 39, location: 4}
+  model: core.rarity
+  pk: 71
+- fields: {chance: 25, item: 39, location: 6}
+  model: core.rarity
+  pk: 72
+- fields: {chance: 20, item: 40, location: 4}
+  model: core.rarity
+  pk: 73
+- fields: {chance: 15, item: 41, location: 4}
+  model: core.rarity
+  pk: 74
+- fields: {chance: 2, item: 42, location: 4}
+  model: core.rarity
+  pk: 75
+- fields: {chance: 3, item: 42, location: 5}
+  model: core.rarity
+  pk: 76
+- fields: {chance: 1, item: 42, location: 6}
+  model: core.rarity
+  pk: 77
+- fields: {chance: 1, item: 42, location: 7}
+  model: core.rarity
+  pk: 78
+- fields: {chance: 5, item: 43, location: 4}
+  model: core.rarity
+  pk: 79
+- fields: {chance: 4, item: 43, location: 6}
+  model: core.rarity
+  pk: 80
+- fields: {chance: 2, item: 44, location: 4}
+  model: core.rarity
+  pk: 81
+- fields: {chance: 2, item: 44, location: 6}
+  model: core.rarity
+  pk: 82
+- fields: {chance: 2, item: 44, location: 7}
+  model: core.rarity
+  pk: 83
+- fields: {chance: 2, item: 44, location: 5}
+  model: core.rarity
+  pk: 84
+- fields: {chance: 20, item: 45, location: 5}
+  model: core.rarity
+  pk: 85
+- fields: {chance: 3, item: 45, location: 6}
+  model: core.rarity
+  pk: 86
+- fields: {chance: 30, item: 46, location: 4}
+  model: core.rarity
+  pk: 87
+- fields: {chance: 6, item: 47, location: 4}
+  model: core.rarity
+  pk: 88
+- fields: {chance: 1, item: 47, location: 7}
+  model: core.rarity
+  pk: 89
+- fields: {chance: 1, item: 48, location: 6}
+  model: core.rarity
+  pk: 90
+- fields: {chance: 1, item: 48, location: 5}
+  model: core.rarity
+  pk: 91
+- fields: {chance: 1, item: 48, location: 4}
+  model: core.rarity
+  pk: 92
+- fields: {chance: 1, item: 48, location: 7}
+  model: core.rarity
+  pk: 93
+- fields: {chance: 9, item: 49, location: 6}
+  model: core.rarity
+  pk: 94
+- fields: {chance: 44, item: 50, location: 4}
+  model: core.rarity
+  pk: 95
+- fields: {chance: 4, item: 50, location: 6}
+  model: core.rarity
+  pk: 96
+- fields: {chance: 75, item: 51, location: 6}
+  model: core.rarity
+  pk: 97
+- fields: {chance: 25, item: 51, location: 4}
+  model: core.rarity
+  pk: 98
+- fields: {chance: 65, item: 52, location: 6}
+  model: core.rarity
+  pk: 99
+- fields: {chance: 15, item: 52, location: 4}
+  model: core.rarity
+  pk: 100
+- fields: {chance: 60, item: 53, location: 6}
+  model: core.rarity
+  pk: 101
+- fields: {chance: 15, item: 53, location: 4}
+  model: core.rarity
+  pk: 102
+- fields: {chance: 40, item: 54, location: 6}
+  model: core.rarity
+  pk: 103
+- fields: {chance: 60, item: 54, location: 4}
+  model: core.rarity
+  pk: 104
+- fields: {chance: 45, item: 55, location: 6}
+  model: core.rarity
+  pk: 105
+- fields: {chance: 55, item: 55, location: 4}
+  model: core.rarity
+  pk: 106
+- fields: {chance: 50, item: 56, location: 7}
+  model: core.rarity
+  pk: 107
+- fields: {chance: 30, item: 56, location: 4}
+  model: core.rarity
+  pk: 108
+- fields: {chance: 45, item: 57, location: 7}
+  model: core.rarity
+  pk: 109
+- fields: {chance: 20, item: 57, location: 6}
+  model: core.rarity
+  pk: 110
+- fields: {chance: 40, item: 58, location: 7}
+  model: core.rarity
+  pk: 111
+- fields: {chance: 15, item: 58, location: 6}
+  model: core.rarity
+  pk: 112
+- fields: {chance: 12, item: 59, location: 7}
+  model: core.rarity
+  pk: 113
+- fields: {chance: 10, item: 59, location: 6}
+  model: core.rarity
+  pk: 114
+- fields: {chance: 2, item: 60, location: 6}
+  model: core.rarity
+  pk: 115
+- fields: {chance: 20, item: 61, location: 6}
+  model: core.rarity
+  pk: 116
+- fields: {chance: 15, item: 62, location: 5}
+  model: core.rarity
+  pk: 117
+- fields: {chance: 15, item: 62, location: 6}
+  model: core.rarity
+  pk: 118
+- fields: {chance: 15, item: 62, location: 7}
+  model: core.rarity
+  pk: 119
+- fields: {chance: 15, item: 62, location: 4}
+  model: core.rarity
+  pk: 120
+- fields: {chance: 20, item: 63, location: 5}
+  model: core.rarity
+  pk: 121
+- fields: {chance: 40, item: 64, location: 6}
+  model: core.rarity
+  pk: 122
+- fields: {chance: 60, item: 65, location: 7}
+  model: core.rarity
+  pk: 123
+- fields: {chance: 65, item: 65, location: 5}
+  model: core.rarity
+  pk: 124
+- fields: {chance: 20, item: 66, location: 6}
+  model: core.rarity
+  pk: 125
+- fields: {chance: 55, item: 67, location: 6}
+  model: core.rarity
+  pk: 126
+- fields: {chance: 10, item: 67, location: 4}
+  model: core.rarity
+  pk: 127
+- fields: {chance: 39, item: 68, location: 6}
+  model: core.rarity
+  pk: 128
+- fields: {chance: 10, item: 68, location: 4}
+  model: core.rarity
+  pk: 129
+- fields: {chance: 50, item: 69, location: 6}
+  model: core.rarity
+  pk: 130
+- fields: {chance: 50, item: 70, location: 6}
+  model: core.rarity
+  pk: 131
+- fields: {chance: 40, item: 71, location: 6}
+  model: core.rarity
+  pk: 132
+- fields: {chance: 40, item: 72, location: 6}
+  model: core.rarity
+  pk: 133
+- fields: {chance: 40, item: 73, location: 6}
+  model: core.rarity
+  pk: 134
+- fields: {chance: 15, item: 73, location: 7}
+  model: core.rarity
+  pk: 135
+- fields: {chance: 35, item: 74, location: 6}
+  model: core.rarity
+  pk: 136
+- fields: {chance: 15, item: 74, location: 4}
+  model: core.rarity
+  pk: 137
+- fields: {chance: 2, item: 74, location: 7}
+  model: core.rarity
+  pk: 138
+- fields: {chance: 55, item: 75, location: 6}
+  model: core.rarity
+  pk: 139
+- fields: {chance: 50, item: 76, location: 5}
+  model: core.rarity
+  pk: 140
+- fields: {chance: 45, item: 76, location: 7}
+  model: core.rarity
+  pk: 141
+- fields: {chance: 20, item: 77, location: 6}
+  model: core.rarity
+  pk: 142
+- fields: {chance: 50, item: 78, location: 6}
+  model: core.rarity
+  pk: 143
+- fields: {chance: 40, item: 78, location: 4}
+  model: core.rarity
+  pk: 144
+- fields: {chance: 25, item: 79, location: 7}
+  model: core.rarity
+  pk: 145
+- fields: {chance: 40, item: 80, location: 6}
+  model: core.rarity
+  pk: 146
+- fields: {chance: 28, item: 80, location: 4}
+  model: core.rarity
+  pk: 147
+- fields: {chance: 40, item: 81, location: 7}
+  model: core.rarity
+  pk: 148
+- fields: {chance: 20, item: 81, location: 4}
+  model: core.rarity
+  pk: 149
+- fields: {chance: 50, item: 82, location: 6}
+  model: core.rarity
+  pk: 150
+- fields: {chance: 25, item: 83, location: 6}
+  model: core.rarity
+  pk: 151
+- fields: {chance: 30, item: 84, location: 7}
+  model: core.rarity
+  pk: 152
+- fields: {chance: 45, item: 85, location: 7}
+  model: core.rarity
+  pk: 153
+- fields: {chance: 35, item: 86, location: 5}
+  model: core.rarity
+  pk: 154
+- fields: {chance: 38, item: 87, location: 6}
+  model: core.rarity
+  pk: 155
+- fields: {chance: 4, item: 87, location: 4}
+  model: core.rarity
+  pk: 156
+- fields: {chance: 25, item: 88, location: 6}
+  model: core.rarity
+  pk: 157
+- fields: {chance: 25, item: 89, location: 6}
+  model: core.rarity
+  pk: 158
+- fields: {chance: 25, item: 90, location: 6}
+  model: core.rarity
+  pk: 159
+- fields: {chance: 28, item: 91, location: 6}
+  model: core.rarity
+  pk: 160
+- fields: {chance: 17, item: 92, location: 6}
+  model: core.rarity
+  pk: 161
+- fields: {chance: 27, item: 93, location: 6}
+  model: core.rarity
+  pk: 162
+- fields: {chance: 55, item: 438, location: 4}
+  model: core.rarity
+  pk: 163
+- fields: {chance: 55, item: 442, location: 4}
+  model: core.rarity
+  pk: 164
+

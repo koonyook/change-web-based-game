@@ -1,0 +1,42 @@
+				.bg_body{
+					position: absolute;
+					background: url(../images/morning.jpg);
+					background-color: #000;
+					background-repeat:no-repeat;
+					background-position:top right;
+					width: 100%;
+					height: 100%;
+				}
+				div.overview_blog_center{
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					width: 500px;
+					height: 450px;
+					margin-left: -250px;
+					margin-top: -225px;
+					font-family: verdana,helvetica,arial,sans-serif;
+					font-size: 14px;
+					background: rgba(255, 255, 255, 0.7);
+					border: 3px solid #333333;
+					-moz-box-shadow: #333333 0px 0px 30px 10px;
+					-webkit-box-shadow: black 0px 0px 20px;
+					overflow: auto;
+				}
+				div.overview_blog_content{
+					margin: 10px;
+				}
+				#regis_blog { 
+					display:none; 
+					z-index:1000; 
+					background-color:#FFFFFF; 
+					border:3px solid #000000; 
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					width: 500px;
+					height: 600px;
+					margin-left: -250px;
+					margin-top: -300px;
+					font-family: verdana,helvetica,arial,sans-serif;  
+				}

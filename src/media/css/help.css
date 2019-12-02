@@ -1,0 +1,144 @@
+	#help_box{
+		position: absolute;
+		display: none;
+		z-index: 100;
+		left: 50%;
+		top: 50%;
+		width: 640px;
+		height: 480px;
+		margin-top: -240px;
+		margin-left: -320px;
+		background: url(/media/images/dialog/help/bg.png);
+	}
+	#help_list{
+		list-style: none;
+		padding: 5px 0px 0px 5px;
+		margin: 0px;
+		font-family: Verdana;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	#help_content{
+		position: absolute;
+		left: 215px;
+		margin-top: 129px;
+		padding: 10px 10px 10px 10px;
+		height: 280px;
+		width: 368px;
+		background: rgba(255,255,255,0.5);
+		overflow:auto;
+	}
+	#help_content_list{
+		position: absolute;
+		margin-left: 30px;
+		width: 182px;
+		bottom: 39px;
+	}
+	#help_close{
+		position:relative;
+		width: 12px;
+		height:12px;
+		font-family: Verdana;
+		font-size: 14px;
+		font-weight: bold;
+		text-align: center;
+		left: 24px;
+		top: 53px;
+	}
+	#help_close:hover{
+		background: url(/media/images/dialog/help/close_hover.png);
+	}
+	.help_menu_button{
+		width: 176px;
+		height: 23px;
+		padding-left: 15px;
+		padding-top: 7px;
+		background-image: url(/media/images/dialog/help/normal_tab.png);
+		background-repeat: repeat-y;
+	}
+	.help_menu_button:hover{
+		background-image: url(/media/images/dialog/help/hover_tab.png);
+		background-repeat: repeat-y;
+	}
+	.help_menu_button_selected ,
+	.help_menu_button_selected:hover{
+		width: 176px;
+		height: 23px;
+		padding-left: 15px;
+		padding-top: 7px;
+		color: white;
+		background-image: url(/media/images/dialog/help/selected_tab.png);
+		background-repeat: repeat-y;
+	}
+/* following was used in help content */
+	h2{
+		font-family:fantasy
+	}
+	h3{
+		font-family:fantasy
+	}
+	p.paragraph{
+		text-indent:40px;
+		text-align:justify;
+	}
+	div.true{
+		background-image:url('/media/images/help/true.png');
+		background-repeat: no-repeat; 
+		width:24px;
+		height:24px;
+	}
+	div.false{
+		background-image:url('/media/images/help/false.png');
+		background-repeat: no-repeat; 
+		width:24px;
+		height:24px;
+	}
+	div.top{
+		background-image: url('/media/images/help/top.png'); 
+		background-repeat: no-repeat; 
+		margin-top: 0px; 
+		margin-bottom: 0px;
+		padding-top:0px;
+		padding-bottom:0px;
+		width:343px;
+		height:36px;
+	}
+	table.box{
+		background-image: url('/media/images/help/panel.png'); 
+		background-repeat: repeat-y; 
+		margin-top: 0px; 
+		margin-bottom: 0px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	ul.box{
+		background-image: url('/media/images/help/panel.png'); 
+		background-repeat: repeat-y; 
+		margin-top: 0px; 
+		margin-bottom: 0px;
+	}
+	div.bottom{
+		background-image: url('/media/images/help/bottom.png'); 
+		background-repeat: no-repeat; 
+		margin-top: 0px; 
+		margin-bottom: 5px;
+		padding-top:0px;
+		padding-bottom:0px;
+		width:343px;
+		height:37px;
+	}
+	li.question{
+		list-style-image:url('/media/images/help/question.png');
+		text-align:justify;
+		padding-right:15px;
+	}
+	li.answer{
+		list-style-image:url('/media/images/help/answer.png');
+		text-align:justify;
+		padding-right:15px;
+	}
+	li.trick{
+		list-style-image:url('/media/images/help/trick.png');
+		text-align:justify;
+		padding-right:15px;
+	}

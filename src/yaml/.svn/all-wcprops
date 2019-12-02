@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repos/change/!svn/ver/866/trunk/newtype/yaml
+END
+EffectType.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/change/!svn/ver/178/trunk/newtype/yaml/EffectType.yaml
+END
+Item.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/change/!svn/ver/802/trunk/newtype/yaml/Item.yaml
+END
+Result.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/change/!svn/ver/482/trunk/newtype/yaml/Result.yaml
+END
+ItemType.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/change/!svn/ver/279/trunk/newtype/yaml/ItemType.yaml
+END
+chart.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/change/!svn/ver/769/trunk/newtype/yaml/chart.yaml
+END
+Formula.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/change/!svn/ver/829/trunk/newtype/yaml/Formula.yaml
+END
+Formulas_Effects.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/change/!svn/ver/347/trunk/newtype/yaml/Formulas_Effects.yaml
+END
+Items_HoldEffects.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/change/!svn/ver/247/trunk/newtype/yaml/Items_HoldEffects.yaml
+END
+QuestionAnswer.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/change/!svn/ver/802/trunk/newtype/yaml/QuestionAnswer.yaml
+END
+Harvesting.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/change/!svn/ver/621/trunk/newtype/yaml/Harvesting.yaml
+END
+Rarity.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/change/!svn/ver/277/trunk/newtype/yaml/Rarity.yaml
+END
+Patent.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/change/!svn/ver/597/trunk/newtype/yaml/Patent.yaml
+END
+Effect.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/change/!svn/ver/866/trunk/newtype/yaml/Effect.yaml
+END
+Items_UseEffects.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/change/!svn/ver/863/trunk/newtype/yaml/Items_UseEffects.yaml
+END

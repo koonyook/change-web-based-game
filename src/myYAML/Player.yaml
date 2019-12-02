@@ -1,0 +1,41 @@
+- fields:
+    energy: 160
+    harvest_cost: 10
+    known_items: []
+    latitude: 39
+    location: 1
+    longitude: 61
+    max_energy: 200
+    max_mechanical_energy: 200
+    mechanical_energy: 0
+    money: 90000
+    regeneration_rate: 20
+    research_cost: 5
+    reserve_space: 0
+    storage: 40
+    travel_cost: 2
+    union: null
+    user: 3
+  model: core.player
+  pk: 2
+- fields:
+    energy: 200
+    harvest_cost: 10
+    known_items: []
+    latitude: -75
+    location: 1
+    longitude: -35
+    max_energy: 200
+    max_mechanical_energy: 200
+    mechanical_energy: 0
+    money: 50000
+    regeneration_rate: 20
+    research_cost: 5
+    reserve_space: 0
+    storage: 40
+    travel_cost: 2
+    union: null
+    user: 4
+  model: core.player
+  pk: 3
+

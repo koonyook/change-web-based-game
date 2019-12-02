@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/change/!svn/ver/615/trunk/newtype/hall_of_fame
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/change/!svn/ver/615/trunk/newtype/hall_of_fame/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/change/!svn/ver/267/trunk/newtype/hall_of_fame/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/change/!svn/ver/267/trunk/newtype/hall_of_fame/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/change/!svn/ver/267/trunk/newtype/hall_of_fame/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/change/!svn/ver/499/trunk/newtype/hall_of_fame/urls.py
+END

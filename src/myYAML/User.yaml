@@ -1,0 +1,46 @@
+- fields:
+    date_joined: 2009-12-07 13:41:22
+    email: koon_prayook@hotmail.com
+    first_name: ''
+    groups: []
+    is_active: 1
+    is_staff: 1
+    is_superuser: 1
+    last_login: 2009-12-09 09:53:14
+    last_name: ''
+    password: sha1$e3617$e2ce019cf9f1f44328527eb07276ca6398165373
+    user_permissions: []
+    username: root
+  model: auth.user
+  pk: 1
+- fields:
+    date_joined: 2009-12-07 20:20:40
+    email: tester@change.in.th
+    first_name: ''
+    groups: []
+    is_active: 1
+    is_staff: 0
+    is_superuser: 0
+    last_login: 2009-12-09 09:51:24
+    last_name: ''
+    password: sha1$545e9$fe3473d65105e5724f38a60176f0ef69e5e4a899
+    user_permissions: []
+    username: test
+  model: auth.user
+  pk: 3
+- fields:
+    date_joined: 2009-12-09 09:46:38
+    email: t2@tester.com
+    first_name: ''
+    groups: []
+    is_active: 1
+    is_staff: 0
+    is_superuser: 0
+    last_login: 2009-12-09 09:46:38
+    last_name: ''
+    password: sha1$c28ed$a3fd14ea6afb86ce097bb8d07557ceb1e4acae64
+    user_permissions: []
+    username: test2
+  model: auth.user
+  pk: 4
+

@@ -1,0 +1,236 @@
+- fields: {description: "\u0E2B\u0E32\u0E44\u0E14\u0E49\u0E08\u0E32\u0E01\u0E41\u0E2B\
+      \u0E25\u0E48\u0E07\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23", name: "\u0E17\u0E23\
+      \u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23\u0E18\u0E23\u0E23\u0E21\u0E0A\u0E32\u0E15\
+      \u0E34"}
+  model: core.itemtype
+  pk: 1
+- fields: {description: "\u0E04\u0E27\u0E32\u0E21\u0E23\u0E39\u0E49\u0E17\u0E35\u0E48\
+      \u0E44\u0E21\u0E48\u0E21\u0E35\u0E27\u0E31\u0E19\u0E2A\u0E39\u0E0D\u0E2B\u0E32\
+      \u0E22 \u0E41\u0E25\u0E30\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\
+      \u0E49\u0E1E\u0E37\u0E49\u0E19\u0E17\u0E35\u0E48\u0E08\u0E31\u0E14\u0E40\u0E01\
+      \u0E47\u0E1A", name: "\u0E40\u0E17\u0E04\u0E42\u0E19\u0E42\u0E25\u0E22\u0E35"}
+  model: core.itemtype
+  pk: 2
+- fields: {description: '', name: "\u0E2B\u0E34\u0E19"}
+  model: core.itemtype
+  pk: 3
+- fields: {description: '', name: "\u0E2D\u0E38\u0E1B\u0E01\u0E23\u0E13\u0E4C\u0E21\
+      \u0E31\u0E14"}
+  model: core.itemtype
+  pk: 4
+- fields: {description: '', name: "\u0E2A\u0E31\u0E15\u0E27\u0E4C"}
+  model: core.itemtype
+  pk: 5
+- fields: {description: '', name: "\u0E2A\u0E31\u0E15\u0E27\u0E4C\u0E40\u0E25\u0E47\
+      \u0E01"}
+  model: core.itemtype
+  pk: 6
+- fields: {description: '', name: "\u0E2A\u0E31\u0E15\u0E27\u0E4C\u0E01\u0E25\u0E32\
+      \u0E07"}
+  model: core.itemtype
+  pk: 7
+- fields: {description: '', name: "\u0E2A\u0E31\u0E15\u0E27\u0E4C\u0E43\u0E2B\u0E0D\
+      \u0E48"}
+  model: core.itemtype
+  pk: 8
+- fields: {description: '', name: "\u0E2A\u0E31\u0E15\u0E27\u0E4C\u0E43\u0E2B\u0E0D\
+      \u0E48\u0E21\u0E32\u0E01"}
+  model: core.itemtype
+  pk: 9
+- fields: {description: '', name: "\u0E2A\u0E31\u0E15\u0E27\u0E4C\u0E1B\u0E48\u0E32"}
+  model: core.itemtype
+  pk: 10
+- fields: {description: '', name: "\u0E2A\u0E31\u0E15\u0E27\u0E4C\u0E40\u0E25\u0E35\
+      \u0E49\u0E22\u0E07"}
+  model: core.itemtype
+  pk: 11
+- fields: {description: '', name: "\u0E2D\u0E32\u0E27\u0E38\u0E18"}
+  model: core.itemtype
+  pk: 12
+- fields: {description: '', name: "\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E40\u0E1A\u0E32"}
+  model: core.itemtype
+  pk: 13
+- fields: {description: '', name: "\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E01\u0E25\u0E32\
+      \u0E07"}
+  model: core.itemtype
+  pk: 14
+- fields: {description: '', name: "\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E2B\u0E19\u0E31\
+      \u0E01"}
+  model: core.itemtype
+  pk: 15
+- fields: {description: '', name: "\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E2B\u0E19\u0E31\
+      \u0E01\u0E1E\u0E34\u0E40\u0E28\u0E29"}
+  model: core.itemtype
+  pk: 16
+- fields: {description: '', name: "\u0E02\u0E2D\u0E07\u0E21\u0E35\u0E04\u0E21"}
+  model: core.itemtype
+  pk: 17
+- fields: {description: '', name: "\u0E20\u0E32\u0E0A\u0E19\u0E30"}
+  model: core.itemtype
+  pk: 18
+- fields: {description: '', name: "\u0E20\u0E32\u0E0A\u0E19\u0E30\u0E14\u0E34\u0E19\
+      \u0E40\u0E1C\u0E32"}
+  model: core.itemtype
+  pk: 19
+- fields: {description: '', name: "\u0E41\u0E23\u0E48\u0E2A\u0E35"}
+  model: core.itemtype
+  pk: 20
+- fields: {description: '', name: "\u0E02\u0E27\u0E32\u0E19"}
+  model: core.itemtype
+  pk: 21
+- fields: {description: '', name: "\u0E02\u0E27\u0E32\u0E19\u0E42\u0E25\u0E2B\u0E30"}
+  model: core.itemtype
+  pk: 22
+- fields: {description: '', name: "\u0E40\u0E21\u0E25\u0E47\u0E14\u0E1E\u0E37\u0E0A"}
+  model: core.itemtype
+  pk: 23
+- fields: {description: '', name: "\u0E40\u0E02\u0E47\u0E21\u0E42\u0E25\u0E2B\u0E30"}
+  model: core.itemtype
+  pk: 25
+- fields: {description: '', name: "\u0E20\u0E32\u0E0A\u0E19\u0E30\u0E1B\u0E34\u0E14"}
+  model: core.itemtype
+  pk: 26
+- fields: {description: '', name: "\u0E1E\u0E37\u0E0A\u0E2B\u0E21\u0E31\u0E01\u0E44\
+      \u0E14\u0E49"}
+  model: core.itemtype
+  pk: 27
+- fields: {description: '', name: "\u0E04\u0E31\u0E19\u0E44\u0E16"}
+  model: core.itemtype
+  pk: 28
+- fields: {description: '', name: "\u0E2A\u0E31\u0E15\u0E27\u0E4C\u0E25\u0E32\u0E01"}
+  model: core.itemtype
+  pk: 29
+- fields: {description: '', name: "\u0E20\u0E32\u0E0A\u0E19\u0E30\u0E17\u0E19\u0E44\
+      \u0E1F"}
+  model: core.itemtype
+  pk: 30
+- fields: {description: '', name: "\u0E40\u0E02\u0E47\u0E21"}
+  model: core.itemtype
+  pk: 31
+- fields: {description: '', name: "\u0E19\u0E32\u0E2C\u0E34\u0E01\u0E32"}
+  model: core.itemtype
+  pk: 32
+- fields: {description: '', name: "\u0E21\u0E35\u0E14\u0E42\u0E25\u0E2B\u0E30"}
+  model: core.itemtype
+  pk: 33
+- fields: {description: '', name: "\u0E17\u0E48\u0E2D\u0E42\u0E25\u0E2B\u0E30"}
+  model: core.itemtype
+  pk: 34
+- fields: {description: '', name: "\u0E41\u0E23\u0E48"}
+  model: core.itemtype
+  pk: 35
+- fields: {description: '', name: "\u0E40\u0E2A\u0E49\u0E19\u0E43\u0E22"}
+  model: core.itemtype
+  pk: 36
+- fields: {description: '', name: "\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E08\
+      \u0E31\u0E01\u0E23"}
+  model: core.itemtype
+  pk: 37
+- fields: {description: '', name: "\u0E04\u0E49\u0E2D\u0E19"}
+  model: core.itemtype
+  pk: 38
+- fields: {description: '', name: "\u0E25\u0E39\u0E01\u0E42\u0E25\u0E2B\u0E30"}
+  model: core.itemtype
+  pk: 39
+- fields: {description: '', name: "\u0E25\u0E27\u0E14"}
+  model: core.itemtype
+  pk: 40
+- fields: {description: '', name: "\u0E41\u0E17\u0E48\u0E07\u0E42\u0E25\u0E2B\u0E30"}
+  model: core.itemtype
+  pk: 41
+- fields: {description: '', name: "\u0E43\u0E1A\u0E44\u0E21\u0E49\u0E2A\u0E32\u0E19"}
+  model: core.itemtype
+  pk: 42
+- fields: {description: '', name: "\u0E43\u0E1A\u0E44\u0E21\u0E49"}
+  model: core.itemtype
+  pk: 43
+- fields: {description: '', name: "\u0E2A\u0E21\u0E38\u0E19\u0E44\u0E1E\u0E23"}
+  model: core.itemtype
+  pk: 44
+- fields: {description: '', name: "\u0E42\u0E23\u0E07\u0E44\u0E1F\u0E1F\u0E49\u0E32"}
+  model: core.itemtype
+  pk: 45
+- fields: {description: '', name: "\u0E25\u0E49\u0E2D"}
+  model: core.itemtype
+  pk: 46
+- fields: {description: '', name: "\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E02\
+      \u0E38\u0E14"}
+  model: core.itemtype
+  pk: 47
+- fields: {description: '', name: "\u0E41\u0E1C\u0E48\u0E19\u0E42\u0E25\u0E2B\u0E30"}
+  model: core.itemtype
+  pk: 48
+- fields: {description: '', name: "\u0E16\u0E31\u0E07\u0E42\u0E25\u0E2B\u0E30"}
+  model: core.itemtype
+  pk: 49
+- fields: {description: '', name: "\u0E1E\u0E37\u0E0A"}
+  model: core.itemtype
+  pk: 50
+- fields: {description: '', name: "\u0E40\u0E0A\u0E37\u0E49\u0E2D\u0E40\u0E1E\u0E25\
+      \u0E34\u0E07\u0E15\u0E30\u0E40\u0E01\u0E35\u0E22\u0E07"}
+  model: core.itemtype
+  pk: 51
+- fields: {description: '', name: "\u0E2A\u0E31\u0E15\u0E27\u0E4C\u0E21\u0E35\u0E44\
+      \u0E02"}
+  model: core.itemtype
+  pk: 52
+- fields: {description: '', name: "\u0E2A\u0E32\u0E23\u0E1B\u0E23\u0E30\u0E01\u0E2D\
+      \u0E1A metal oxide"}
+  model: core.itemtype
+  pk: 53
+- fields: {description: '', name: "\u0E2A\u0E32\u0E23\u0E01\u0E36\u0E48\u0E07\u0E15\
+      \u0E31\u0E27\u0E19\u0E33"}
+  model: core.itemtype
+  pk: 54
+- fields: {description: '', name: "\u0E2A\u0E32\u0E23\u0E1B\u0E23\u0E30\u0E01\u0E2D\
+      \u0E1A transistor"}
+  model: core.itemtype
+  pk: 55
+- fields: {description: '', name: "\u0E2A\u0E32\u0E23\u0E09\u0E32\u0E1A\u0E40\u0E07\
+      \u0E32"}
+  model: core.itemtype
+  pk: 56
+- fields: {description: '', name: "\u0E2A\u0E32\u0E23\u0E1B\u0E23\u0E30\u0E01\u0E2D\
+      \u0E1A solar cell"}
+  model: core.itemtype
+  pk: 57
+- fields: {description: '', name: "\u0E1E\u0E37\u0E0A\u0E41\u0E2D\u0E25\u0E01\u0E2D\
+      \u0E2E\u0E2D\u0E25\u0E4C"}
+  model: core.itemtype
+  pk: 58
+- fields: {description: '', name: "\u0E18\u0E32\u0E15\u0E38\u0E01\u0E33\u0E21\u0E31\
+      \u0E19\u0E15\u0E23\u0E31\u0E07\u0E2A\u0E35"}
+  model: core.itemtype
+  pk: 59
+- fields: {description: '', name: "\u0E01\u0E32\u0E23\u0E2B\u0E25\u0E48\u0E2D\u0E42\
+      \u0E25\u0E2B\u0E30"}
+  model: core.itemtype
+  pk: 60
+- fields: {description: '', name: "\u0E18\u0E32\u0E15\u0E38\u0E19\u0E34\u0E27\u0E40\
+      \u0E04\u0E25\u0E35\u0E22\u0E23\u0E4C"}
+  model: core.itemtype
+  pk: 61
+- fields: {description: '', name: "\u0E2A\u0E32\u0E23\u0E1B\u0E23\u0E30\u0E01\u0E2D\
+      \u0E1A\u0E15\u0E31\u0E27\u0E19\u0E33\u0E22\u0E34\u0E48\u0E07\u0E22\u0E27\u0E14"}
+  model: core.itemtype
+  pk: 62
+- fields: {description: '', name: "\u0E01\u0E34\u0E48\u0E07\u0E44\u0E21\u0E49"}
+  model: core.itemtype
+  pk: 63
+- fields: {description: '', name: "\u0E16\u0E48\u0E32\u0E19\u0E44\u0E21\u0E49"}
+  model: core.itemtype
+  pk: 64
+- fields: {description: '', name: "\u0E2A\u0E31\u0E15\u0E27\u0E4C\u0E25\u0E32\u0E01"}
+  model: core.itemtype
+  pk: 65
+- fields: {description: '', name: "\u0E41\u0E23\u0E48\u0E42\u0E25\u0E2B\u0E30"}
+  model: core.itemtype
+  pk: 66
+- fields: {description: '', name: "\u0E01\u0E32\u0E23\u0E15\u0E35\u0E42\u0E25\u0E2B\
+      \u0E30"}
+  model: core.itemtype
+  pk: 67
+- fields: {description: '', name: "\u0E40\u0E15\u0E32\u0E2B\u0E25\u0E2D\u0E21"}
+  model: core.itemtype
+  pk: 68
+

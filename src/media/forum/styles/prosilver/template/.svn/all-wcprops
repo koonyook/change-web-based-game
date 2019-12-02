@@ -1,0 +1,617 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template
+END
+overall_header.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/overall_header.html
+END
+posting_pm_layout.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/posting_pm_layout.html
+END
+posting_layout.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/posting_layout.html
+END
+mcp_queue.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_queue.html
+END
+ucp_zebra_friends.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_zebra_friends.html
+END
+faq_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/faq_body.html
+END
+viewtopic_print.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/viewtopic_print.html
+END
+login_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/login_body.html
+END
+search_results.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/search_results.html
+END
+mcp_front.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_front.html
+END
+mcp_forum.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_forum.html
+END
+report_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/report_body.html
+END
+ucp_main_drafts.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_main_drafts.html
+END
+quickreply_editor.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/quickreply_editor.html
+END
+posting_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/posting_body.html
+END
+mcp_logs.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_logs.html
+END
+posting_review.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/posting_review.html
+END
+mcp_move.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_move.html
+END
+ucp_profile_avatar.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_profile_avatar.html
+END
+template.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/template.cfg
+END
+captcha_default.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/captcha_default.html
+END
+captcha_recaptcha.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/captcha_recaptcha.html
+END
+memberlist_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/memberlist_body.html
+END
+custom_profile_fields.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/custom_profile_fields.html
+END
+login_forum.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/login_forum.html
+END
+styleswitcher.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/styleswitcher.js
+END
+ucp_attachments.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_attachments.html
+END
+jumpbox.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/jumpbox.html
+END
+index_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/index_body.html
+END
+captcha_qa.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/captcha_qa.html
+END
+mcp_notes_user.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_notes_user.html
+END
+ucp_profile_signature.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_profile_signature.html
+END
+memberlist_im.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/memberlist_im.html
+END
+ucp_prefs_personal.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_prefs_personal.html
+END
+posting_editor.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/posting_editor.html
+END
+ucp_prefs_post.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_prefs_post.html
+END
+index.htm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/index.htm
+END
+viewonline_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/viewonline_body.html
+END
+ucp_pm_viewmessage_print.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_pm_viewmessage_print.html
+END
+mcp_notes_front.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_notes_front.html
+END
+mcp_ban.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_ban.html
+END
+forumlist_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/forumlist_body.html
+END
+posting_topic_review.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/posting_topic_review.html
+END
+ucp_main_bookmarks.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_main_bookmarks.html
+END
+ucp_pm_history.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_pm_history.html
+END
+simple_footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/simple_footer.html
+END
+posting_smilies.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/posting_smilies.html
+END
+ucp_pm_viewfolder.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_pm_viewfolder.html
+END
+mcp_warn_post.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_warn_post.html
+END
+mcp_topic.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_topic.html
+END
+ucp_prefs_view.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_prefs_view.html
+END
+ucp_pm_viewmessage.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_pm_viewmessage.html
+END
+search_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/search_body.html
+END
+forum_fn.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/forum_fn.js
+END
+mcp_post.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_post.html
+END
+viewtopic_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/viewtopic_body.html
+END
+ucp_zebra_foes.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_zebra_foes.html
+END
+mcp_whois.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_whois.html
+END
+memberlist_search.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/memberlist_search.html
+END
+ucp_register.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_register.html
+END
+mcp_footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_footer.html
+END
+editor.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/editor.js
+END
+mcp_viewlogs.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_viewlogs.html
+END
+ucp_main_subscribed.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_main_subscribed.html
+END
+viewforum_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/viewforum_body.html
+END
+simple_header.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/simple_header.html
+END
+posting_buttons.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/posting_buttons.html
+END
+memberlist_leaders.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/memberlist_leaders.html
+END
+ucp_profile_profile_info.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_profile_profile_info.html
+END
+ucp_main_front.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_main_front.html
+END
+ucp_footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_footer.html
+END
+ucp_pm_message_footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_pm_message_footer.html
+END
+ucp_profile_reg_details.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_profile_reg_details.html
+END
+memberlist_email.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/memberlist_email.html
+END
+mcp_approve.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_approve.html
+END
+mcp_warn_front.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_warn_front.html
+END
+bbcode.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/bbcode.html
+END
+ucp_agreement.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_agreement.html
+END
+overall_footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/overall_footer.html
+END
+drafts.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/drafts.html
+END
+mcp_message.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_message.html
+END
+posting_preview.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/posting_preview.html
+END
+posting_attach_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/posting_attach_body.html
+END
+ucp_remind.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_remind.html
+END
+posting_poll_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/posting_poll_body.html
+END
+mcp_header.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_header.html
+END
+ucp_resend.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_resend.html
+END
+attachment.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/attachment.html
+END
+viewonline_whois.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/viewonline_whois.html
+END
+memberlist_view.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/memberlist_view.html
+END
+mcp_reports.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_reports.html
+END
+ucp_groups_manage.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_groups_manage.html
+END
+ucp_pm_options.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_pm_options.html
+END
+ucp_header.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_header.html
+END
+ucp_pm_message_header.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_pm_message_header.html
+END
+ucp_avatar_options.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_avatar_options.html
+END
+message_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/message_body.html
+END
+mcp_warn_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_warn_list.html
+END
+ucp_groups_membership.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_groups_membership.html
+END
+mcp_warn_user.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/mcp_warn_user.html
+END
+ucp_pm_popup.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/ucp_pm_popup.html
+END
+confirm_body.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/styles/prosilver/template/confirm_body.html
+END

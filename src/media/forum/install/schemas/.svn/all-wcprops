@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/install/schemas
+END
+sqlite_schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/install/schemas/sqlite_schema.sql
+END
+oracle_schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/install/schemas/oracle_schema.sql
+END
+firebird_schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/install/schemas/firebird_schema.sql
+END
+postgres_schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/install/schemas/postgres_schema.sql
+END
+mysql_40_schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/install/schemas/mysql_40_schema.sql
+END
+mysql_41_schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/install/schemas/mysql_41_schema.sql
+END
+schema_data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/install/schemas/schema_data.sql
+END
+mssql_schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/install/schemas/mssql_schema.sql
+END
+index.htm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/change/!svn/ver/516/trunk/newtype/media/forum/install/schemas/index.htm
+END

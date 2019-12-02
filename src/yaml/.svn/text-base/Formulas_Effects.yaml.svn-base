@@ -1,0 +1,45 @@
+- fields: {effect: 15, formula: 125, value: '{ ''name'':''age_id'', ''data'':''2''
+      }'}
+  model: core.formulas_effects
+  pk: 1
+- fields: {effect: 15, formula: 77, value: '{ ''name'':''age_id'', ''data'':''3''
+      }'}
+  model: core.formulas_effects
+  pk: 2
+- fields: {effect: 15, formula: 77, value: '{ ''name'':''mechanical_energy_enabled'',
+      ''data'':''1'' }'}
+  model: core.formulas_effects
+  pk: 3
+- fields: {effect: 15, formula: 332, value: '{ ''name'':''age_id'', ''data'':''3''
+      }'}
+  model: core.formulas_effects
+  pk: 4
+- fields: {effect: 15, formula: 332, value: '{ ''name'':''mechanical_energy_enabled'',
+      ''data'':''1'' }'}
+  model: core.formulas_effects
+  pk: 5
+- fields: {effect: 15, formula: 47, value: '{ ''name'':''money_enabled'', ''data'':''1''
+      }'}
+  model: core.formulas_effects
+  pk: 6
+- fields: {effect: 15, formula: 189, value: '{ ''name'':''bank_enabled'', ''data'':''1''
+      }'}
+  model: core.formulas_effects
+  pk: 7
+- fields: {effect: 15, formula: 76, value: '{ ''name'':''patent_enabled'', ''data'':''1''
+      }'}
+  model: core.formulas_effects
+  pk: 8
+- fields: {effect: 15, formula: 347, value: '{ ''name'':''union_enabled'', ''data'':''1''
+      }'}
+  model: core.formulas_effects
+  pk: 9
+- fields: {effect: 15, formula: 51, value: '{ ''name'':''market_enabled'', ''data'':''1''
+      }'}
+  model: core.formulas_effects
+  pk: 10
+- fields: {effect: 15, formula: 280, value: '{ ''name'':''environvent_found'', ''data'':''1''
+      }'}
+  model: core.formulas_effects
+  pk: 11
+

@@ -1,0 +1,85 @@
+- fields: {air_pollution: 332, earth_pollution: 842, natural_resources: 999358, researches: 1522,
+    time: !!timestamp '2009-12-14 00:00:00', water_pollution: 731}
+  model: chart.state
+  pk: 1
+- fields: {air_pollution: 609, earth_pollution: 932, natural_resources: 998451, researches: 1532,
+    time: !!timestamp '2009-12-15 00:00:00', water_pollution: 1354}
+  model: chart.state
+  pk: 2
+- fields: {air_pollution: 1022, earth_pollution: 1732, natural_resources: 998873,
+    researches: 1543, time: !!timestamp '2009-12-16 00:00:00', water_pollution: 2532}
+  model: chart.state
+  pk: 3
+- fields: {air_pollution: 1489, earth_pollution: 2145, natural_resources: 998943,
+    researches: 1551, time: !!timestamp '2009-12-17 00:00:00', water_pollution: 3212}
+  model: chart.state
+  pk: 4
+- fields: {air_pollution: 1470, earth_pollution: 3267, natural_resources: 997580,
+    researches: 1548, time: !!timestamp '2009-12-18 00:00:00', water_pollution: 4210}
+  model: chart.state
+  pk: 5
+- fields: {air_pollution: 1735, earth_pollution: 4355, natural_resources: 997175,
+    researches: 1559, time: !!timestamp '2009-12-19 00:00:00', water_pollution: 4130}
+  model: chart.state
+  pk: 6
+- fields: {air_pollution: 2311, earth_pollution: 5691, natural_resources: 997012,
+    researches: 1544, time: !!timestamp '2009-12-20 00:00:00', water_pollution: 3992}
+  model: chart.state
+  pk: 7
+- fields: {air_pollution: 2800, earth_pollution: 5255, natural_resources: 997496,
+    researches: 1590, time: !!timestamp '2009-12-21 00:00:00', water_pollution: 4533}
+  model: chart.state
+  pk: 8
+- fields: {air_pollution: 3154, earth_pollution: 6521, natural_resources: 996372,
+    researches: 1601, time: !!timestamp '2009-12-22 00:00:00', water_pollution: 5709}
+  model: chart.state
+  pk: 9
+- fields: {air_pollution: 3810, earth_pollution: 7724, natural_resources: 996475,
+    researches: 1620, time: !!timestamp '2009-12-23 00:00:00', water_pollution: 6939}
+  model: chart.state
+  pk: 10
+- fields: {air_pollution: 3733, earth_pollution: 9002, natural_resources: 995936,
+    researches: 1645, time: !!timestamp '2009-12-24 00:00:00', water_pollution: 7892}
+  model: chart.state
+  pk: 11
+- fields: {air_pollution: 4193, earth_pollution: 10400, natural_resources: 995443,
+    researches: 1650, time: !!timestamp '2009-12-25 00:00:00', water_pollution: 9102}
+  model: chart.state
+  pk: 12
+- fields: {air_pollution: 4935, earth_pollution: 12234, natural_resources: 995296,
+    researches: 1671, time: !!timestamp '2009-12-26 00:00:00', water_pollution: 10502}
+  model: chart.state
+  pk: 13
+- fields: {air_pollution: 5284, earth_pollution: 13986, natural_resources: 994473,
+    researches: 1700, time: !!timestamp '2009-12-27 00:00:00', water_pollution: 10350}
+  model: chart.state
+  pk: 14
+- fields: {air_pollution: 5121, earth_pollution: 15890, natural_resources: 994085,
+    researches: 1696, time: !!timestamp '2009-12-28 00:00:00', water_pollution: 11586}
+  model: chart.state
+  pk: 15
+- fields: {air_pollution: 5100, earth_pollution: 18132, natural_resources: 993056,
+    researches: 1731, time: !!timestamp '2009-12-29 00:00:00', water_pollution: 12899}
+  model: chart.state
+  pk: 16
+- fields: {air_pollution: 6091, earth_pollution: 20126, natural_resources: 992767,
+    researches: 1759, time: !!timestamp '2009-12-30 00:00:00', water_pollution: 14432}
+  model: chart.state
+  pk: 17
+- fields: {air_pollution: 6992, earth_pollution: 22843, natural_resources: 992249,
+    researches: 1789, time: !!timestamp '2009-12-31 00:00:00', water_pollution: 15762}
+  model: chart.state
+  pk: 18
+- fields: {air_pollution: 7223, earth_pollution: 24546, natural_resources: 991119,
+    researches: 1825, time: !!timestamp '2009-12-31 00:00:00', water_pollution: 16387}
+  model: chart.state
+  pk: 19
+- fields: {air_pollution: 8103, earth_pollution: 26877, natural_resources: 990834,
+    researches: 1850, time: !!timestamp '2010-01-01 00:00:00', water_pollution: 18139}
+  model: chart.state
+  pk: 20
+- fields: {air_pollution: 9204, earth_pollution: 28312, natural_resources: 989123,
+    researches: 1867, time: !!timestamp '2010-01-02 00:00:00', water_pollution: 19755}
+  model: chart.state
+  pk: 21
+

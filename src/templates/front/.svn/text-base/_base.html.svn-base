@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+			<title>{% block title %}Change - เปลี่ยนคุณ เปลี่ยนโลก{% endblock %}</title>
+			<link rel="stylesheet" href="/media/css/front.css" type="text/css" />
+			<link rel="icon" href="/media/ico/change.png">
+			{% block css %}{% endblock %}
+			<link type="text/css" href="/media/css/jquery-ui.css" rel="stylesheet" />	
+			<script type="text/javascript" src="/media/js/lib/jquery.js"></script>
+			<script type="text/javascript" src="/media/js/lib/jquery-ui.min.js"></script>
+			<script type="text/javascript" src="/media/js/lib/jquery.delay.js"></script>
+			<script type="text/javascript" src="/media/js/lib/soundmanager2.js"></script>
+			{% block javascript %}{% endblock %}
+	</head>
+	<body class="bg_body">
+		<div id="blackscreen" style="background: black; position:absolute; z-index: 10000; width: 100%; height: 100%; display:none"></div>
+		<div id="tab_menu">
+			<div id="tab_menu_link">
+				<!--<a href="/">Home</a> | <a href="/overview/">Overview</a> | <a href="/forum">Forum</a> | <a href="hof.html">Hall of fame</a>-->
+				<a href="/">Home</a> | <a href="/overview/">Overview</a> | <a href="/forum">Forum</a>
+			</div>
+		</div>
+		<div>
+		{% block content %}{% endblock %}
+		</div>
+	</body>
+</html>

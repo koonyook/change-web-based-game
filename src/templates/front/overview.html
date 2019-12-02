@@ -1,0 +1,42 @@
+{% extends "front/_base.html" %}
+{% block css %}<link rel="stylesheet" href="/media/css/overview.css" type="text/css" />{% endblock %}
+{% block javascript %}<script type="text/javascript">	
+			function LoadWeather()
+			{
+				$.getJSON("/weather/", function(data) 
+					{
+						$('.bg_body').css("background","url(/media/images/bg_"+data+".png)");
+					});
+			}
+			$(document).ready(function(){
+				LoadWeather();
+				$("#register_button").click(function() {
+						window.location = "/?register";
+						return false;
+				});
+			});
+</script>{% endblock %}
+{% block content %}
+
+	<div class="overview_blog_center">
+		<div class="overview_blog_content">
+			<p style="text-indent:40px; text-align:justify;">กาลครั้งหนึ่งนานมาแล้ว ณ ดินแดนอันอุดมสมบูรณ์แห่งหนึ่ง ที่เรียกว่า "โลก" สิ่งมีชีวิตอันทรงปัญญาจำนวนหนึ่งได้ถือกำเนิดขึ้น พร้อมกับพลังแห่งการสร้างสรรค์ที่ไร้ขีดจำกัด...</p>
+			<p style="text-indent:40px; text-align:justify;">สิ่งมีชีวิตเหล่านี้ได้พยายามสำรวจสิ่งต่างๆ ในโลกและนำสิ่งเหล่านั้นมาผสมผสานสร้างสรรค์เป็นนวัตกรรมเพื่อการดำรงชีวิตที่สะดวกสบายขึ้น โดยไม่รู้เลยว่าพวกเขาจะต้องไปประสบกับอะไรในอนาคต...</p>
+			<p style="text-indent:40px; text-align:justify;">ขอเชิญคุณมาร่วมเป็นส่วนหนึ่งของการเปลี่ยนแปลงนี้ มาร่วมกันสร้างสรรค์สิ่งใหม่ๆ ด้วยการวิจัยอย่างง่ายๆ ดังนี้</p>
+			<ol>
+			<li>เดินทางไปหาทรัพยากรธรรมชาติ จากแหล่งทรัพยากรต่างๆ<br/>
+			<center><img src="/media/images/help/four_resource_place.jpg"/></center>
+            <br/>
+			<li>นำมาทดลองหาวิธีการที่เหมาะสม ที่จะทำให้ได้นวัตกรรมใหม่ๆมา<br/>
+			<center><img src="/media/images/help/formula.png"/></center><br/>
+			<li>ได้นวัตกรรมใหม่ๆ ที่ช่วยให้ชีวิต หรือสิ่งต่างๆ ดีขึ้น<br/>
+			<center><img src="/media/images/help/plus_plus.png"/></center><br/>
+			<li>เผยแพร่นวัตกรรมของคุณให้โลกได้รับรู้ เพื่อการต่อยอดสู่จุดสูงสุด<br/>
+			<center><img src="/media/images/help/distribute.png"/></center><br/>
+			</ol>
+            <p style="text-indent:40px; text-align:justify;">และเตียมพบกับระบบใหม่ๆในเกมมากมาย ที่จะเกิดขึ้นจากการวิจัยของคุณเอง</p>
+			<p style="text-indent:40px; text-align:justify;">คุณพร้อมหรือยังที่จะมาปลดปล่อยพลังแห่งการสร้างสรรค์ร่วมกัน</p>
+			<center><a id="register_button" href="#">[สมัครเลย]</a></center>
+		</div>
+	</div>
+{% endblock %}

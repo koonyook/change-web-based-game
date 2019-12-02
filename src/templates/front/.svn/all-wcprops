@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/change/!svn/ver/852/trunk/newtype/templates/front
+END
+register.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/change/!svn/ver/22/trunk/newtype/templates/front/register.html
+END
+overview.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/change/!svn/ver/852/trunk/newtype/templates/front/overview.html
+END
+front.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/change/!svn/ver/845/trunk/newtype/templates/front/front.html
+END
+_base.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/change/!svn/ver/820/trunk/newtype/templates/front/_base.html
+END
